@@ -1,3 +1,9 @@
 # Aqui estão alguns links interessantes
 
-* 
+* Curso POO - Curso em Vídeo : https://www.youtube.com/watch?v=KlIL63MeyMY&list=PLHz_AreHm4dkqe2aR0tQK74m8SFe-aGsY
+
+* Criando Aplicativos Gráficos com Java : https://www.youtube.com/watch?v=v3--xpdMz-Q
+
+* Interfaces Loiane : https://www.youtube.com/watch?v=6uLLfRNgRA4
+
+* Como Organizar o Código em Pacotes : https://www.youtube.com/watch?v=ia89Acj0WtE
