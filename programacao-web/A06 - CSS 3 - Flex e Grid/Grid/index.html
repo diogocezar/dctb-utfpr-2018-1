@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Exemplo CSS Grid</title>
+</head>
+<style>
+	body{
+		margin: 0;
+		font-family: sans-serif;
+	}
+
+	/* Utilizando Grids Simples */
+
+	.box{
+		background-color: #444;
+		color: #fff;
+		border-radius: 5px;
+		padding: 20px;
+		font-size: 150%;
+	}
+
+	.container{
+		padding: 10px;
+		display: grid;
+		grid-template-columns: 33% 33% 33%;
+		grid-template-rows:  187px 150px;
+		grid-gap: 10px;
+		background-color: #fff;
+		color: #444;
+	}
+
+	/* Utilizando Containers Áreas */
+
+	.container-area {
+		display: grid;
+		grid-template-columns: 25% 25% 25% 25%;
+		grid-gap: 10px;
+		grid-template-rows: 33% 33% 33%;
+		grid-template-areas:
+		"header header header header"
+		"main main . sidebar"
+		"footer footer footer footer";
+	}
+
+	.box-area{
+		background-color: #ddd;
+		color: #fff;
+		border-radius: 5px;
+		padding: 20px;
+		font-size: 150%;
+	}
+
+	.box-area-b1 {
+		grid-area: header;
+	}
+	.box-area-b2 {
+		grid-area: main;
+	}
+	.box-area-b3 {
+		grid-area: sidebar;
+	}
+	.box-area-b4 {
+		grid-area: footer;
+	}
+</style>
+<body>
+	<!--
+	<div class="container">
+		<div class="box b1">Box 1</div>
+		<div class="box b2">Box 2</div>
+		<div class="box b3">Box 3</div>
+		<div class="box b4">Box 4</div>
+		<div class="box b5">Box 5</div>
+		<div class="box b6">Box 6</div>
+	</div>
+-->
+
+	<div class="container-area">
+		<div class="box-area box-area-b1">Box 1</div>
+		<div class="box-area box-area-b2">Box 2</div>
+		<div class="box-area box-area-b3">Box 3</div>
+		<div class="box-area box-area-b4">Box 4</div>
+	</div>
+</body>
+</html>
