@@ -17,9 +17,9 @@ Quais são as disciplinas?
     * 3N4 : P105;
     * 3N5 : P105;
 * ES31A - Introdução A Engenharia De Software - ES11 - Horários e Salas:
-    * 2N1 : P001;
-    * 2N2 : P001;
-    * 2N3 : P001;
+    * 2N1 : A136;
+    * 2N2 : A136;
+    * 2N3 : A136;
     * 4N2 : P001;
     * 4N3 : P001;
 * SO33A - Estrutura De Dados - ES31 - SALA P005 - Horários e Salas:
