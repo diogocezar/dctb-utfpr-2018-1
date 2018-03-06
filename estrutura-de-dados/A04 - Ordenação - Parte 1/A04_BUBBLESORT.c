@@ -1,13 +1,12 @@
 #include <stdio.h>
 
 /**
-  * Exemplo de Implementação do Método de Ordenação Bolha
+  * Exemplo de Implementação do Método de Ordenação BubbleSort
   * Diogo Cezar <diogo@diogocezar.com>
   */
 
-
 /**
-  * Ordenação pelo método bolha
+  * Ordenação pelo método BubbleSort
   */
 void bubbleSort(int n, int v[]){
     int i;

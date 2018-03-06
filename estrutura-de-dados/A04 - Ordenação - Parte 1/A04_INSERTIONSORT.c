@@ -1,26 +1,25 @@
 #include <stdio.h>
 
 /**
-  * Exemplo de Implementação do Método de Ordenação Bolha
+  * Exemplo de Implementação do Método de Ordenação InsertionSort
   * Diogo Cezar <diogo@diogocezar.com>
   */
 
-
 /**
-  * Ordenação pelo método bolha
+  * Ordenação pelo método InsertionSort
   */
-void selectionSort(int n, int v[]){
-    int i, j, min, aux;
-    for(i=0; i<n-1; i++){
-        min = i;
-        for(j=i+1; j<n; j++){
-            if(v[j] < v[min]){
-                min = j;
-            }
+void insertionSort(int n, int v[]){
+    int i;
+    int j;
+    int pivo;
+    for(i=1; i<n; i++){
+        pivo = v[i];
+        j = i-1;
+        while(j >= 0 && v[j] > pivo){
+            v[j+1] = v[j];
+            j--;
         }
-        aux = v[i];
-        v[i] = v[min];
-        v[min] = aux;
+        v[j+1] = pivo;
     }
 }
 
@@ -42,7 +41,7 @@ int main(){
     int v[7] = {80,12,1,5,18,20,3};
     printf("Vetor original:\n");
     printVet(7, v);
-    selectionSort(7, v);
+    insertionSort(7, v);
     printf("Vetor ordenado:\n");
     printVet(7, v);
 }

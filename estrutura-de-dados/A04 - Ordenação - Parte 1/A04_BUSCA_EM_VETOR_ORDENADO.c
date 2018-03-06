@@ -5,7 +5,6 @@
   * Diogo Cezar <diogo@diogocezar.com>
   */
 
-
 /**
   * Uma busca sequencial, nada performática!
   */
@@ -50,5 +49,4 @@ int main(){
     printf("O elemento foi encontrado na posição: %d\n", sequentialSearch(30, 7, v));
     printf("O elemento foi encontrado na posição: %d\n", binarySearch(30, 7, v));
     printf("O elemento foi encontrado na posição: %d\n", recursiveBinarySearch(30, -1, 7, v));
-
 }
