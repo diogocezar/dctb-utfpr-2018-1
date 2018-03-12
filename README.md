@@ -20,8 +20,8 @@ Quais são as disciplinas?
     * 2N1 : A136;
     * 2N2 : A136;
     * 2N3 : A136;
-    * 4N2 : P001;
-    * 4N3 : P001;
+    * 4N2 : P205;
+    * 4N3 : P205;
 * SO33A - Estrutura De Dados - ES31 - SALA P005 - Horários e Salas:
     * 5N4 : P005;
     * 5N5 : P005;
