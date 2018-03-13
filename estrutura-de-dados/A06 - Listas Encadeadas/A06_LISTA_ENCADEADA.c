@@ -64,6 +64,12 @@ void freeList(Node * list){
 Node * removeList(Node * list, int value){
 	Node * p = list;
 	Node * prior = NULL;
+	if(value == list->value){
+		prior = list;
+		list = list->next;
+		free(prior);
+		return list;
+	}
 	while(p != NULL && p->value != value){
 		prior = p;
 		p = p->next;
