@@ -1,7 +1,9 @@
-public abstract Class Creature
+import java.util.Random;
+
+abstract class Creature
 {
     private String name;
-    private String class;
+    private String _class;
     private int level;
     private int life;
     private int mana;
@@ -16,10 +18,10 @@ public abstract Class Creature
     {
     }
 
-    public Creature(String name, String class, int level, int life, int mana, int force, int agility, int dexterity, int intelligence, int charisma)
+    public Creature(String name, String _class, int level, int life, int mana, int force, int agility, int dexterity, int intelligence, int charisma)
     {
         this.name = name;
-        this.class = class;
+        this._class = _class;
         this.level = level;
         this.life = life;
         this.mana = mana;
@@ -40,14 +42,14 @@ public abstract Class Creature
         return this.name;
     }
 
-    public void setClass(String class)
+    public void setClass(String _class)
     {
-        this.class = class;
+        this._class = _class;
     }
 
     public String getClass()
     {
-        return this.class;
+        return this._class;
     }
 
     public void setLevel(int level)
@@ -130,24 +132,28 @@ public abstract Class Creature
         return this.charisma;
     }
 
-    public void attack()
+    public int attack()
     {
-        
+        Random rand = new Random();
+        return this.force * (rand.nextInt(50 - 1) + 1) ;
     }
 
     public void defend()
     {
-
+        // ?
     }
 
-    public void isAlive()
+    public Boolean isAlive()
     {
-
+        if (this.life <= 0)
+            return false;
+        else
+            return true;
     }
 
     public void losesLife()
     {
-
+        
     }
 
     public void revitalize()
@@ -155,8 +161,5 @@ public abstract Class Creature
 
     } 
 
-    abstract void rest()
-    {
-
-    }
+    abstract void rest();
 }
