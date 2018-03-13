@@ -132,7 +132,7 @@ public abstract Class Creature
 
     public void attack()
     {
-
+        
     }
 
     public void defend()
