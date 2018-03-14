@@ -9,6 +9,28 @@ package javarpg;
  *
  * @author noda
  */
-public class Monster {
+public class Monster extends Creature {
+    
+    public Monster(String name, String creature_class, int level, int life, int magic, int strength, int agility, int dexterity, int intelligence, int charisma) {
+        super(name,creature_class,level,life,magic,strength,agility,dexterity,intelligence,charisma);
+    }
+    
+    @Override
+    public void __toString() {
+        System.out.println("Name: " + this.getName());
+        System.out.println("Class: " + this.getCreature_class());
+        System.out.println("Level: " + this.getLevel());
+        System.out.println("Life: " + this.getLife() );
+        System.out.println("Magic: "+ this.getMagic());
+        System.out.println("Strenght: " + this.getStrength());
+        System.out.println("Agility: " + this.getAgility());
+        System.out.println("Dexterity: " + this.getDexterity());
+        System.out.println("Intelligence: " + this.getIntelligence());
+        System.out.println("Charisma: " + this.getCharisma());
+    }
+
+    @Override
+    public void __call() {
+    }
     
 }
