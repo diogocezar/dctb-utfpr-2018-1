@@ -1,6 +1,6 @@
 import java.util.Random;
 
-abstract class Creature {
+abstract class Creature implements Generic {
     private String name;
     private String classType;
     private int level;
@@ -109,9 +109,9 @@ abstract class Creature {
         return this.charisma;
     }
 
-    public Float attack() {
+    public float attack() {
         Random rand = new Random();
-        Float var = (this.level + this.force + this.agility + (this.mana*0.1))*(rand.nextFloat()*(1.66 - 1.10) + 1.10);
+        float var = (this.level + this.force + this.agility + (this.mana*0.1f))*(rand.nextFloat()*(1.66f - 1.10f) + 1.10f);
         if (var > 100)
         {
             return 100;
@@ -122,9 +122,9 @@ abstract class Creature {
         }
     }
 
-    public Float defend() {
+    public float defend() {
         Random rand = new Random();
-        Float var = (this.agility + (this.dexterity*1.8) + this.intelligence) * (rand.nextFloat()*(1.66 - 1.10) + 1.10) + 10;
+        float var = (this.agility + (this.dexterity*1.8f) + this.intelligence) * (rand.nextFloat()*(1.66f - 1.10f) + 1.10f) + 10f;
         
         if ( var > 100 )
         {
@@ -160,6 +160,16 @@ abstract class Creature {
             this.mana += 30;
         }
     }
+
+    public void __toString() 
+    {
+    }
+
+    public void __call()
+    {
+
+    }
+
 
     abstract void rest();
 }

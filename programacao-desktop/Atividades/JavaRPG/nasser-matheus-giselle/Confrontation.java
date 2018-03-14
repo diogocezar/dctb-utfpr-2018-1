@@ -1,13 +1,10 @@
 public class Confrontation 
 {
-    public static void main()
+    public static void main(String[] args)
     {
-        
-
-    }
-
-    public static iniciar()
-    {
-
+        Hero hero = new Hero();
+        hero.setName("Ola mundo");
+        hero.setLife(10);
+        hero.__toString();
     }
 }
