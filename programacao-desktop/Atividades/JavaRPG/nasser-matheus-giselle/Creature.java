@@ -143,7 +143,7 @@ abstract class Creature implements Generic {
             return true;
     }
 
-    public void losesLife(Float value) {
+    public void losesLife(float value) {
         this.life -= value;
     }
 
@@ -163,6 +163,15 @@ abstract class Creature implements Generic {
 
     public void __toString() 
     {
+        System.out.println("Name: "+ this.name);
+        System.out.println("Class: "+ this.classType);
+        System.out.println("Life: "+ this.life);
+        System.out.println("Mana: "+ this.mana);
+        System.out.println("Force: "+ this.force);
+        System.out.println("Agility: "+ this.agility);
+        System.out.println("Dexterity: "+ this.dexterity);
+        System.out.println("Intelligence: "+ this.intelligence);
+        System.out.println("Charisma: "+ this.charisma);
     }
 
     public void __call()

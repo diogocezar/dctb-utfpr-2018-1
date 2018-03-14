@@ -21,6 +21,11 @@ public class Hero extends Creature {
     public int getBlessing() {
         return this.blessing;
     }
+    @Override
+    public void __toString() {
+        super.__toString();
+        System.out.println("Blessing: "+ this.blessing);
+    }
 
     public void rest() {
         Random rand = new Random();
