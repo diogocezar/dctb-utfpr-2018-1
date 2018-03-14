@@ -1,3 +1,4 @@
+import java.util.Scanner;
 
 public class Principal{
         public static void main(String args[]){
@@ -20,8 +21,7 @@ public class Principal{
 
             System.out.println("Bencao do "+heroi1.getNome() +": "+heroi1.getBencao());
             */
-        }        
 
-
-
+            Confronto jogo1 = new Confronto(heroi1, monstro1);
+        }
 }
