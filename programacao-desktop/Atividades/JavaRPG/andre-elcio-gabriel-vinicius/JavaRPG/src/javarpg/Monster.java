@@ -16,7 +16,8 @@ public class Monster extends Creature {
     }
     
     @Override
-    public void __toString() {
+    public String  __toString() {
+        String monsterInfos="";
         System.out.println("Name: " + this.getName());
         System.out.println("Class: " + this.getCreature_class());
         System.out.println("Level: " + this.getLevel());
@@ -27,6 +28,7 @@ public class Monster extends Creature {
         System.out.println("Dexterity: " + this.getDexterity());
         System.out.println("Intelligence: " + this.getIntelligence());
         System.out.println("Charisma: " + this.getCharisma());
+        return monsterInfos;
     }
 
     @Override

@@ -10,6 +10,6 @@ package javarpg;
  * @author noda
  */
 public interface Generic {
-    public void __toString();
+    public String __toString();
     public void __call();
 }
