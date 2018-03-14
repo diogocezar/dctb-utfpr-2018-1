@@ -1,8 +1,7 @@
 public class Confronto
 {
     public static void main()
-    {
-        
+    {   
 
     }
 
