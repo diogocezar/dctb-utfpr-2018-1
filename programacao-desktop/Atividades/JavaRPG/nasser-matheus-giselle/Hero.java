@@ -1,26 +1,26 @@
-public class Hero extends Creature
-{
+public class Hero extends Creature {
     private int blessing;
 
-    public Hero(String name, String class, int level, int life, int mana, int force, int agility, int dexterity, int intelligence, int charisma, int blessing)
-    {
-        super(name, class, level, life, mana, force, agility, dexterity, intelligence, charisma);
+    public Hero(String name, String typeClass, int level, int life, int mana, int force, int agility, int dexterity,
+            int intelligence, int charisma, int blessing) {
+        super(Creature(name, typeClass, level, life, mana, force, agility, dexterity, intelligence, charisma));
         this.blessing = blessing;
     }
 
-    public void rest()
-    {
-
-    }
-
-    public void setBlessing(int blessing)
-    {
+    public void setBlessing(int blessing) {
         this.blessing = blessing;
     }
 
-    public int getBlessing()
-    {
+    public int getBlessing() {
         return this.blessing;
     }
 
+    public void rest() {
+        Random rand = new Random();
+        Float var = (super.getLife() + super.getLevel() + this.blessing) * (rand.nextFloat() * (1.66 - 1.10) + 1.10);
+
+        if (var > 20) {
+            super.revitalize();
+        }
+    }
 }
