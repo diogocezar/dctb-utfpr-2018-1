@@ -50,7 +50,7 @@ public class Hero extends Creature {
 
     @Override
     public int rest() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return (int)((this.getLife()+this.getLevel()+this.getBlessing())*this.constantMultiplier());
     }
     
     
