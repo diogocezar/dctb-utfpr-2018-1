@@ -31,6 +31,7 @@ public class Monster extends Creature {
 
     @Override
     public void __call() {
+        
     }
     
 }
