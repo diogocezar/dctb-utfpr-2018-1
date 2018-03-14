@@ -5,6 +5,8 @@
  */
 package javarpg;
 
+import java.text.DecimalFormat;
+
 /**
  *
  * @author noda
@@ -124,5 +126,48 @@ public abstract class Creature implements Generic{
             this.charisma = charisma; 
         }
     }
+    public double constantMultiplier() {
+        double max=1.66, min=1.1;
+        double random = min + Math.random() * (max - min);
+        DecimalFormat decimal = new DecimalFormat("#.##");
+        String rS = decimal.format(random);
+        return(Double.parseDouble(rS.replace(",", ".")));
+    }
+    public int attack() {
+        Double r = constantMultiplier();
+        int damage = (int) (Math.round((level+strength+agility+(magic * 0.1)) * r));
+        if(damage > 100){
+            return(100);
+        }else {
+            return(damage);
+        }
+    }
+    public int defense() {
+        Double r = constantMultiplier();
+        int defense = (int) (Math.round((agility+(dexterity * 1.8)+intelligence) * r +10));
+        if(defense > 100){
+            return(100);
+        }else {
+            return(defense);
+        }
+    }
+    public Boolean isAlive() {
+        return(life>0);
+    }
+    public void losesLife(int lostLife) {
+        if(life < lostLife){
+            setLife((life-lostLife));
+        }else{
+            setLife(0);
+        }
+    }
+    public void revitalize(int recovered){
+        if(life+recovered <= 100){
+            setLife(life+recovered);
+        }else{
+            setLife(100);
+        }
+    }
+    public abstract int rest();
 }
     
