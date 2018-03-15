@@ -119,3 +119,38 @@ public class Criatura extends NPC{
 	}
 	
 	//Methods
+}
+
+
+public Monstro extends Criatura{
+	
+}
+
+public Heroi extends Criatura{
+	private int blessing;
+	
+	//Get & Set
+	public int getBlessing(){
+		return this.blessing;
+	}
+	public void setBlessing(int bless){
+		this.blessing = bless;
+	}
+
+	//Construtor
+	public Heroi(String name, String class, int level, int health, int magic, int strength, int agility, int dexterity, int inteligence, int charisma, int bless){
+		super(name, class, level, health, magic, strength, agility, dexterity, inteligence, charisma);
+		setBlessing(bless);
+		return Heroi;
+	}
+	
+	//toString
+	String toString(){
+		return super.toString() + "Blessing: "+getBlessing();
+	}
+
+	//Misc Methods
+	public descansar(){
+
+	}
+}
