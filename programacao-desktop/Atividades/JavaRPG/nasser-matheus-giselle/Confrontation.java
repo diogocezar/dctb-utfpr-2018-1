@@ -6,7 +6,7 @@ public class Confrontation
         Hero hero = new Hero("DARK GLORYSSON", "Human", 8, 100, 100, 10, 5, 10, 15, 2, 10);
         hero.__toString();
         try {
-            Thread.sleep(2500);
+            Thread.sleep(1000);
         } catch (InterruptedException e)
         {
             e.printStackTrace();
@@ -15,7 +15,7 @@ public class Confrontation
         Monster monster = new Monster("MONTARO", "Dark Elf", 7, 100, 100, 10, 5, 10, 15, 10);
         monster.__toString();
         try {
-            Thread.sleep(2500);
+            Thread.sleep(1000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -35,7 +35,7 @@ public class Confrontation
                 attack = (int) monster.attack();
                 defence = (int) hero.defend();
 
-                System.out.println(monster.getName()+ " attacked ("+attack+"X"+defence+")"+hero.getName());
+                System.out.println(monster.getName()+ " attacked ("+attack+"X"+defence+") "+hero.getName());
 
                 if (attack > defence)
                 {
@@ -48,7 +48,7 @@ public class Confrontation
                 System.out.println("Life of Monster: " + monster.getLife());
                 System.out.println("");
                 try {
-                    Thread.sleep(1500);
+                    Thread.sleep(500);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
@@ -57,7 +57,7 @@ public class Confrontation
                 flag = 1;
                 attack = (int) hero.attack();
                 defence = (int) monster.defend();
-                System.out.println(hero.getName()+ " attacked ("+attack+"X"+defence+")"+monster.getName());
+                System.out.println(hero.getName()+ " attacked ("+attack+"X"+defence+") "+monster.getName());
 
                 if (attack > defence)
                 {
@@ -70,7 +70,7 @@ public class Confrontation
                 System.out.println("Life of Monster: " + monster.getLife());
                 System.out.println("");
                 try {
-                    Thread.sleep(1500);
+                    Thread.sleep(500);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }

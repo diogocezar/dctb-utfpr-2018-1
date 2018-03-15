@@ -124,7 +124,7 @@ abstract class Creature implements Generic {
 
     public float defend() {
         Random rand = new Random();
-        float var = (this.agility + (this.dexterity*1.8f) + this.intelligence) * (rand.nextFloat()*(1.66f - 1.10f) + 1.10f) + 10f;
+        float var = (this.agility + (this.dexterity*0.7f) + this.intelligence) * (rand.nextFloat()*(1.66f - 1.10f) + 1.10f) + 10f;
         
         if ( var > 100 )
         {
