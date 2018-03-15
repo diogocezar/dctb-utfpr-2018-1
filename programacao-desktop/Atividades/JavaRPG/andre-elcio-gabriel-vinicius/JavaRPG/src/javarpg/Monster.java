@@ -17,17 +17,16 @@ public class Monster extends Creature {
     
     @Override
     public String  __toString() {
-        String monsterInfos="";
-        System.out.println("Name: " + this.getName());
-        System.out.println("Class: " + this.getCreature_class());
-        System.out.println("Level: " + this.getLevel());
-        System.out.println("Life: " + this.getLife() );
-        System.out.println("Magic: "+ this.getMagic());
-        System.out.println("Strenght: " + this.getStrength());
-        System.out.println("Agility: " + this.getAgility());
-        System.out.println("Dexterity: " + this.getDexterity());
-        System.out.println("Intelligence: " + this.getIntelligence());
-        System.out.println("Charisma: " + this.getCharisma());
+        String monsterInfos = "\n----------\nName: " + this.getName() +"\n"+
+                "Class: " + this.getCreature_class() +"\n"+
+                "Level: " + this.getLevel() +"\n"+
+                "Life: " + this.getLife() +"\n"+
+                "Magic: "+ this.getMagic() +"\n"+
+                "Strenght: " + this.getStrength() +"\n"+
+                "Agility: " + this.getAgility() +"\n"+
+                "Dexterity: " + this.getDexterity() +"\n"+
+                "Intelligence: " + this.getIntelligence() +"\n"+
+                "Charisma: " + this.getCharisma();
         return monsterInfos;
     }
 

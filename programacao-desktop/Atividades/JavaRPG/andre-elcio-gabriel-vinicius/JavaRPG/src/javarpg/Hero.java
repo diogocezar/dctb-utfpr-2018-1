@@ -21,7 +21,7 @@ public class Hero extends Creature {
     @Override
     public String __toString() {
         String heroInfos=
-                "Name: "+ this.getName()+ "\n"
+                "\n----------\nName: "+ this.getName()+ "\n"
                 +"Class: "+ this.getCreature_class()+"\n"
                 +"Level: "+this.getLevel()+"\n"
                 +"Life: "+this.getLife()+"\n"
@@ -31,7 +31,7 @@ public class Hero extends Creature {
                 +"Dexterity: "+this.getDexterity()+"\n"
                 +"Intelligence: "+this.getIntelligence()+"\n"
                 +"Charisma: "+this.getCharisma()+"\n"
-                +"Blessing: "+this.blessing+"\n";
+                +"Blessing: "+this.blessing;
         return heroInfos;
     }
 
