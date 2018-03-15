@@ -11,8 +11,21 @@ package javarpg;
  */
 public class Confront {
     
+    
     static void Start(Monster monster,Hero hero){
-        //todo
+       
+//        int turn = 0;
+//        int flag = 1;
+//        
+//        while(monster.isAlive() && hero.isAlive()){
+//            if(flag = 1){
+//                flag = 2;
+//                monster.attack();
+//                hero.defense();
+//                
+//            }
+//        }
+        
     }
     
 }

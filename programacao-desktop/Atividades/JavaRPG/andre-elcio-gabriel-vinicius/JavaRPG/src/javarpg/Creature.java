@@ -126,6 +126,9 @@ public abstract class Creature implements Generic{
             this.charisma = charisma; 
         }
     }
+    
+    //methods
+    
     public double constantMultiplier() {
         double max=1.66, min=1.1;
         double random = min + Math.random() * (max - min);
