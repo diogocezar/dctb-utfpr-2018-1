@@ -18,6 +18,17 @@ public class Confront {
         int flag = 1;
         int monsteraux;
         int heroaux;
+        
+        System.out.println("-----Let the Battle Begin----");
+        
+        monster.__toString();
+        
+        System.out.println(" Versus ");
+        
+        hero.__toString();
+        
+        System.out.println("-----------------------------"+"\n");
+        
         while(monster.isAlive() && hero.isAlive()){
             turn++;
             System.out.println("Turn " + turn + "\n");
@@ -65,6 +76,7 @@ public class Confront {
                 hero.revitalize(50,30);
                 System.out.println(hero.getName()+" can rest");
             }
+            
             return hero;   
         }
         
