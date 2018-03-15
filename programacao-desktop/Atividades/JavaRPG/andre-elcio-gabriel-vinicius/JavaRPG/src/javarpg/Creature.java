@@ -164,11 +164,18 @@ public abstract class Creature implements Generic{
             setLife(0);
         }
     }
-    public void revitalize(int recovered){
-        if(life+recovered <= 100){
-            setLife(life+recovered);
+    public void revitalize(int recoveredLife,int recoveredMagic){
+        //life
+        if(life+recoveredLife <= 100){
+            setLife(life+recoveredLife);
         }else{
             setLife(100);
+        }
+        //magic
+        if(magic+recoveredMagic <= 100){
+            setMagic(magic+recoveredMagic);
+        }else{
+            setMagic(100);
         }
     }
     public abstract int rest();
