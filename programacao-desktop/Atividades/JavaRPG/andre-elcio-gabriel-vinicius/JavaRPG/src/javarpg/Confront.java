@@ -12,41 +12,60 @@ package javarpg;
 public class Confront {
     
     
-    static String Start(Monster monster,Hero hero){
+    static Creature Start(Creature monster,Creature hero){
        
         int turn = 0;
         int flag = 1;
-        
+        int monsteraux;
+        int heroaux;
         while(monster.isAlive() && hero.isAlive()){
             turn++;
+            System.out.println("Turn " + turn + "\n");
             //monster attack
             if(flag == 1){
                 flag = 2;
-                if(monster.attack()> hero.defense()){
+                monsteraux = monster.attack();
+                heroaux    = hero.defense();
+                if(monsteraux> heroaux){
                     hero.losesLife(8);
+                    System.out.println(monster.getName() + "Attacks ("+monsteraux+" x "+heroaux+")"+hero.getName() );
+                    System.out.println("Hero loses 8 life");
+                    System.out.println(hero.getName()+" life: "+hero.getLife() );
+                    System.out.println(monster.getName()+" life: "+monster.getLife() );
                 }
             }
             //hero attack
             else if(flag == 2){
                 flag = 1;
-                if(hero.attack()>monster.defense()){
+                monsteraux = monster.attack();
+                heroaux    = hero.defense();
+                if(heroaux> monsteraux){
                     monster.losesLife(8);
+                    System.out.println(hero.getName() + "Attacks ("+heroaux+" x "+monsteraux+")"+monster.getName() );
+                    System.out.println("Monster loses 8 life");
+                    System.out.println(hero.getName()+" life: "+hero.getLife() );
+                    System.out.println(monster.getName()+" life: "+monster.getLife() );
                 }
             }
+            System.out.println("");
         }
         
         //winner
         if(monster.isAlive()){
+            System.out.println(monster.getName() + " Wins");
             if(monster.rest() > 20){
                 monster.revitalize(50,30);
+                System.out.println(monster.getName()+" can rest");
             }
-            return monster.getName() + " Wins";
+            return monster;
         }
         else{
+            System.out.println(hero.getName() + " Wins");
             if(hero.rest() > 20){
                 hero.revitalize(50,30);
+                System.out.println(hero.getName()+" can rest");
             }
-            return hero.getName() + " Wins";   
+            return hero;   
         }
         
     }
