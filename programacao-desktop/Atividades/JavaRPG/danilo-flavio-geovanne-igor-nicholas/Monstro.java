@@ -4,6 +4,6 @@ class Monstro extends Criatura{
         super(nome, classe, nivel, vida, forca, magia, agilidade, destreza, inteligencia, carisma);
     }
         
-    public void descansar(){}
-      
-}
+    public float descansar(){
+        return (super.getVida() + super.getNivel()) * r;
+}}

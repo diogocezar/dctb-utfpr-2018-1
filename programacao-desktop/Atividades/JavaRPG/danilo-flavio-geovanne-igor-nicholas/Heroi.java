@@ -8,8 +8,9 @@ class Heroi extends Criatura{
         this.bencao = bencao;
     }
      
-    public void descansar()
+    public float descansar()
     {
+        return (super.getVida() + super.getNivel() + getBencao()) * r;
     }
     
     public void setBencao(float bencao)
