@@ -10,7 +10,7 @@ class Heroi extends Criatura{
      
     public float descansar()
     {
-        return (super.getVida() + super.getNivel() + getBencao()) * r;
+        return (super.getVida() + super.getNivel() + getBencao()) * (min + gerador.nextFloat() * (max-min));
     }
     
     public void setBencao(float bencao)
