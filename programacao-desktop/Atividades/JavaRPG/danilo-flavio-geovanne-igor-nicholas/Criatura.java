@@ -57,10 +57,10 @@ public abstract class Criatura{
     public float getCarisma(){
         return carisma;
     }
-    final float max = 166;
-    final float min = 110;
+    final float max = 1.66;
+    final float min = 1.10;
     Random gerador = new Random(); //numero aleatorio para o ataque e defesa
-    float r = gerador.nextFloat();
+    float r = min + gerador.nextFloat() * (max-min);
 
     public float atacar(){ // função atacar() retorna o dano causado
         /*if(classe=="Humano")
