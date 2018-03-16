@@ -57,8 +57,9 @@ public abstract class Criatura{
     public float getCarisma(){
         return carisma;
     }
-    final float max = 1.66;
-    final float min = 1.10;
+
+    final float max = 1.66f;
+    final float min = 1.10f;
     Random gerador = new Random(); //numero aleatorio para o ataque e defesa
     float r = min + gerador.nextFloat() * (max-min);
 
