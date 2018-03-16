@@ -80,49 +80,49 @@ public abstract class Creature implements Generic{
     }
 
     public void setLevel(int level) {
-        if(level > 0 && level <= 10){   
+        if(level >= 0 && level <= 10){   
             this.level = level;
         }
     }
 
     public void setLife(int life) {
-        if(life > 0 && life <=100){    
+        if(life >= 0 && life <=100){    
             this.life = life;
         }
     }
 
     public void setMagic(int magic) {
-        if(magic > 0 && magic <=100){      
+        if(magic >= 0 && magic <=100){      
             this.magic = magic;
         }
     }
 
     public void setStrength(int strength) {
-        if(strength > 0 && strength <=32){
+        if(strength >= 0 && strength <=32){
             this.strength = strength;
         }
     }
 
     public void setAgility(int agility) {
-        if(agility > 0 && agility <= 12){
+        if(agility >= 0 && agility <= 12){
             this.agility = agility;
         }
     }
 
     public void setDexterity(int dexterity) {
-        if(dexterity > 0 && dexterity <=16){
+        if(dexterity >= 0 && dexterity <=16){
             this.dexterity = dexterity;
         }
     }
 
     public void setIntelligence(int intelligence) {
-        if(intelligence > 0 && intelligence <=20){
+        if(intelligence >= 0 && intelligence <=20){
             this.intelligence = intelligence;
         }
     }
 
     public void setCharisma(int charisma) {
-        if(charisma > 0 && charisma <=12){
+        if(charisma >= 0 && charisma <=12){
             this.charisma = charisma; 
         }
     }
@@ -147,7 +147,7 @@ public abstract class Creature implements Generic{
     }
     public int defense() {
         Double r = constantMultiplier();
-        int defense = (int) (Math.round((agility+(dexterity * 1.8)+intelligence) * r +10));
+        int defense = (int) (Math.round((agility+(dexterity * 0.7)+intelligence) * r +10));
         if(defense > 100){
             return(100);
         }else {
@@ -157,9 +157,9 @@ public abstract class Creature implements Generic{
     public Boolean isAlive() {
         return(life>0);
     }
-    public void losesLife(int lostLife) {
-        if(life < lostLife){
-            setLife((life-lostLife));
+    public void lifeDamage(int lifeLost) {
+        if(lifeLost <= life){
+            setLife((life-lifeLost));
         }else{
             setLife(0);
         }
@@ -178,6 +178,22 @@ public abstract class Creature implements Generic{
             setMagic(100);
         }
     }
+    
+    public String __toString() {
+        String heroInfos=
+                "\n----------\nName: "+ this.getName()+ "\n"
+                +"Class: "+ this.getCreature_class()+"\n"
+                +"Level: "+this.getLevel()+"\n"
+                +"Life: "+this.getLife()+"\n"
+                +"Magic: "+this.getMagic()+"\n"
+                +"Strength: "+this.getStrength()+"\n"
+                +"Agility: "+this.getAgility()+"\n"
+                +"Dexterity: "+this.getDexterity()+"\n"
+                +"Intelligence: "+this.getIntelligence()+"\n"
+                +"Charisma: "+this.getCharisma()+"\n";
+        return heroInfos;
+    }
+    
     public abstract int rest();
 }
     

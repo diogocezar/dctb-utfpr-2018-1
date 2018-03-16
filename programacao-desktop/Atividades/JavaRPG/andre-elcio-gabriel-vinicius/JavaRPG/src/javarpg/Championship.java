@@ -29,10 +29,6 @@ public class Championship {
         chp.runFirstStage();
         chp.runFinalStage();
     }
-    
-    private Creature confrontMethod(Creature champ1, Creature champ2) {
-        return champ1;
-    }
 
     private void setChampions() {
         Montaro = new Monster("Montaro", "Dark Elf", 7, 100, 100, 10, 5, 10, 15, 10);
@@ -45,21 +41,21 @@ public class Championship {
     }
 
     private void runFirstStage() {
-        FirstStageWinners.add(confrontMethod(DarkGlorysson, Montaro));
-        FirstStageWinners.add(confrontMethod(Mellayne, Matilda));
-        FirstStageWinners.add(confrontMethod(Gryin, LordBlack));
+        FirstStageWinners.add(Confront.Start(DarkGlorysson, Montaro));
+        FirstStageWinners.add(Confront.Start(Mellayne, Matilda));
+        FirstStageWinners.add(Confront.Start(Gryin, LordBlack));
         printFirstStageResults();
     }
     
     private Creature runSemiFinalStage(){
-        Creature Winner1x2 = confrontMethod(FirstStageWinners.get(0), FirstStageWinners.get(1));
+        Creature Winner1x2 = Confront.Start(FirstStageWinners.get(0), FirstStageWinners.get(1));
         System.out.println("The semifinal winner is "+Winner1x2.getName()+" ! \n");
         return Winner1x2;
     }
 
     private void runFinalStage() {
         Creature Winner1x2=runSemiFinalStage();
-        Creature FinalWinner = confrontMethod(Winner1x2, FirstStageWinners.get(2));
+        Creature FinalWinner = Confront.Start(Winner1x2, FirstStageWinners.get(2));
         System.out.println(FinalWinner.getName()+ " is the ultimate winner!");
     }
 

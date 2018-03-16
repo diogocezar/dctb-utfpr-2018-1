@@ -20,18 +20,8 @@ public class Hero extends Creature {
         
     @Override
     public String __toString() {
-        String heroInfos=
-                "\n----------\nName: "+ this.getName()+ "\n"
-                +"Class: "+ this.getCreature_class()+"\n"
-                +"Level: "+this.getLevel()+"\n"
-                +"Life: "+this.getLife()+"\n"
-                +"Magic: "+this.getMagic()+"\n"
-                +"Strength: "+this.getStrength()+"\n"
-                +"Agility: "+this.getAgility()+"\n"
-                +"Dexterity: "+this.getDexterity()+"\n"
-                +"Intelligence: "+this.getIntelligence()+"\n"
-                +"Charisma: "+this.getCharisma()+"\n"
-                +"Blessing: "+this.blessing;
+        String heroInfos = super.__toString();
+        heroInfos += "Blessing: "+this.blessing;
         return heroInfos;
     }
 
