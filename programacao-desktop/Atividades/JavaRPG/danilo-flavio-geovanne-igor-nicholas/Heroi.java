@@ -1,8 +1,8 @@
 class Heroi extends Criatura{
     
-    int bencao;
+    float bencao;
     
-    public Heroi (String nome, String classe, int nivel, int vida, int forca, int magia, int agilidade, int destreza, int inteligencia, int carisma, int bencao)
+    public Heroi (String nome, String classe, float nivel, float vida, float forca, float magia, float agilidade, float destreza, float inteligencia, float carisma, float bencao)
     {    
         super(nome, classe, nivel, vida, forca, magia, agilidade, destreza, inteligencia, carisma);
         this.bencao = bencao;
@@ -12,12 +12,12 @@ class Heroi extends Criatura{
     {
     }
     
-    public void setBencao(int bencao)
+    public void setBencao(float bencao)
     {
         this.bencao = bencao;
     }
     
-    public int getBencao(){
+    public float getBencao(){
         return bencao;
     }
   
