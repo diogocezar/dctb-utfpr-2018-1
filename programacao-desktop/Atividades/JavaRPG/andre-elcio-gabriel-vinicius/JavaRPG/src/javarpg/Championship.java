@@ -21,13 +21,17 @@ public class Championship {
     private Hero Mellayne;
     private Hero Gryin;
 
-    private ArrayList<Creature> FirstStageWinners= new ArrayList<>();
+    private final ArrayList<Creature> FirstStageWinners;
 
     public static void runChampionship(){
         Championship chp= new Championship();
         chp.setChampions();
         chp.runFirstStage();
         chp.runFinalStage();
+    }
+
+    public Championship() {
+        this.FirstStageWinners = new ArrayList<>();
     }
 
     private void setChampions() {
