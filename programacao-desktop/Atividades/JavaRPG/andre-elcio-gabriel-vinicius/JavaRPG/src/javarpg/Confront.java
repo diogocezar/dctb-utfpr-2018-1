@@ -10,81 +10,73 @@ package javarpg;
  * @author andre
  */
 public class Confront {
-    
-    
-    static Creature Start(Creature monster,Creature hero){
-       
-        int turn = 0, flag = 1, monsteraux, heroaux, restLimit = 20, lifeRegen = 50, magRegen = 30, damage = 8;
-        
+
+    static void printBattleStart(Creature champion1, Creature champion2) {
         System.out.println("-----Let the Battle Begin----");
-        
-        System.out.println(monster.__toString());
-        
+
+        System.out.println(champion1.__toString());
+
         System.out.println(" Versus ");
-        
-        System.out.println(hero.__toString());
-        
-        System.out.println("-----------------------------"+"\n");
-        
-        while(monster.isAlive() && hero.isAlive()){
+
+        System.out.println(champion2.__toString());
+
+        System.out.println("-----------------------------" + "\n");
+    }
+
+    static Creature endBattle(Creature creature, int restLimit, int lifeRegen, int magRegen) {
+        System.out.println(creature.getName() + " Wins");
+        if (creature.rest() > restLimit) {
+            creature.revitalize(lifeRegen, magRegen);
+            System.out.println(creature.getName() + " can rest");
+        }
+        return creature;
+    }
+
+    static void creatureDamage(Creature damaged, Creature damager, int damage) {
+        damaged.lifeDamage(damage);
+        System.out.println("Attack succeed");
+        System.out.println("Hero loses " + damage + " life");
+        System.out.println(damaged.getName() + " life: " + damaged.getLife());
+        System.out.println(damager.getName() + " life: " + damager.getLife());
+    }
+
+    static void validateDamage(Creature damaged, Creature damager, int damage) {
+        int damageX = damager.attack();
+        int defense = damaged.defense();
+        System.out.println(damager.getName() + " Attacks (" + damageX + " x " + defense + ") " + damaged.getName());
+        if (damageX > defense) {
+            creatureDamage(damaged, damager, damage);
+        }
+    }
+
+    static Creature Start(Creature creature1, Creature creature2) {
+        //monster x hero
+        int turn = 0, flag = 1, restLimit = 20, lifeRegen = 50, magRegen = 30, damage = 8;
+
+        printBattleStart(creature1, creature2);
+
+        while (creature1.isAlive() && creature2.isAlive()) {
             turn++;
             System.out.println("Turn " + turn + "\n");
             //monster attack
-            if(flag == 1){
+            if (flag == 1) {
                 flag = 2;
-                monsteraux = monster.attack();
-                heroaux    = hero.defense();
-                System.out.println(monster.getName() + " Attacks ("+monsteraux+" x "+heroaux+") "+hero.getName() );
-                
-                if(monsteraux> heroaux){
-                    hero.lifeDamage(damage);
-                    System.out.println("Attack succeed");
-                    System.out.println("Hero loses "+damage+" life");
-                    System.out.println(hero.getName()+" life: "+hero.getLife() );
-                    System.out.println(monster.getName()+" life: "+monster.getLife() );
-                }else{
-                    System.out.println("Attack failed");
-                }
-            }
-            //hero attack
-            else if(flag == 2){
+                validateDamage(creature2, creature1, damage);
+
+            } //hero attack
+            else if (flag == 2) {
                 flag = 1;
-                monsteraux = monster.attack();
-                heroaux    = hero.defense();
-                System.out.println(hero.getName() + " Attacks ("+heroaux+" x "+monsteraux+") "+monster.getName() );
-                    
-                if(heroaux> monsteraux){
-                    monster.lifeDamage(damage);
-                    System.out.println("Attack succeed");
-                    System.out.println("Monster loses "+damage+" life");
-                    System.out.println(hero.getName()+" life: "+hero.getLife() );
-                    System.out.println(monster.getName()+" life: "+monster.getLife() );
-                }else{
-                    System.out.println("Attack failed");
-                }
+                validateDamage(creature1, creature2, damage);
             }
             System.out.println("");
-            
         }
-        
         //winner
-        if(monster.isAlive()){
-            System.out.println(monster.getName() + " Wins");
-            if(monster.rest() > restLimit){
-                monster.revitalize(lifeRegen,magRegen);
-                System.out.println(monster.getName()+" can rest");
-            }
-            return monster;
+        if (creature1.isAlive()) {
+            return endBattle(creature1, restLimit, lifeRegen, magRegen);
+        } else {
+            return endBattle(creature2, restLimit, lifeRegen, magRegen);
         }
-        else{
-            System.out.println(hero.getName() + " Wins");
-            if(hero.rest() > 20){
-                hero.revitalize(lifeRegen,magRegen);
-                System.out.println(hero.getName()+" can rest");
-            }
-            return hero;   
-        }
-        
+
     }
-    
+
 }
