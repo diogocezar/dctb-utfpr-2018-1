@@ -47,7 +47,7 @@ public class Creature implements Generic {
     }
     //Health
     public void setHealth(int hp){
-        this.health = health;
+        this.health = hp;
     }
     public int getHealth(){
         return this.health;
@@ -110,18 +110,24 @@ public class Creature implements Generic {
         this.charisma = charisma;
     }
     //Methods
+    
+    //Metodo que retorna um coeficiente aleatorio entre 1.10f e 1.66f
     public float ladyLuck(){
-        final int min = 10, max = 60;
+        final int min = 110, max = 166;
         Random r = new Random();
-        return (r.nextInt((max - min) + 1) + min)/100;
+        return (float)(r.nextInt((max - min) + 1) + min)/100;
     }
+    
+    //Metodo que retorna um coeficiente do ataque para comparar com o da defesa.
     public  int attack (){
         
-        if( ((int)(((float)this.level + (float)this.strength + (float)this.agility +(float)(this.magic*0.1))* ladyLuck()) > 100)){
+        if( ((int)(((float)this.level + (float)this.strength + (float)this.agility +((float)this.magic*0.1))* ladyLuck()) > 100)){
             return 100;
         }else
-            return (int) (((float)this.level + (float)this.strength + (float)this.agility +(float)(this.magic*0.1))* ladyLuck()) ;
+            return (int) (((float)this.level + (float)this.strength + (float)this.agility +((float)this.magic*0.1))* ladyLuck()) ;
     }
+    
+    //Metodo que retorna um coeficiente da defesa para comparar com o ataque.
     public int defend(){
         
         if((int)(((float)this.agility + ((float)this.dexterity * 0.7f) + (float)this.inteligence) * ladyLuck() + 10f)>100)
@@ -129,27 +135,35 @@ public class Creature implements Generic {
         else
             return (int)(((float)this.agility + ((float)this.dexterity * 0.7f) + (float)this.inteligence) * ladyLuck() + 10f);
     }
+    
+    //Metodo retorna se a criatura esta viva ou não.
     public boolean isAlive(){
-        return (this.getHealth() <= 0);
+        return (this.getHealth() > 0);
     }
+    
+    //Metodo que altera o atriburo "Health" na criatura quando o mesmo sofre dano de combate.
     public void loseHealth(){
         setHealth(getHealth() -8); 
     }
+    
+    //Metodo que "revitaliza" a criatura, caso não falhe em seu teste de descanso. 
     public void Heal(int bless){
         int lifeRecover = 50, magicRecover = 30;
         if(bless > 20){
-            if((magicRecover + getMagic()) > 100)
-                    setMagic(100);
+            if((lifeRecover + getHealth()) >= 100)
+                    setHealth(100);
             else
-                setHealth(lifeRecover);
+                setHealth(getHealth() + lifeRecover);
         }
         if(bless > 20){
-            if((magicRecover + getMagic()) > 100)
+            if((magicRecover + getMagic()) >= 100)
                     setMagic(100);
             else
-                setMagic(magicRecover);
+                setMagic(getMagic() + magicRecover);
         }
     }
     //toString
-
+    public String toString(){
+     return "\nRace: "+getRace()+"\tLevel: "+getLevel()+"\n\tAtributes\nHealth: "+getHealth()+"\t Magic: "+getMagic()+"\nStrength: "+getStrength()+"\tAgility: "+getAgility()+"\nDexterity: "+getDexterity()+"\tInteligence: "+getInteligence()+"\nCharisma: "+getCharisma()+"\t";
+    }
 }

@@ -11,6 +11,11 @@ package javarpg;
  */
 public  class Confronto {
     public static void Fight(Heroi player1 ,Monstro player2){
-    
+        
     }
+    public void apresenta(Heroi player1, Monstro player2){
+        System.out.println("\n" + player1.getName() + " VS "+ player2.getName());
+    }
+    
+    
 }

@@ -17,6 +17,10 @@ public class Monstro extends Creature {
      }
     //Methods
     public int rest(){
-        return (((int)((float)(this.getHealth() + (float)this.getLevel()) * this.ladyLuck())) > 100) ? 100 : ((int)(((float)this.getHealth() + (float)this.getLevel())* this.ladyLuck()));
-    }    
+        return (((int)(((float)this.getHealth() + (float)this.getLevel()) * this.ladyLuck())) > 100) ? 100 : ((int)(((float)this.getHealth() + (float)this.getLevel())* this.ladyLuck()));
+    }
+    //toString
+    public String toString(){
+        return "\tMonster: "+getName()+super.toString()+"BAMF!!";
+    }
 }
