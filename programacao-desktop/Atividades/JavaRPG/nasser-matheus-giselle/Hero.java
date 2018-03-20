@@ -33,6 +33,7 @@ public class Hero extends Creature {
 
         if (var > 20) {
             super.revitalize();
+            System.out.println(super.getName() + " can take a rest!");
         }
     }
 }
