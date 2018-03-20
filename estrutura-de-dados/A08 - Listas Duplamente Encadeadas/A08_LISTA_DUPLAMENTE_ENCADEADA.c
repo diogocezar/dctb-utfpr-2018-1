@@ -2,7 +2,7 @@
 * Professor Diogo Cezar Teixeira Batista
 * <diogo@diogocezar.com>
 * <diogoc@utfpr.edu.br>
-* Exemplo de uma Lista Encadeada
+* Exemplo de uma Lista Duplamente Encadeada
 */
 
 #include <stdio.h>
