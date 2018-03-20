@@ -17,12 +17,21 @@ public class Heroi extends Creature{
          super(name, race, level, health, magic, strength, agility, dexterity, inteligence, charisma);
          this.blessing = blessing;
      }   
+     //GET &SET
+    public void setBlessing(int bless){
+        this.blessing = bless;
+    }
+    public int getBlessing(){
+        return this.blessing;
+    }
      //Methods
     public int rest(){
+        return (int)(((float)this.getHealth() + (float)this.getLevel()+ (float)this.blessing) * this.ladyLuck());
     }
+    
      //toString
      public String toString(){
-         return super.toString() + "\nBlessing: " + this.blessing;
+         return "\tHero: "+getName()+super.toString() + "Blessing: " + getBlessing()+"\n";
      }
      
 }

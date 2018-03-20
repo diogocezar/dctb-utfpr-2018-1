@@ -15,7 +15,10 @@ public class JavaRpg {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Heroi  m1 = new Heroi("Carlinhos","Elfo",7,100,100,10,5,10,15,10,10);
+        Monstro  m2 = new Monstro("Jaler","Demonio do avesso",14,100,100,15,30,20,12,23);
+        System.out.println(m1);
+        System.out.println(m2);
     }
     
 }
