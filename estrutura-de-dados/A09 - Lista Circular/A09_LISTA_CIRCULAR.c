@@ -45,7 +45,6 @@ Node * removeList(Node* head){
 		p->next = nextNode;
 		free(head);
 	}
-	printf("%d", nextNode->value);
 	return nextNode;
 }
 
