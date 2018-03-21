@@ -5,7 +5,7 @@ public abstract class Criatura implements Generica{
     public float nivel, vida, forca, magia, agilidade, destreza, inteligencia, carisma;
     //public double vida;
 
-    Criatura(String nome, String classe, float nivel, float vida, float forca, float magia, float agilidade, float destreza, float inteligencia, float carisma){
+    Criatura(String nome, String classe, float nivel, float vida, float magia, float forca, float agilidade, float destreza, float inteligencia, float carisma){
         this.nome = nome;
         this.classe = classe;
         this.nivel = nivel;
@@ -66,6 +66,7 @@ public abstract class Criatura implements Generica{
     }
 
     public float atacar(){ // função atacar() retorna o dano causado
+        float novo = (float)(nivel + forca + agilidade + (magia*0.1) ) * gerarNumero();
         /*if(classe=="Humano") 
             return (double)nivel*forca*(double)(0.75*agilidade+0.25*destreza)/100;
         else
@@ -74,12 +75,21 @@ public abstract class Criatura implements Generica{
       //      return (gerador.nextInt(2))*nivel*(7*forca+3*agilidade+3*destreza)/10;
       //  else
        //     return (gerador.nextInt(2))*nivel*(7*inteligencia+2*magia+agilidade)/10;
-       return (float)(nivel + forca + agilidade + (magia*0.1) ) * gerarNumero();
+       if(novo > 100){
+            return 100;
+       }else{
+            return novo;
+       }
     }
     public float defender(){ // função defender() retorna o total de dano defendido
-       // return nivel*(double)(0.4*destreza+0.3*carisma+0.3*inteligencia)/(double)(vida/3);
-      // return (gerador.nextInt(2))*this.vida/8*(5*destreza+4*agilidade+carisma)/10;
-        return  (float)((agilidade + (destreza * 0.7) + inteligencia) * gerarNumero()) + 10;
+        float novo = (float)((agilidade + (destreza * 0.7) + inteligencia) * gerarNumero()) + 10;
+        // return nivel*(double)(0.4*destreza+0.3*carisma+0.3*inteligencia)/(double)(vida/3);
+        // return (gerador.nextInt(2))*this.vida/8*(5*destreza+4*agilidade+carisma)/10;
+        if(novo > 100){
+            return 100;
+        }else{
+            return novo;
+        }
     }
 
     void vivo(){
@@ -93,12 +103,15 @@ public abstract class Criatura implements Generica{
         //if (toggleRegen==0) revitalizar(); // 1/3 de chance de ativar a skill revitalizar
     }
 
-    void revitalizar(){
+    public void revitalizar(float recuperar){
+        if(recuperar>this.vida){
+            this.vida = recuperar;
+        }
         //int regeneracao = gerador.nextInt(65);
         //if (this.vida+regeneracao>100) this.vida=100; // regeneraçao do HP entre cada ataque sofrido
        // else this.vida+= regeneracao;
-
     }
+    
     public abstract float descansar();
     // System.out.println("Revitalizar disparado. Regenerados "+regeneracao+" pontos de vida.");
     

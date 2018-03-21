@@ -7,8 +7,7 @@ public class Confronto {
 
     }
 
-    public void iniciar(Criatura player1, Criatura player2, int[] vencedor)
-    {
+    public void iniciar(Criatura player1, Criatura player2, int[] vencedor){
         int vez = 2;
         int turno = 1;
         
@@ -22,7 +21,7 @@ public class Confronto {
                 int ataque = player2.atacar();
                 int defesa = player1.defender();
 
-                System.out.println(player2.getNome()+" atacou (" +ataque+ " x " +defesa+") " +player1.getNome()+ "\n");
+                System.out.println(player2.getNome()+" atacou (%.2f " +ataque+ " x %.2f" +defesa+") " +player1.getNome()+ "\n");
 
                 if(ataque>defesa){
                     player1.perdeVida();
@@ -38,7 +37,7 @@ public class Confronto {
                 int ataque = player1.atacar();
                 int defesa = player2.defender();
 
-                System.out.println(player1.getNome()+" atacou (" +ataque+ " x " +defesa+") " +player2.getNome()+ "\n");
+                System.out.println(player1.getNome()+" atacou (%.2f" +ataque+ " x %.2f" +defesa+") " +player2.getNome()+ "\n");
 
                 if(ataque>defesa){
                     player2.perdeVida();
@@ -51,11 +50,25 @@ public class Confronto {
             }
             turno++;
         }
+
+
         if(player2.getVida()<0){ 
             System.out.println("O "+player1.getNome()+" venceu o confronto");
-        }
-        else{
-             System.out.println("O "+player2.getNome()+" ganhou a luta com "+player2.getVida()+" pontos de vida.");
+            if(player1 instanceof Heroi){
+                player1.revitalizar(player1.descansar());
+                System.out.println("O heroi " +player1.getNome()+ " pode descansar. Seu novo HP é " +player1.getVida());
+            }else{
+                System.out.println("A classe de " +player1.getNome()+ " nao permite que ele descanse e recupere seu HP.");
             }
+        }
+        else if(player1.getVida()<0){
+            System.out.println("O "+player2.getNome()+" venceu o confronto");
+            if(player2 instanceof Heroi){
+                player2.revitalizar(player2.descansar());
+                System.out.println("O heroi " +player2.getNome()+ " pode descansar. Seu novo HP é " +player2.getVida());
+            }else{
+                System.out.println("A classe de " +player2.getNome()+ " nao permite que ele descanse e recupere seu HP.");
+            }
+        }
     }
 }
