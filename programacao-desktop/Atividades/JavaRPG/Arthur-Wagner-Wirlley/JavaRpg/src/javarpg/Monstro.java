@@ -12,6 +12,7 @@ package javarpg;
 public class Monstro extends Creature {
     
     //Construtor
+    public Monstro(){}
     public Monstro(String name, String race, int level, int health, int magic, int strength, int agility, int dexterity, int inteligence, int charisma){
          super(name, race, level, health, magic, strength, agility, dexterity, inteligence, charisma);
      }
