@@ -1,9 +1,9 @@
 import java.util.Random;
-public abstract class Criatura{
+public abstract class Criatura implements Generica{
 
-    private String nome, classe;
-    private float nivel, vida, forca, magia, agilidade, destreza, inteligencia, carisma;
-    //private double vida;
+    public String nome, classe;
+    public float nivel, vida, forca, magia, agilidade, destreza, inteligencia, carisma;
+    //public double vida;
 
     Criatura(String nome, String classe, float nivel, float vida, float forca, float magia, float agilidade, float destreza, float inteligencia, float carisma){
         this.nome = nome;
@@ -58,10 +58,12 @@ public abstract class Criatura{
         return carisma;
     }
 
-    final float max = 1.66f;
-    final float min = 1.10f;
-    Random gerador = new Random(); //numero aleatorio para o ataque e defesa
-    
+    public float gerarNumero(){
+        final float max = 1.66f;
+        final float min = 1.10f;
+        Random gerador = new Random(); //numero aleatorio para o ataque e defesa
+        return (gerador.nextFloat()*(max - min)) + min;
+    }
 
     public float atacar(){ // função atacar() retorna o dano causado
         /*if(classe=="Humano") 
@@ -72,31 +74,22 @@ public abstract class Criatura{
       //      return (gerador.nextInt(2))*nivel*(7*forca+3*agilidade+3*destreza)/10;
       //  else
        //     return (gerador.nextInt(2))*nivel*(7*inteligencia+2*magia+agilidade)/10;
-       return (float)(nivel + forca + agilidade + (magia*0.1) ) * (min + gerador.nextFloat() * (max-min));
+       return (float)(nivel + forca + agilidade + (magia*0.1) ) * gerarNumero();
     }
     public float defender(){ // função defender() retorna o total de dano defendido
        // return nivel*(double)(0.4*destreza+0.3*carisma+0.3*inteligencia)/(double)(vida/3);
       // return (gerador.nextInt(2))*this.vida/8*(5*destreza+4*agilidade+carisma)/10;
-        return  (float)((agilidade + (destreza * 0.7) + inteligencia) * (min + gerador.nextFloat() * (max-min))) + 10;
+        return  (float)((agilidade + (destreza * 0.7) + inteligencia) * gerarNumero()) + 10;
     }
 
     void vivo(){
 
     }
 
-    public void perdeVida(float ataque){ // função perdeVida() dá baixa no HP do personagem
-        float defesa = defender();
-        System.out.println("Coeficiente do ataque: "+ataque);
-        System.out.println("Coeficiente da defesa: "+defesa);
-        if(ataque>=defesa){
-            System.out.println("Ataque bem sucedido. O "+getNome()+" perdeu 8 pontos de vida.");
-            this.vida -= 8;
-            System.out.println("Vida atual do "+getNome()+": "+getVida());
-        }
-        else{
-            System.out.println("Ataque não foi bem sucedido");
-        }
-       // int toggleRegen = gerador.nextInt(3);
+    public void perdeVida(){ // função perdeVida() dá baixa no HP do personagem
+        this.vida -=8;
+        System.out.println(this.nome+ " perdeu 8 pontos de vida");
+        // int toggleRegen = gerador.nextInt(3);
         //if (toggleRegen==0) revitalizar(); // 1/3 de chance de ativar a skill revitalizar
     }
 
@@ -105,9 +98,14 @@ public abstract class Criatura{
         //if (this.vida+regeneracao>100) this.vida=100; // regeneraçao do HP entre cada ataque sofrido
        // else this.vida+= regeneracao;
 
-       // System.out.println("Revitalizar disparado. Regenerados "+regeneracao+" pontos de vida.");
     }
     public abstract float descansar();
-       
+    // System.out.println("Revitalizar disparado. Regenerados "+regeneracao+" pontos de vida.");
     
+
+    public String toString(){
+        return("Nome: " +this.nome+ "\nClasse: " +this.classe+ "\nNível: " +this.nivel+   
+        "\nVida: " +this.vida+ "\nMagia: " +this.magia+ "\nForça: " +this.forca+ "\nAgilidade:" +this.agilidade+
+        "\nDestreza: " +this.destreza+ "\nInteligência: " +this.inteligencia+ "\nCarisma: " +this.carisma);
+    }
 }

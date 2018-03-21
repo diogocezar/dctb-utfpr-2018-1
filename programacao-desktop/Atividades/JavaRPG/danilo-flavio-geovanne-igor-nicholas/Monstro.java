@@ -5,5 +5,6 @@ class Monstro extends Criatura{
     }
         
     public float descansar(){
-        return (super.getVida() + super.getNivel()) * r;
-}}
+        return (super.getVida() + super.getNivel()) * gerarNumero();
+    }
+}
