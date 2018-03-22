@@ -13,6 +13,7 @@ public class Heroi extends Creature{
      private int blessing;
      
      //Constructor
+     public Heroi(){}
      public Heroi(String name, String race, int level, int health, int magic, int strength, int agility, int dexterity, int inteligence, int charisma, int blessing){
          super(name, race, level, health, magic, strength, agility, dexterity, inteligence, charisma);
          this.blessing = blessing;

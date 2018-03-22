@@ -96,6 +96,7 @@ public class Creature implements Generic {
     }
     
     //Construtor
+    public Creature(){}
     public Creature(String name, String race, int level, int health, int magic, int strength, int agility, int dexterity, int inteligence, int charisma){
         
         this.name = name;
@@ -147,20 +148,34 @@ public class Creature implements Generic {
     }
     
     //Metodo que "revitaliza" a criatura, caso não falhe em seu teste de descanso. 
-    public void Heal(int bless){
+    public boolean Heal(int bless){
         int lifeRecover = 50, magicRecover = 30;
         if(bless > 20){
-            if((lifeRecover + getHealth()) >= 100)
+            if((lifeRecover + getHealth()) >= 100){
                     setHealth(100);
-            else
+            }
+            else{
                 setHealth(getHealth() + lifeRecover);
+            }
+        }
+        else{
+            System.out.println("\nNo rest this time !!");
+            return false;
         }
         if(bless > 20){
-            if((magicRecover + getMagic()) >= 100)
+            if((magicRecover + getMagic()) >= 100){
                     setMagic(100);
-            else
-                setMagic(getMagic() + magicRecover);
+                    System.out.println("\nThe Winner rest at the tavern !!");
+                    return true;
+            }
         }
+        else{
+                setMagic(getMagic() + magicRecover);
+                System.out.println("\nThe Winner rest at the tavern !!");
+                return true;
+            }
+        System.out.println("\nNo rest this time !!");
+        return false;
     }
     //toString
     public String toString(){
