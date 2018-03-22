@@ -19,14 +19,5 @@ public class Principal{
             Confronto rodada4 = new Confronto(rodada1.getVencedor(), rodada2.getVencedor());
             Confronto rodada5 = new Confronto(rodada4.getVencedor(), rodada3.getVencedor());
             
-            /*exemplos de implementação dos monstros e herois
-            
-            if(monstro1.getForca() > heroi1.getForca()){
-                System.out.println(""+monstro1.getNome()+ " eh mais forte que" + " " +heroi1.getNome());
-            }
-
-            System.out.println("Bencao do "+heroi1.getNome() +": "+heroi1.getBencao());
-            */
-
         }
 }

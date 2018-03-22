@@ -7,5 +7,4 @@ public class Monstro extends Criatura{
     public float descansar(){
         return 0;   
     }
-
 }

@@ -30,8 +30,8 @@ public class Confronto {
             System.out.println("--Turno "+turno+"--\n");
             if(vez==2){
                 vez = 1;
-                float ataque = player1.atacar();
-                float defesa = player2.defender();
+                float ataque = player2.atacar();
+                float defesa = player1.defender();
 
                 System.out.println(player2.getNome()+" atacou (" +df.format(ataque) + " x "+df.format(defesa)+") " +player1.getNome()+ "\n");
 
@@ -65,11 +65,10 @@ public class Confronto {
 
         if(player2.getVida()<0){ 
             System.out.println("O "+player1.getNome()+" venceu o confronto\n");
-            //System.out.println(String.valueOf( player2 instanceof Heroi) +"\n");                        
             
             if(player1 instanceof Heroi){
                 player1.revitalizar(player1.descansar());
-                System.out.println("O heroi " +player1.getNome()+ " pode descansar. Seu novo HP é " +df.format(player2.getVida())+"\n");
+                System.out.println("O heroi " +player1.getNome()+ " pode descansar. Seu novo HP é " +df.format(player1.getVida())+"\n");
             }else{
                 System.out.println("A classe de " +player1.getNome()+ " nao permite que ele descanse e recupere seu HP.\n");
             }
@@ -78,7 +77,6 @@ public class Confronto {
         }
         else if(player1.getVida()<0){
             System.out.println(player2.getNome()+" venceu o confronto\n");
-            //System.out.println(String.valueOf( player2 instanceof Heroi) +"\n");            
             
             if(player2 instanceof Heroi){
                 player2.revitalizar(player2.descansar());
