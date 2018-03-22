@@ -4,9 +4,9 @@ public class Principal{
         public static void main(String args[]){
 
             //nome, classe, nivel, vida, forca, magia, agilidade, destreza, inteligencia, carisma
-            Monstro monstro1 = new Monstro("Montaro", "Elfo das Trevas", 7, 10, 100, 10, 5, 10, 15, 10);
-            Monstro monstro2 = new Monstro("Lord Black", "Humano", 10, 10, 20, 32, 12, 10, 10, 1);
-            Monstro monstro3 = new Monstro("Matilda", "Elfa", 10, 10, 80, 10, 8, 10, 18, 5);
+            Monstro monstro1 = new Monstro("Montaro", "Elfo das Trevas", 7, 100, 100, 10, 5, 10, 15, 10);
+            Monstro monstro2 = new Monstro("Lord Black", "Humano", 10, 100, 20, 32, 12, 10, 10, 1);
+            Monstro monstro3 = new Monstro("Matilda", "Elfa", 10, 100, 80, 10, 8, 10, 18, 5);
                         
             //nome, classe, nivel, vida, forca, magia, agilidade, destreza, inteligencia, carisma, bencao
             Heroi heroi1 = new Heroi("Dark Gloryson", "Humano", 8, 100, 10, 100, 5, 10, 15, 2, 10);
