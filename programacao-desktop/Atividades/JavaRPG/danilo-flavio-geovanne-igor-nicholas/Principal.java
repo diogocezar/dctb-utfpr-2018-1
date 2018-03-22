@@ -2,10 +2,6 @@ import java.util.Scanner;
 
 public class Principal{
         public static void main(String args[]){
-            
-            int[] vencedor;
-            vencedor =  new int[4];
-            int flag = 0;
 
             //nome, classe, nivel, vida, forca, magia, agilidade, destreza, inteligencia, carisma
             Monstro monstro1 = new Monstro("Montaro", "Elfo das Trevas", 7, 100, 100, 10, 5, 10, 15, 10);
@@ -17,15 +13,10 @@ public class Principal{
             Heroi heroi2 = new Heroi("Mellayne", "Humano", 5, 100, 25, 80, 10, 8, 2, 20, 10);
             Heroi heroi3 = new Heroi("Gryin", "Anao", 10, 100, 30, 50, 5, 10, 5, 1, 10);
 
-            Confronto rodada1 = new Confronto(heroi1, monstro1, vencedor[flag]);
-            flag++;
-            Confronto rodada2 = new Confronto(heroi2, monstro3, vencedor[flag]);
-            flag++;
-            Confronto rodada3 = new Confronto(heroi3, monstro2, vencedor[flag]);
-            flag++;
-            Confronto rodada4 = new Confronto(vencedor[0], vencedor[1], vencedor[flag]);
-            Confronto rodada5 = new Confronto(vencedor[3], vencedor[1], vencedor[flag]);
-            
+            Confronto rodada1 = new Confronto(heroi1, monstro1);
+            Confronto rodada2 = new Confronto(heroi2, monstro3);
+            Confronto rodada3 = new Confronto(heroi3, monstro2);
+           
             
 
             
