@@ -64,7 +64,7 @@ public class Confronto {
         }
 
         if(player2.getVida()<0){ 
-            System.out.println("O "+player1.getNome()+" venceu o confronto\nA classe é heroi?");
+            System.out.println("O "+player1.getNome()+" venceu o confronto\n");
             //System.out.println(String.valueOf( player2 instanceof Heroi) +"\n");                        
             
             if(player1 instanceof Heroi){
