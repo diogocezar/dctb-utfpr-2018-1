@@ -98,7 +98,7 @@ public abstract class Criatura implements Generica{
 
     public void perdeVida(){ // função perdeVida() dá baixa no HP do personagem
         this.vida -=8;
-        System.out.println(this.nome+ " perdeu 8 pontos de vida");
+        System.out.println(this.nome+ " perdeu 8 pontos de vida\n");
         // int toggleRegen = gerador.nextInt(3);
         //if (toggleRegen==0) revitalizar(); // 1/3 de chance de ativar a skill revitalizar
     }
@@ -117,8 +117,8 @@ public abstract class Criatura implements Generica{
     
 
     public String toString(){
-        return("Nome: " +this.nome+ "\nClasse: " +this.classe+ "\nNível: " +this.nivel+   
+        return("\nNome: " +this.nome+ "\nClasse: " +this.classe+ "\nNível: " +this.nivel+   
         "\nVida: " +this.vida+ "\nMagia: " +this.magia+ "\nForça: " +this.forca+ "\nAgilidade:" +this.agilidade+
-        "\nDestreza: " +this.destreza+ "\nInteligência: " +this.inteligencia+ "\nCarisma: " +this.carisma);
+        "\nDestreza: " +this.destreza+ "\nInteligência: " +this.inteligencia+ "\nCarisma: " +this.carisma+"\n");
     }
 }
