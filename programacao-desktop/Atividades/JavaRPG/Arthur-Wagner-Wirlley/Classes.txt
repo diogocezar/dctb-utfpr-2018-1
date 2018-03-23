@@ -1,0 +1,156 @@
+public abstract class NPC{
+	
+	toString(){
+		
+	}
+	call(){
+
+	}
+}
+
+public class Criatura extends NPC{
+	private String name;
+	private String class;
+	private int health;
+	private int level;
+	private int magic;
+	private int strength;
+	private int agility;
+	private int dexterity;
+	private int inteligence;
+	private int charisma;
+	
+	// Gets & Sets
+	
+	//Name
+	public String getName(){
+		return this.name;
+	}
+	public void setName(String name){
+		this.name = name;
+	}
+	
+	//Race
+	public String getClass(){
+		return this.class;
+	}
+	public void setClass(String class){
+		this.class = class;
+	}
+	
+	//Level
+ 	public int getLevel(){
+		return this.level;
+	}
+	public void setLevel(int level){
+		this.level = level;
+	}
+	
+	//Health
+	public int getHealth(){
+		return this.health;
+	}
+	public void setHealth(int health){
+		this.health = health
+	}
+
+	//Magic
+	public int getMagic(){
+		return this.magic;
+	}
+	public void setMagic(int magic){
+		this.magic = magic;
+	}
+
+	//Strength
+	public int getStrength(){
+		return this.strength;
+	}
+	public void setStrength(int strength){
+		this.strength = strength;
+	}
+	
+	//Agility
+	public int getAgility(){
+		return this.agility;
+	}
+	public void setAgility(int agility){
+		this.agility = agility;
+	}
+
+	//Dexterity
+	public int getDexterity(){
+		return this.dexterity;
+	}
+	public void setDexterity(int dexterity){
+		this.dexterity = dexterity;
+	}
+
+	//Inteligence
+	public int getInteligence(){
+		return this.inteligence;
+	}
+	public void setInteligence(int inteligence){
+		this.inteligence = inteligence;
+	}
+
+	//Charisma
+	public int getCharisma(){
+		return this.charisma;
+	}
+	public void setCharisma(int charisma){
+		this.charisma = charisma;
+	}
+	
+	//Construtor
+
+	Criatura(String name, String class, int level, int health, int magic, int strength, int agility, int dexterity, int inteligence, int charisma){
+		
+		setName(name);
+		setClass(class);
+		setHealth(health);
+		setMagic(magic);
+		setStrength(strength);
+		setAgility(agility);
+		setDexterity(dexterity);
+		setInteligence(inteligence);
+		setCharisma(charisma);
+		return Criatura;
+	}
+	
+	//Methods
+}
+
+
+public Monstro extends Criatura{
+	
+}
+
+public Heroi extends Criatura{
+	private int blessing;
+	
+	//Get & Set
+	public int getBlessing(){
+		return this.blessing;
+	}
+	public void setBlessing(int bless){
+		this.blessing = bless;
+	}
+
+	//Construtor
+	public Heroi(String name, String class, int level, int health, int magic, int strength, int agility, int dexterity, int inteligence, int charisma, int bless){
+		super(name, class, level, health, magic, strength, agility, dexterity, inteligence, charisma);
+		setBlessing(bless);
+		return Heroi;
+	}
+	
+	//toString
+	String toString(){
+		return super.toString() + "Blessing: "+getBlessing();
+	}
+
+	//Misc Methods
+	public descansar(){
+
+	}
+}
