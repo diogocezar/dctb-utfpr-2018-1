@@ -4,21 +4,35 @@ package jogorpg;
  *
  * @author Erik Lima
  */
-public class Monster extends Creature{
+public class Monster extends Creature {
 
-    public Monster(String name, String family, int level, int life, int magic, int force, int agility, int dexterity, int intelligence, int charisma) {
-        super(name, family, level, life, magic, force, agility, dexterity, intelligence, charisma);
+    public Monster(String nome, String clases, double nivel, double vida, double magia, double força, double agilidade, double destreza, double intelligencia, double carisma) {
+        super(nome, clases, nivel, vida, magia, força, agilidade, destreza, intelligencia, carisma);
     }
-    
-    
-    
-         //===methods==
-    
-    public void construct(){
-       
-    }
-     public void descancar(){
             
-        }
+            
+            //===methods==
+  
+   
+
+    
+
+
+    @Override
+    public double descancar(double vida, double nivel) {
+        Aleatorio r = new Aleatorio();
+        double num =r.GerarNumeroAleatorio(11, 66);
+        return getVida() + getNivel()* (num/100);
+        
+        
+      }
+
+  
+    
+    
+         
+    
+  
+    
     
 }
