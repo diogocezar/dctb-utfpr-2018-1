@@ -1,0 +1,28 @@
+#foto_pessoal{
+    width: 300px;
+    height: 300px;
+}
+
+table{
+    width: 1000px;
+    margin: auto;
+    border-spacing: 0;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+caption{
+    background-color: #ddd;
+    font-size: 130%;
+    color: #00F;
+    border: #aaa;
+}
+
+td{
+    text-align: center;
+    border: thin solid #aaa;
+}
+
+tbody tr:nth-child(odd){
+    background-color: #ddd;
+}
