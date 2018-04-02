@@ -10,3 +10,7 @@ Com base nos primeiros textos escritos pela turma, tenho algumas dicas!
 6. Sempre que houver uma citação, colocar a referência de onde isso foi retirado;
 7. Utilização correta de pontuação (utilizem vírgulas);
 8. Todo parágrafo deve ter uma ligação com o próximo;
+9. Cuidado com os detalhes: nome do arquivo, formato do arquivo, codificação do arquivo;
+10. Cuidado com a formataço do arquivo: título, sub-título, parágrafos;
+11. Sempre identifique-se em seu trabalho: Nome, Nome da Disciplina, RA;
+12. Tentem ser o mais didáticos o possível, lembre-se sempre, o leitor não tem as mesmas bases de conhecimento que você, por isso, escreva para que qualquer pessoa possa entender o que está sendo dito;
