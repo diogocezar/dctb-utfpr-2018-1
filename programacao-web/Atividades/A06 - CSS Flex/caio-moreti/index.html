@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Atividade A06 - CSS Flex</title>
+
+    <style>
+        /* Flex */
+		.flex {
+			display: flex;
+		}
+
+		.grow0 {
+			flex-grow: 0;
+		}
+
+		.grow1 {
+			flex-grow: 1;
+		}
+
+
+		.grow2 {
+			flex-grow: 2;
+		}
+
+		.stretch {
+			align-items: stretch;
+		}
+
+		.center {
+			align-self: center;
+		}
+
+		.column {
+			flex-direction: column;
+		}
+
+		.wrap {
+			flex-wrap: wrap;
+		}
+
+		.space-between {
+			justify-content: space-between;
+		}
+
+
+		.item {
+            margin: 5px;
+            background: #FFE96D;
+            text-align: center;
+            font-size: 1.5em;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            border: 1px solid #ccc;
+            display: flex;
+        }
+
+        .resolucao { 
+        	height: 11em;
+        	width: 11em;
+        	margin: 2em;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 20px 0 0 0;
+            font-size: 1.25em;
+            font-weight: normal;
+        }
+
+        body {
+            font-family: monospace;
+            color: #492173;
+        }
+    </style>
+
+</head>
+<body>
+
+	<h1>Topo de um site de vinhos</h1>
+	<section class="container space-between">
+		<div class="item">Vinhos & Cia</div>
+		<div class="item">Tipos de vinhos</div>
+		<div class="item">Carrinho</div>
+		<div class="item">Minha Conta</div>
+	</section>
+
+	<h1>Menu aberto para escolha do tipo de vinho</h1>
+	<section class="container column">
+		<div class="item">Tinto</div>
+		<div class="item">Branco</div>
+		<div class="item">Rosé</div>
+		<div class="item">Espumante</div>
+		<div class="item">Licoroso</div>
+	</section>
+
+	<h1>Flex-wrap para exbibição de fotos em uma galeria</h1>
+	<section class="container wrap">
+		<div> <img src="http://assets.angeloni.com.br/files/images/1/3D/94/1866214_1_A.jpg" class="resolucao" alt="Vinho1"/> </div>
+
+		<div> <img src="http://costibebidas.vteximg.com.br/arquivos/ids/210488-300-300/tinto-suave.jpg?v=635799115648170000" class="resolucao" alt="Vinho1"/> </div>
+
+		<div> <img src="https://www.wine.com.br/renderImage.image?imageName=produtos/1964-01.png&height=600&padding=0" class="resolucao" alt="Vinho1"/> </div>
+
+		<div> <img src="https://www.wine.com.br/renderImage.image?imageName=produtos/4209-01.png&height=600&padding=0" class="resolucao" alt="Vinho1"/> </div>
+	</section>
+
+	<h1>Rodapé</h1>
+	<section class="container stretch">
+		<div class="item">Ajuda: <br/> Perguntas frequentes <br/> Trocas <br/> Devoluções <br/></div>
+
+		<div class="item grow2">Redes Sociais: <br/> Twitter <br/> Facebook</div>
+
+		<div class="item">Sobre a empresa: <br/> Telefone <br/> Email <br/>Quem somos</div>
+	</section>
+</body>
+</html>

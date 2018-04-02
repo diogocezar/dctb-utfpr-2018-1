@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exemplos Flex Wrap</title>
+    <style>
+        .nowrap {
+            flex-wrap: nowrap;
+        }
+        .wrap {
+            flex-wrap: wrap;
+        }
+        .wrap-reverse {
+            flex-wrap: wrap-reverse;
+        }
+
+        /* Flex Container */
+        .container {
+            max-width: 360px;
+            margin: 0 auto;
+            display: flex;
+            border: 1px solid #ccc;
+        }
+        /* Flex Item */
+        .item {
+            /* O flex: 1; é necessário para que cada item se expanda ocupando o tamanho máximo do container. */
+            flex: 1;
+            margin: 5px;
+            background: tomato;
+            text-align: center;
+            font-size: 1.5em;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 20px 0 0 0;
+            font-size: 1.25em;
+            font-weight: normal;
+        }
+
+        body {
+            font-family: monospace;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <h1>flex-wrap: nowrap;</h1>
+    <section class="container nowrap">
+        <!-- O nome grudado foi necessário pois eu preciso definir um conteúdo que não possa ser quebrado. Como uma palavra ou uma imagem. Se fosse uma frase, ele quebraria as linhas da frase antes de ultrapassar o container.	 -->
+        <div class="item">TesteDoItem1</div>
+        <div class="item">TesteDoItem2</div>
+        <div class="item">TesteDoItem3</div>
+    </section>
+
+    <h1>flex-wrap: wrap;</h1>
+    <section class="container wrap">
+        <div class="item">TesteDoItem1</div>
+        <div class="item">TesteDoItem2</div>
+        <div class="item">TesteDoItem3</div>
+    </section>
+
+    <h1>flex-wrap: wrap-reverse;</h1>
+    <section class="container wrap-reverse">
+        <div class="item">TesteDoItem1</div>
+        <div class="item">TesteDoItem2</div>
+        <div class="item">TesteDoItem3</div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pink Floyd - Novo CD </title>
+    <style>
+    .stretch {
+            align-items: stretch;
+        }
+    .flex-start {
+            align-items: flex-start;
+        }
+        
+        /* Flex Container */
+        .container {
+            max-width: 420px;
+            margin: 0 auto;
+            display: flex;
+        }
+        .column {
+            flex-direction: column;
+        }
+        /* Flex Item */
+        .item {
+            flex: 1;
+            margin: 3px;
+            padding: 0 10px;
+            background: #778899;
+            text-align: stretch;
+            font-size: 1.5em;
+        }
+        .item:first-child {
+            padding-top: 15px;
+        }
+        .alinhamento-central .item {
+            flex: 0;
+            padding: 10px;
+        }
+        
+        body {
+            font-family: monospace;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <section class="container flex-start column">
+        <div class="item"><strong><i><center>Pink Floyd</i></strong> </br>The Endless River</center></div>
+        <div class="item">1. Things Left Unsaid</div>
+        <div class="item">2. It's What We Do    </div>
+        <div class="item">3. Ebb and Flow</div>
+        <div class="item">4. Sum</div>
+        <div class="item">5. Skins</div>
+        <div class="item">6. Unsung</div>
+        <div class="item">7. Anisina</div>
+        <div class="item">8. The Lost Art of Conversation</div>
+    </section>
+</body>
+</html>
