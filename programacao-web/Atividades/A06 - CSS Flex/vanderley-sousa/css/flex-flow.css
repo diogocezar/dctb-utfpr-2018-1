@@ -1,0 +1,34 @@
+body{
+    background: #999;
+    font-family: monospace;
+    color: #333;
+    border: 0;
+    margin: 0;
+}
+
+.row-wrap {
+	flex-flow: row wrap;
+}
+
+.container {
+    margin: 0 auto;
+	max-width: 900px;
+	display: flex;
+    background: white;
+    border: #333 solid 1px;
+}
+
+.item {
+	flex: 1;
+	margin: 5px;
+	background: tomato;
+	text-align: center;
+    font-size: 1.5em;
+    padding: 0;
+}
+
+.item img{
+    width: 100%;
+    height: 160px;
+    min-width: 200px;
+}
