@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Igor Lousada - Atividade A06 - CSS Flex</title>
+
+    <style>
+    /* Flex */
+    
+	.space-between {
+		justify-content: space-between;
+	}
+
+	.stretch{
+		align-content: stretch;
+	}
+	
+	.wrap{
+		flex-wrap: wrap;
+	}
+
+	.column {
+		flex-direction: column;
+	}
+
+	/* Flex Item */
+	.item {
+		margin: 5px;
+		padding: 0 10px;
+		background: deepskyblue;
+		text-align: center;
+		font-size: 1.5em;
+	}
+
+	.item1{
+		margin: 0px;
+		padding: 0 0px;
+		text-align: center;
+	}
+
+	.container {
+		max-width: 1200px;
+		margin: 0 auto;
+		display: flex;
+		border: 1px solid #ccc;
+	}
+
+	.container1 {
+		max-width: 400px;
+		margin: 0 auto;
+		display: flex;
+		border: 1px solid #ccc;
+	}
+
+	.flex {
+		flex: 1;
+	}
+
+	h1 {
+		text-align: center;
+		margin: 20px 0 0 0;
+		font-size: 1.25em;
+		font-weight: normal;
+	}
+
+	body {
+		font-family: monospace;
+		color: #333;
+	}
+
+	</style>
+
+</head>
+
+<body>
+
+	<h1>Menu de navegação de um site de compras</h1>
+	<section class="container space-between">
+		<div class="item flex">Home</div>
+		<div class="item flex">Categorias</div>
+		<div class="item flex">Ofertas</div>
+		<div class="item flex">Lista de desejos</div>
+		<div class="item flex">Carrinho de compras</div>
+		<div class="item flex">Login</div>
+		<div class="item flex">Logout</div>
+	</section>
+
+	<h1>Galeria de fotos para site de turismo</h1>
+	<section class="container stretch space-between wrap">
+		<div class="item1"><img src="londoneye.jpg" alt="London Eye"></div>
+		<div class="item1"><img src="bigben.jpg" alt="Big Ben"></div>
+		<div class="item1"><img src="towerbridge.jpg" alt="Tower Bridge"></div>
+		<div class="item1"><img src="saintpaul.jpg" alt="Saint Paul's Cathedral"></div>
+		<div class="item1"><img src="palacio-de-buckingham.jpg" alt="Palácio de Buckingham"></div>
+		<div class="item1"><img src="kingscross.jpg" alt="King's Cross Station"></div>
+	</section>
+
+	<h1>Menu vertical para filtro de busca em site de compra</h1>
+	<section class="container1 column">
+		<div class="item">Menor preço</div>
+		<div class="item">Maior preço</div>
+		<div class="item">Mais procurado</div>
+		<div class="item">Melhor avaliado</div>
+	</section>
+	
+</body>
