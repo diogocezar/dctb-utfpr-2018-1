@@ -95,7 +95,7 @@ void printRecursive(Node * list){
 void printRecursiveInverted(Node * list){
 	Node * p = list;
 	if(!isEmptyList(p)){
-		printRecursive(p->next);
+		printRecursiveInverted(p->next);
 		printf("\nValor: %d", p->value);
 	}
 }

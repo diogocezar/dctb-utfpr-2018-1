@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Ex1 part 2 Web</title>
+	<meta charset="utf-8">
+</head>
+<body>
+<h1>Grade Curricular 2018/1</h1>
+<table>
+	<tr>
+		<th>Materias</th><th>Horarios</th>
+	</tr>
+	<tr>
+		<td>&emsp;&emsp;&emsp;Programacao Web</td> <td>Seg. 21:20 ~ 23:00</td>
+	</tr>
+	<tr>
+		<td>&emsp;&emsp;&emsp;Gerenciamento De Projetos De Software</td> <td> Qui. 21:20 ~ 23:00&emsp; Sex. 19:30 ~ 20:20 <td>
+	</tr>	
+	<tr>
+		<td>&emsp;&emsp;&emsp;Banco De Dados 3</td> <td> Ter.&nbsp;  19:30 ~ 21:10&emsp; Qua.19:30 ~ 21:10 </td>
+	</tr>	
+	<tr>
+		<td>&emsp;&emsp;&emsp;Redes De Computadores</td> <td> Qua. 21:20 ~ 23:00&emsp; Qui.19:30 ~ 21:10 </td>
+	</tr>
+	<tr>	
+		<td>&emsp;&emsp;&emsp;Oficina De Integracao</td> <td> Sex. &nbsp;21:20 ~ 23:00 </td>	
+	</tr>	
+	<tr>
+		<td>&emsp;&emsp;&emsp;Metodologia De Pesquisa</td> <td> Seg. &nbsp;19:30 ~ 21:10 </td>
+	</tr>
+</table>
+</body>
+</html>

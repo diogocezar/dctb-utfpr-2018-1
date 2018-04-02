@@ -39,11 +39,11 @@ void quickSort(int start, int end, int vet[]){
 	i = start;
 	j = end;
 	middle = (int) ((i + j) / 2);
-	pivot  = vet[middle];
+	pivo  = vet[middle];
     /* Aqui inicia o algoritmo partition, poderia estar em outra função */
 	do{
-		while (vet[i] < pivot) i = i + 1;
-		while (vet[j] > pivot) j = j - 1;
+		while (vet[i] < pivo) i = i + 1;
+		while (vet[j] > pivo) j = j - 1;
 		if(i <= j){
 			aux = vet[i];
 			vet[i] = vet[j];

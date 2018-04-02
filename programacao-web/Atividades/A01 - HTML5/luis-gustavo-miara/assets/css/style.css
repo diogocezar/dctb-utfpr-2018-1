@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    width: 980px;
+    margin: 0 auto;
+}
+
+.myname{
+    font-size: 3rem;
+}
+
+#menu ul{
+    position: relative;
+    float: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin-left: 10%;
+}
+
+#menu ul li{
+    list-style: none;
+}
+
+#menu ul li a{
+    text-decoration: none;
+    position: relative;
+    display: block;
+    text-align: center;
+    font-weight: 500;
+    line-height: 40px;
+    font-size: 1.25em;
+    padding-top: 16px;
+    font-family: "Poppins",
+    sans-serif;
+    color: rgb(51, 49, 44);
+    font-weight: 400;
+}
+
+.social-size{
+    font-size: 2rem;
+}
+
+
+/*
+* Table
+*/
+.table{
+    text-align: center;
+    border: solid black 2px;    
+}
+
+
+th{
+    width: 30px;
+    border: solid black 2px;
+}
+
+td{
+    width: 700px;
+    border: solid black 2px;
+}
+
+
+/*
+* footer
+*/
+
+.ft div ul li{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    list-style: none;
+    text-align: center;
+}
