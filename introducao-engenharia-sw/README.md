@@ -1,4 +1,4 @@
-# Intruções Gerias para Escrita dos Textos;
+# Intruções Gerais para Escrita dos Textos;
 
 Com base nos primeiros textos escritos pela turma, tenho algumas dicas!
 
