@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    padding: 0px 20%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 'header header header header header' 'menu menu main main main ' 'menu menu main main main ' 'menu menu main main main ' 'footer footer footer footer footer';
+    grid-gap: 10px;
+    background-color: white;
+    border: 2px solid #2196F3;
+}
+
+.grid-container>div {
+    text-align: left;
+}
+
+.header {
+    grid-area: header;
+    background-color: #121212;
+    font-family: 'Roboto', sans-serif;
+    padding: 100px 100px 0px 40px;
+    display: flex;
+}
+
+.header h1 {
+    color: white;
+}
+
+.header h3 {
+    color: #414141;
+}
+
+h3 {
+    color: #6ffefe
+}
+
+.header img {
+    border-radius: 100%;
+    margin-bottom: -96px;
+}
+
+.nameJob {
+    text-align: left;
+    line-height: 15px;
+    margin-left: 50px;
+    margin-top: 15px
+}
+
+.menu {
+    line-height: 27px;
+    grid-area: menu;
+    padding-top: 90px;
+    padding-left: 40px;
+}
+
+.main {
+    grid-area: main;
+    padding: 0 20px
+}
+
+.footer {
+    grid-area: footer;
+    background-color: #121212
+}
+
+label {
+    color: #434244;
+    font-size: 12px;
+}
+
+section {
+    margin: 20px 0
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #333;
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
+}
+
+.dados {
+    display: -webkit-box;
+}
+
+.dados>.right {
+    width: 130px;
+    display: grid
+}
+
+.dados>.left {
+    width: 125px;
+    display: grid
+}
+
+.meter {
+    margin-top: 10px;
+    margin-bottom: 11px;
+    width: 130px;
+    height: 6px;
+    position: relative;
+    background: #bfc9c9;
+    box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.3);
+}
+
+.meter>span {
+    display: block;
+    height: 100%;
+    background-color: black;
+    box-shadow: inset 0 2px 9px rgba(255, 255, 255, 0.3), inset 0 -2px 6px rgba(0, 0, 0, 0.4);
+    position: relative;
+    overflow: hidden;
+}
+.edu{
+    width:50%;display:grid; line-height: 25px;
+}
+.job{
+    display:grid; line-height: 25px;margin-bottom: 20px;
+}
+.contato > label{
+    line-height: 50px;
+    vertical-align: super;
+    margin-left: 15px;
+}
