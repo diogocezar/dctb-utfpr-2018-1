@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Atividade A06 - CSS Flex RA 1633287</title>
+
+    <style>
+        /* Flex */
+		.flex {
+			display: flex;
+		}
+		.grow0 {
+			flex-grow: 0;
+		}
+		.grow1 {
+			flex-grow: 1;
+		}
+		.grow2 {
+			flex-grow: 2;
+		}
+		.stretch {
+			align-items: stretch;
+		}
+		.center {
+			align-self: center;
+		}
+		.column {
+			flex-direction: column;
+		}
+		.wrap {
+			flex-wrap: wrap;
+		}
+		.space-between {
+			justify-content: space-between;
+		}
+		.item {
+            margin: 3px;
+            background: black;
+            text-align: center;
+          
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            border: 4px solid black;
+            display: flex;
+        }
+        .resolucao { 
+        	height: 5em;
+        	width: 5em;
+        	margin: 5em;
+        }
+        h1 {
+            text-align: center;
+            margin: 20px 0 0 0;
+            }
+        body {
+            font-family: monospace;
+            color: purple;
+        }
+    </style>
+
+</head>
+<body>
+
+	<h1>Menu principal</h1>
+	<section class="container space-between">
+		<div class="item">Genero musical</div>
+		<div class="item">Cantores</div>
+		<div class="item">Sobre</div>
+		<div class="item">Login</div>
+		<div class="item">cadastro</div>
+	</section>
+
+	<h1>Generos</h1>
+	<section class="container column">
+		<div class="item">Pop e Rock</div>
+		<div class="item">Metal</div>
+		<div class="item">Trash metal</div>
+		
+	</section>
+
+	<h1>Albuns</h1>
+	/*<section class="container wrap">
+		<div> <img src="metalica.jpg" class="resolucao" alt="metalica"/> </div>
+
+		<div> <img src="guns.jpg" class="resolucao" alt="guns"/> </div>
+
+		<div> <img src="ram.jpg" class="resolucao" alt="rammstein"/> </div>
+
+	
+	</section>*/
+
+	<h1> </h1>
+	<section class="container stretch">
+
+		<div class="item grow2">Sac: <br/> Chat online <br/> Contato</div>
+
+		
+	</section>
+</body>
+</html>
