@@ -9,13 +9,13 @@ package model;
  *
  * @author ecsanchesjr
  */
-public class Conta {
+public final class Account {
     String Agencia;
     String nomeTitular;
     int numConta;
     double Saldo;
 
-    public Conta(String Agencia, String nomeTitular, int numConta, double Saldo) {
+    public Account(String Agencia, String nomeTitular, int numConta, double Saldo) {
         setAgencia(Agencia);
         setNomeTitular(nomeTitular);
         setNumConta(numConta);

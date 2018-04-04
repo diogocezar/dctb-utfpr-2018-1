@@ -11,29 +11,29 @@ import java.util.ArrayList;
  *
  * @author ecsanchesjr
  */
-public class Database {
-    private ArrayList<Conta> Contas= new ArrayList<>();
+public class DAO {
+    private ArrayList<Account> Contas= new ArrayList<>();
 
-    public ArrayList<Conta> getContas() {
+    public ArrayList<Account> getContas() {
         return Contas;
     }
 
-    public void setContas(ArrayList<Conta> Contas) {
+    public void setContas(ArrayList<Account> Contas) {
         this.Contas = Contas;
     }
-    public void addToContas(Conta conta){
+    public void addToContas(Account conta){
         Contas.add(conta);
     }
     
-    private Database() {
+    private DAO() {
     }
     
-    public static Database getInstance() {
+    public static DAO getInstance() {
         return DatabaseHolder.INSTANCE;
     }
     
     private static class DatabaseHolder {
 
-        private static final Database INSTANCE = new Database();
+        private static final DAO INSTANCE = new DAO();
     }
 }

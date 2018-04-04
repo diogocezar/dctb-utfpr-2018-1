@@ -6,8 +6,8 @@
 package controllers;
 
 import java.util.ArrayList;
-import model.Conta;
-import model.Database;
+import model.Account;
+import model.DAO;
 
 /**
  *
@@ -16,18 +16,18 @@ import model.Database;
 public class GerenciadorDeContas {
     public String listarContas(){
         String contasStr="";
-        ArrayList<Conta> contas = Database.getInstance().getContas();
-        for (Conta conta: contas){
+        ArrayList<Account> contas = DAO.getInstance().getContas();
+        for (Account conta: contas){
             contasStr+= "Titular: "+ conta.getNomeTitular() + " Conta: "+ conta.getNumConta()+ " \n";
         }
         return contasStr;
     }
     
     public boolean removerConta(int numeroConta){
-        ArrayList<Conta> contas = Database.getInstance().getContas();
-        for(Conta conta: contas){
+        ArrayList<Account> contas = DAO.getInstance().getContas();
+        for(Account conta: contas){
             if(conta.getNumConta()==numeroConta){
-                Database.getInstance().getContas().remove(conta);
+                DAO.getInstance().getContas().remove(conta);
                 return true;
             }
         }
@@ -35,8 +35,8 @@ public class GerenciadorDeContas {
     }
     
     public boolean atualizarNomeDoTitular(int numeroConta,String novoNomeTitular){
-        ArrayList<Conta> contas= Database.getInstance().getContas();
-        for(Conta conta: contas){
+        ArrayList<Account> contas= DAO.getInstance().getContas();
+        for(Account conta: contas){
             if(conta.getNumConta()==numeroConta){
                 conta.setNomeTitular(novoNomeTitular);
                 return true;
@@ -46,8 +46,8 @@ public class GerenciadorDeContas {
     }
     
     public String pesquisarAgencia(int numeroConta){
-        ArrayList<Conta> contas = Database.getInstance().getContas();
-        for(Conta conta: contas){
+        ArrayList<Account> contas = DAO.getInstance().getContas();
+        for(Account conta: contas){
             if(conta.getNumConta()==numeroConta){
                 return conta.getAgencia();
             }
@@ -56,8 +56,8 @@ public class GerenciadorDeContas {
     }
     
     public double pesquisarSaldo(int numeroConta){
-        ArrayList<Conta> contas = Database.getInstance().getContas();
-        for(Conta conta:contas){
+        ArrayList<Account> contas = DAO.getInstance().getContas();
+        for(Account conta:contas){
             if(conta.getNumConta()==numeroConta){
                 return conta.getSaldo();
             }
@@ -69,13 +69,13 @@ public class GerenciadorDeContas {
         if(saldo<0 || numConta<0){
             return false;
         }
-        ArrayList<Conta> contas = Database.getInstance().getContas();
-        for(Conta conta: contas){
+        ArrayList<Account> contas = DAO.getInstance().getContas();
+        for(Account conta: contas){
             if(conta.getNumConta()==numConta){
                 return false;
             }
         }
-        Database.getInstance().addToContas(new Conta(numAgencia,titular,numConta,saldo));
+        DAO.getInstance().addToContas(new Account(numAgencia,titular,numConta,saldo));
         return true;
     }
     
