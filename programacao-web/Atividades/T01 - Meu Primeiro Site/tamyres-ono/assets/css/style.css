@@ -1,0 +1,41 @@
+.banner{
+	width: 100%;
+	background-color: rgb(0, 0, 0);
+}
+
+.container{
+	display:flex;
+	width: 90%;
+	margin: auto;
+	border: 1px solid #ccc
+}
+
+.artista{
+	flex-direction: row;
+}
+
+.texto{
+	width: 50%;
+	margin-left: 5px;
+}
+
+.titulo {
+	color: rgb(255,255,255);
+	font-family: 'Yatra One', cursive;
+	font-size: 40px; 
+}
+
+.artista p{
+	color: rgb(0,0,0);
+	font-family: 'Yatra One', cursive;
+	font-size: 14px
+}
+
+.quadros{
+	justify-content: space-between;
+}
+
+h3{
+	color: rgb(0,0,0);
+	font-family: 'Yatra One', cursive;
+}
