@@ -18,7 +18,7 @@ public class GerenciadorDeConta {
     public String listarContas() {
         String accountsString = "";
         for(int i=0; i<Accounts.size(); i++){
-            accountsString += "Holder: " + Accounts.get(i).getHoldername() + "   Account number: " + Accounts.get(i).getAccountnumber();
+            accountsString += "\nHolder: " + Accounts.get(i).getHoldername() + "   Account number: " + Accounts.get(i).getAccountnumber();
         }
         
         return accountsString;
