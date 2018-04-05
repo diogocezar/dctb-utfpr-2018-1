@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Trabalho flex-Container</title>
+<style>
+.flex-start{
+	justify-content: flex-start;flex-grow: 1;
+}
+.space-around-column{
+justify-content: space-around;
+}
+.flex.end{
+align-items: flex-end;
+}
+.shrink-1{
+	flex-grow: 1;
+	flex-shrink: 1;
+}
+.container{
+max-width:420px;
+margin:1 auto;
+display: flex;
+border: 0px solid #CEF6D8;
+}
+.item{
+margin:15px;
+}
+.item-flex-1{
+display: flex;
+margin:0px;
+min-height:180px;
+}
+.item-flex-2{
+margin:0px;
+display: flex;
+min-height:200px;
+}
+.item-flex-3{
+margin:0px;
+display: flex;
+min-height:150px;
+}
+.item-flex-4{
+margin:0px;
+display: flex;
+min-height:170px;
+}
+h3{
+font-family: Arial;
+color: #333;
+}
+body{
+font-family:Arial;
+color:#333;
+}
+
+</style>
+</head>
+<body>
+<!--justify-content -->
+<section class="container flex-start">
+<div class="item"> Home </div>
+<div class="item">Histórico</div>
+<div class="item">Produtos</div>
+<div class="item">Lojas</div>
+<div class="item">Fale conoscos</div>
+</section>
+
+<section class="space-around-column">
+	<div class="item-flex-1">
+<img width="430%" height="340%" align="left" src="img/imagem1.jpg" /></div>
+<section  class="shrink-1">
+<h3> O novo Golf GTI acaba de chagar no brasil, com novo motor, com novas tecnologias para você melhorar sua vida e seus momentos na hora do laser ou até em passeio com a familía
+
+.O primeiro VW Golf GTI fez a sua estreia há 41 anos, e até hoje é o mais bem sucedido carro esporte compacto do mundo. Em 2013 chegou o Golf Mk 7, com duas versões: uma versão 'padrão' com 220 cavalos e uma versão 'performance' que oferece 230 cv, sempre com tração dianteira.
+</h3>
+</sectiom>
+	<div class="item-flex-2">
+<img width="430%" height="340%" align="center" src="img/imagem2.jpg"/></div>
+<section class="shrink-1">
+<h3>Agora, em 2017, no âmbito de alterações visuais e técnicas, ambas as versões Golf GTI obtiveram mais potência. O carro 'standard' é foi mostrado no início do ano e agora desenvolve a mesma potência que o anterior Performance: 230 cv.</h3>
+</section>
+	<div class="item-flex-3">
+<img width="430%" height="340%" src="img/imagem3.jpeg"/></div>
+<section class="shrink-1">
+<h3>Agora a Volkswagen introduz o novo Golf GTI Performance. Sua nova potência: 245 cavalos - 15 cv a mais que o anterior. O torque máximo cresceu 20 Nm a 370 Nm e está disponível em uma faixa mais ampla de rotações (entre 1600 e 4300 rpm).Equipado com este motor, o Volkswagen Golf GTI Performance acelera de 0 a 100 km / h em apenas 6,2 segundos; sua velocidade máxima é eletronicamente governado a 250 km / h.
+ </h3></section>
+	<div class="item-flex-4">
+<img width="430%" height="340%" src="img/imagem4.jpg"/></div>
+<section class="shrink-1">
+<h3>Estes valores aplicam-se aos desempenhos tanto da versão com uma caixa de velocidades manual de 6 velocidades e à versão com a caixa de dupla embreagem de 7 marchas DSG-7. No entanto, a versão DSG do GTI Performance é mais eficiente em termos de consumo, com média de 15,87 km/l.
+
+Golf GTI 245 cv com recursos adicionais
+
+Em comparação com a versão de 230 cv, o novo Volkswagen Golf GTI Peformance também tem mais recursos de série.
+</h3></section>
+<h3> Vídeo das informações</h3>
+<section>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/amdAArbiMtw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</section>
+</section>
+<section class="flex-end">
+	<div class="item"> Rua Alameda Guimarães, 300, Botafogo - Paraná - PR - 83000-030</div>
+	<div class="item">CNPJ:23.811.435/0034-98</div>
+	<div class="item">Fone:(43)3321-3453/(43)3432-4545</div>
+</section>
+
+</body>
+</html>

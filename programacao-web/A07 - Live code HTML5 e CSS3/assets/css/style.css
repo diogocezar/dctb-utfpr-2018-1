@@ -1,0 +1,408 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    width: 980px;
+    margin: 0 auto;
+}
+
+.row{
+    position: relative;
+    float: left;
+}
+
+/* Menu */
+
+#menu{
+    position: fixed;
+    z-index: 999;
+    float: left;
+    width: 100%;
+    height: 70px;
+    background-color: #fff;
+    box-shadow: -2px -3px 20px 3px rgba(0, 0, 0, 0.11);
+}
+
+#menu #logo-hbs-cambio{
+    height: 50px;
+    position: relative;
+    float: left;
+    width: 20%;
+    margin-top: 10px;
+}
+
+#menu ul{
+    position: relative;
+    float: left;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    margin-left: 10%;
+}
+
+#menu ul li{
+    list-style: none;
+}
+
+#menu ul li a{
+    text-decoration: none;
+    position: relative;
+    display: block;
+    text-align: center;
+    font-weight: 500;
+    line-height: 40px;
+    font-size: 1.25em;
+    padding-top: 16px;
+    font-family: "Poppins",
+    sans-serif;
+    color: #BE9B47;
+    font-weight: 400;
+}
+
+/* Defaults */
+
+section{
+    position: relative;
+    float: left;
+    width: 100%;
+}
+
+.title-big-white {
+    font-family: "Poppins", sans-serif;
+    font-size: 3.2em;
+    line-height: 1.1em;
+    color: #FFF;
+}
+
+.p-yellow-light {
+    font-family: "Open Sans", sans-serif;
+    color: #F6E8C7;
+    font-size: 1.2em;
+}
+
+.hbs-cambio-button {
+    height: 5rem;
+    width: 14.28rem;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    background-color: transparent;
+    border: 2px solid #FFF;
+    color: #FFF;
+    padding: 0px;
+    font-size: 1.2rem;
+    letter-spacing: 0.5px;
+    -webkit-transition: all 0.25s ease-in-out 0s;
+    -moz-transform: all 0.25s ease-in-out 0s;
+    -ms-transition: all 0.25s ease-in-out 0s;
+    transition: all 0.25s ease-in-out 0s;
+    cursor: pointer;
+}
+
+.hbs-cambio-button:hover {
+    background-color: #FFF;
+    color: #BE9B47;
+}
+
+.title-section {
+    color: #785E1F;
+    font-size: 4em;
+    position: relative;
+    float: left;
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    margin-bottom: 1.1em;
+    margin-top: 3rem;
+}
+
+.title-section:after {
+    content: '';
+    position: absolute;
+    bottom: 1em;
+    width: 1.85em;
+    height: 8px;
+    background-color: #BE9B47;
+    top: 1.3em;
+    float: left;
+    left: 5px;
+}
+
+.img-decorative {
+    height: 12.5em;
+    width: 12.5em;
+    margin-bottom: 2em;
+}
+
+.title-h2 {
+    position: relative;
+    float: left;
+    width: 100%;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.8em;
+    color: #BE9B47;
+    margin-bottom: 1.4em;
+    line-height: 1.4em;
+    font-weight: normal;
+}
+
+.title-h2-underline {
+    color: #785E1F;
+    text-decoration: underline;
+}
+
+.p-default {
+    position: relative;
+    float: left;
+    width: 100%;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.1em;
+    color: #000;
+    margin-bottom: 1.2em;
+    line-height: 1.4em;
+    font-weight: 600;
+}
+
+.row {
+    max-width: 650px;
+}
+
+.title-cta {
+    color: #FFF;
+    font-size: 3em;
+    position: relative;
+    float: left;
+    text-align: center;
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    margin-bottom: 1.6em;
+    margin-top: 2em;
+    line-height: 1.3em;
+}
+
+.title-cta:after {
+    content: '';
+    position: absolute;
+    bottom: 1em;
+    width: 1.8em;
+    height: 8px;
+    background-color: #FFF;
+    top: 3em;
+    float: left;
+    left: 5px;
+    margin-left: 50%;
+    transform: translatex(-50%);
+}
+
+.sub-title-cta {
+    position: relative;
+    float: left;
+    width: 100%;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.3em;
+    color: #FFF;
+    margin-bottom: 1.2em;
+    line-height: 1.4em;
+    font-weight: 600;
+    text-align: center;
+    padding: 0 15%;
+    margin-bottom: 3rem;
+
+}
+
+.hbs-cambio-button-cta {
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-left: 50%;
+    -webkit-transform: translatex(-6.42rem) !important;
+    -moz-transform: translatex(-6.42rem) !important;
+    -ms-transform: translatex(-6.42rem) !important;
+    transform: translatex(-6.42rem) !important;
+}
+
+/* Forms */
+
+input,
+textarea,
+select {
+    -webkit-appearance: none;
+    border-radius: 0px;
+    resize: none;
+}
+
+textarea:focus,
+input:focus {
+    outline: none;
+}
+
+input,
+textarea {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.3rem !important;
+    font-weight: 400;
+    border: 1px solid #000;
+    width: 100%;
+    height: 60px;
+    padding: 0 1em;
+    font-size: 1em;
+    margin-bottom: 1em;
+    -webkit-transition: all 0.25s ease-in-out 0s;
+    -moz-transform: all 0.25s ease-in-out 0s;
+    -ms-transition: all 0.25s ease-in-out 0s;
+    transition: all 0.25s ease-in-out 0s;
+    background-color: #FFF;
+    border-color: #BE9B47;
+    color: #785E1F;
+}
+
+label {
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+}
+
+input:focus,
+textarea:focus {
+    border-left-width: 5px;
+}
+
+textarea {
+    height: 120px;
+    padding-top: 1em;
+    resize: none;
+}
+
+/* Home */
+
+#home{
+    margin-top: 70px;
+    background: linear-gradient(rgba(190, 155, 71, 0.84), rgba(190, 155, 71, 0.84)),
+    url('../images/hbs-cambio-bg-home.jpg');
+    height: calc(100vh - 70px);
+    display: flex;
+    align-items: center;
+}
+
+#home .row{
+    max-width: 450px;
+}
+
+#home h1{
+    margin-bottom: 1.5rem;
+}
+
+#home p{
+    margin-bottom: 2rem;
+}
+
+/* CTAs */
+
+.cta {
+    margin-top: 4.2em;
+    background-attachment: fixed;
+    height: 550px;
+}
+
+.cta .row{
+    max-width: 100%;
+}
+
+#cta-1{
+    background: linear-gradient(rgba(54, 49, 39, 0.84), rgba(54, 49, 39, 0.84)),
+    url('../images/hbs-cambio-bg-cta-1.jpg');
+}
+
+#cta-2 {
+    background: linear-gradient(rgba(190, 155, 71, 0.84), rgba(190, 155, 71, 0.84)),
+    url('../images/hbs-cambio-bg-cta-2.jpg');
+}
+
+#cta-3 {
+    background: linear-gradient(rgba(190, 155, 71, 0.84), rgba(190, 155, 71, 0.84)),
+    url('../images/hbs-cambio-bg-cta-1.jpg');
+}
+
+/* Contato */
+
+#contato .row button {
+    border: none;
+    background-color: #BE9B47;
+    color: #FFF;
+    margin-top: 1em;
+    margin-bottom: 3em;
+    font-size: 1.2em;
+}
+
+#contato .row button:hover {
+    background-color: transparent;
+    border: 1px solid #BE9B47;
+    color: #BE9B47;
+}
+
+/* Footer */
+
+footer {
+    position: relative;
+    float: left;
+    width: 100%;
+    margin-top: 2rem;
+    padding-top: 0rem;
+    padding-bottom: 1rem;
+    background-color: #BE9B47;
+    color: #FFF;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+footer .row{
+    max-width: 100%;
+    width: 100%;
+}
+
+footer ul{
+    position: relative;
+    float: left;
+    width: 100%;
+    margin: 0px;
+    margin-top: 5em;
+    margin-bottom: 3em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 38%;
+}
+
+footer ul li{
+    list-style: none;
+}
+
+footer ul li a img{
+    height: 40px;
+    width: 40px;
+    -webkit-transition: all 0.25s ease-in-out 0s;
+    -moz-transform: all 0.25s ease-in-out 0s;
+    -ms-transition: all 0.25s ease-in-out 0s;
+    transition: all 0.25s ease-in-out 0s;
+}
+
+footer .row .icon-decoration {
+    height: 35px;
+    width: 35px;
+    margin-bottom: 1.5rem;
+    margin-top: 1rem;
+}

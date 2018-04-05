@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Demonstração CSS3 - Parte 1</title>
+    <link href="./assets/css/style.css" rel="stylesheet"/>
+    <style>
+        #all{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .box-example{
+            position: relative;
+            float: left;
+            width: 25vw;
+            height: 35vh;
+            background-color: #aaa;
+            text-align: center;
+            margin: 2rem;
+            padding: 2rem;
+            box-sizing: border-box;
+            font-size: 0.8em;
+        }
+        @media screen and (max-width: 800px){
+            .box-example{
+                width: 100vw;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Demonstrações CSS - Parte 1</h1>
+    <section id="all">
+        <section class="box-example">
+            <h2 class="class-inside">Exemplo de Estilo</h2>
+            <p>Neste exemplo, deve-se aplicar estilos a seção com a classe box-example</p>
+            <div class="class-inside">
+                <div id="id-class">
+                    <p>Estilizar este único parágrafo.</p>
+                </div>
+            </div>
+        </section>
+        <section class="box-example" id="change-bg-color">
+            <h2>Exemplo de Background Color</h2>
+            <p>Deve-se aplicar uma cor de fundo para esque quadro.</p>
+        </section>
+        <section class="box-example">
+            <h2>Exemplo de Color</h2>
+            <p>Deve-se aplicar uma cor para este título.</p>
+        </section>
+        <section class="box-example" id="color-type">
+            <h2>Tipos de Cores</h2>
+            <p>Demonstrar os tipos de cores neste exemplo.</p>
+        </section>
+        <section class="box-example" id="font-size">
+            <h2>Tamanho da Fonte</h2>
+            <p>Demonstrar os tamanhos das fontes neste exemplo.</p>
+        </section>
+        <section class="box-example">
+            <h2>Tamanhos Relativos</h2>
+            <p>Demonstrar os tamanhos relativos neste exemplo.</p>
+        </section>
+        <section class="box-example">
+            <h2>Tamanhos Absolutos</h2>
+            <p>Demonstrar os tamanhos absolutos neste exemplo.</p>
+        </section>
+        <section class="box-example" id="margin-example">
+            <h2>Margens</h2>
+            <p>Demonstrar as margens neste exemplo.</p>
+            <div class="box">
+                <p>Oi, eu sou um box!</p>
+            </div>
+        </section>
+        <section class="box-example" id="padding-example">
+            <h2>Paddings</h2>
+            <p>Demonstrar os paddings neste exemplo.</p>
+            <div class="box">
+                <p>Oi, eu sou um box!</p>
+            </div>
+        </section>
+        <section class="box-example">
+            <h2>Bordas</h2>
+            <p>Demonstrar as bordas neste exemplo.</p>
+            <div class="box">
+                <p>Oi, eu sou um box!</p>
+            </div>
+        </section>
+        <section class="box-example">
+            <h2>Bordas</h2>
+            <p>Demonstrar as bordas neste exemplo.</p>
+            <div class="box">
+                <p>Oi, eu sou um box!</p>
+            </div>
+        </section>
+        <section class="box-example" id="hw">
+            <h2>Altura e Largura</h2>
+            <p>Demonstrar altura e largura neste exemplo.</p>
+            <div class="box">
+                <p>Oi, eu sou um box!</p>
+            </div>
+        </section>
+        <section class="box-example" id="image-bg">
+            <h2>Background Image</h2>
+            <p>Demonstrar a utilização de uma imagem de fundo.</p>
+            <div class="box">
+                <p>Oi, eu sou um box!</p>
+            </div>
+        </section>
+        <section class="box-example" id="styles">
+            <h2>Line Height</h2>
+            <p>Demonstrar a utilização do line-height.</p>
+            <div class="box">
+                <p>Oi, eu sou um box!</p>
+                <p>Oi, eu sou um box!</p>
+                <p>Oi, eu sou um box!</p>
+            </div>
+        </section>
+        <section class="box-example">
+            <h2><span class="first-letter">T</span>ext Transform</h2>
+            <p>Demonstrar a utilização do text-transform.</p>
+            <div class="box">
+                <p>Oi, eu sou um box!</p>
+                <p>Oi, eu sou um box!</p>
+                <p>Oi, eu sou um box!</p>
+            </div>
+        </section>
+        <section class="box-example">
+            <h2>Text Decoration</h2>
+            <p>Demonstrar a utilização do text-decoration.</p>
+            <div class="box">
+                <p>Oi, eu sou um box!</p>
+                <p>Oi, eu sou um box!</p>
+                <p>Oi, eu sou um box!</p>
+            </div>
+        </section>
+        <section class="box-example">
+            <h2>Font Style</h2>
+            <p>Demonstrar a utilização do font-style.</p>
+            <div class="box">
+                <p>Oi, eu sou um box!</p>
+                <p>Oi, eu sou um box!</p>
+                <p>Oi, eu sou um box!</p>
+            </div>
+        </section>
+    </section>
+</body>
+</html>

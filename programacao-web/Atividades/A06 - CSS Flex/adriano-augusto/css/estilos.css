@@ -1,0 +1,510 @@
+﻿/*
+GERAL
+*/
+
+body {
+	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+	color: #4d4d4d;
+}
+
+h1, h2, h3 {
+	margin: 0;
+	font-family: "Roboto Slab", Helvetica, Arial, sans-serif;
+	font-weight: 700;
+}
+
+.botao {
+	text-decoration: none;
+	color: #f1f1f1;
+	padding: 0.4em 1.2em;
+	background-color: #8f3faf;
+	font-size: 0.9em;
+	border-radius: 0.2em;
+}
+
+
+/*
+NAVEGAÇÃO
+*/
+
+nav {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #4d4d4d;
+}
+
+nav > a {
+	text-decoration: none;
+	color: #f1f1f1;
+	font-weight: 700;
+	font-size: 2em;
+	font-family: Helvetica, Arial, serif;
+
+}
+
+nav ul {
+	list-style: none;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+}
+
+nav ul li {
+	text-align: center;
+	width: 100%;
+}
+
+nav ul li a {
+	color: lime;
+	display: inline-block;
+	padding: 0.6em 0;
+	text-decoration: none;
+	color: #f1f1f1;
+}
+
+
+/*
+CABEÇALHO
+*/
+
+header {
+	background-image: url('../img/academia.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	color: #f1f1f1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	padding: 1.4em;
+}
+
+header p {
+	margin-bottom: 2em;
+}
+
+/*
+SOBRE
+*/
+
+#sobre {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	padding: 0 1.6em 1.6em;
+	background-color: #8f2faf;
+	color: #f1f1f1;
+}
+
+#sobre p {
+	margin-bottom: 2.5em;
+	max-width: 100%;
+}
+
+#sobre .botao {
+	background-color: #f1f1f1;
+	color: #4d4d4d;
+}
+
+
+/*
+SERVIÇOS
+*/
+
+#servicos {
+	padding: 1.3em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#servicos div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: left;
+	margin-top: 1.8em;
+}
+
+#servicos div img {
+	width: 12em;
+	height: 9em;
+	border-radius: 0.25em;
+}
+
+#servicos div h3 {
+	margin-top: 0.25em;
+
+}
+
+
+/*
+GALERIA
+*/
+
+#galeria {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+#galeria h2 {
+	margin-bottom: 0.6em;
+}
+
+#galeria img {
+	width: 100%;
+	padding-bottom: 0.06em;
+}
+
+
+/*
+CONTATO
+*/
+
+#contato {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	padding: 0.8em;
+}
+
+#contato a {
+	text-decoration: none;
+}
+
+#contato div img {
+	width: 2.8em;
+	height: 2em;
+}
+
+#contato > p {
+	margin-right: 4em;
+}
+
+#contato h2 {
+	margin-right: 3em;
+}
+
+/*
+FOOTER
+*/
+
+footer {
+	text-align: center;
+	background-color: #4d4d4d;
+	color: #f1f1f1;
+	padding: 10px;
+}
+
+/*
+MEDIAS QUERIES
+*/
+
+/* 
+ Pra dispositivos que tem uma largura mínima de 768 pixels. Tablets, por exemplo.
+*/
+@media screen and (min-width: 768px) {
+	/*
+	NAVEGAÇÃO
+	*/
+	nav {
+		flex-direction: row;
+		justify-content: space-around;
+	}
+
+	nav ul {
+		flex-direction: row;
+		width: 50%;
+	}
+
+	nav > a {
+		color: #f1f1f1;
+	}
+
+	/*
+	CABEÇALHO
+	*/
+
+	header {
+		height: 500px;
+		height: 50vh;
+		justify-content: center;
+	}
+
+	/*
+	SOBRE
+	*/
+
+	#sobre {
+		height: 250px;
+		height: 30vh;
+		justify-content: center;
+		min-height: 250px;
+	}
+
+	/*
+	SERVIÇOS
+	*/
+
+	#servicos {
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-items: flex-start;
+		max-width: 80%;
+		margin: 0 auto;
+	}
+
+	#servicos h2 {
+		text-align: center;
+		width: 100%;
+	}
+
+	#servicos div {
+		flex-grow: 1;
+		flex-basis: 150px;
+		padding: 0 10px;
+	}
+
+	/*
+	GALERIA
+	*/
+
+	#galeria {
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	#galeria h2 {
+		width: 100%;
+		text-align: center;
+	}
+
+	#galeria img {
+		width: 33.3333333333%;
+	}
+
+	/*
+	CONTATO
+	*/
+
+	#contato {
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		max-width: 500px;
+		margin: 0 auto;
+	}
+
+	#contato h2,
+	#contato p {
+		width: 100%;
+	}
+	
+}
+
+
+/* 
+ Com uma largura mínima de 992 pixels. Monitores por exemplo.
+*/
+@media screen and (min-width: 992px) {
+	/*
+	NAVEGAÇÃO
+	*/
+	nav {
+		flex-direction: row;
+		justify-content: space-around;
+	}
+
+	nav ul {
+		flex-direction: row;
+		width: 50%;
+	}
+
+	/*
+	CABEÇALHO
+	*/
+
+	header {
+		height: 500px;
+		height: 50vh;
+		justify-content: center;
+	}
+
+	/*
+	SOBRE
+	*/
+
+	#sobre {
+		height: 250px;
+		height: 30vh;
+		justify-content: center;
+		min-height: 250px;
+	}
+
+	/*
+	SERVIÇOS
+	*/
+
+	#servicos {
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-items: flex-start;
+		max-width: 80%;
+		margin: 0 auto;
+	}
+
+	#servicos h2 {
+		text-align: center;
+		width: 100%;
+	}
+
+	#servicos div {
+		flex-grow: 1;
+		flex-basis: 150px;
+		padding: 0 10px;
+	}
+
+	/*
+	GALERIA
+	*/
+
+	#galeria {
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	#galeria h2 {
+		width: 100%;
+		text-align: center;
+	}
+
+	#galeria img {
+		width: 33.3333333333%;
+	}
+
+	/*
+	CONTATO
+	*/
+
+	#contato {
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		max-width: 500px;
+		margin: 0 auto;
+	}
+
+	#contato h2,
+	#contato p {
+		width: 100%;
+	}
+}
+
+/* 
+ Dispositivos com largura mínima de 1200 pixels. Por exemplo TVs.
+*/
+@media screen and (min-width: 1200px) {
+	/*
+	NAVEGAÇÃO
+	*/
+	nav {
+		flex-direction: row;
+		justify-content: space-around;
+	}
+
+	nav ul {
+		flex-direction: row;
+		width: 50%;
+	}
+
+	/*
+	CABEÇALHO
+	*/
+
+	header {
+		height: 500px;
+		height: 50vh;
+		justify-content: center;
+	}
+
+	/*
+	SOBRE
+	*/
+
+	#sobre {
+		height: 250px;
+		height: 30vh;
+		justify-content: center;
+		min-height: 250px;
+	}
+
+	/*
+	SERVIÇOS
+	*/
+
+	#servicos {
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-items: flex-start;
+		max-width: 80%;
+		margin: 0 auto;
+	}
+
+	#servicos h2 {
+		text-align: center;
+		width: 100%;
+	}
+
+	#servicos div {
+		flex-grow: 1;
+		flex-basis: 150px;
+		padding: 0 10px;
+	}
+
+	/*
+	GALERIA
+	*/
+
+	#galeria {
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	#galeria h2 {
+		width: 100%;
+		text-align: center;
+	}
+
+	#galeria img {
+		width: 33.3333333333%;
+	}
+
+	/*
+	CONTATO
+	*/
+
+	#contato {
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		max-width: 500px;
+		margin: 0 auto;
+	}
+
+	#contato h2,
+	#contato p {
+		width: 100%;
+	}
+
+}
+
+
