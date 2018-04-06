@@ -10,6 +10,12 @@ public class Client {
     private String holder;
     private Date dateCreated;
 
+    /**
+     *  Criar conta com id auto incremental e data de criação
+     * @param balance saldo
+     * @param agency agencia
+     * @param holder titulo
+     */
     public Client(double balance, String agency, String holder) {
         this.id = ++count;
         this.balance = balance;
