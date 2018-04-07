@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="2"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" max="-2" attributes="0"/>
+              <Component id="jScrollPane1" pref="376" max="32767" attributes="0"/>
+              <EmptySpace min="-2" max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jScrollPane1" pref="276" max="32767" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextArea" name="jTextArea1">
+          <Properties>
+            <Property name="columns" type="int" value="20"/>
+            <Property name="rows" type="int" value="5"/>
+            <Property name="text" type="java.lang.String" value="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut volutpat odio ut sapien tristique, ut iaculis ex porta. Quisque ultricies tristique sem in porttitor. Ut ultrices libero finibus eleifend suscipit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc aliquet maximus ex. Donec ut orci metus. Proin ac lectus ac augue imperdiet venenatis. Nullam rhoncus nunc id nisi ultrices euismod. Cras ornare, tellus sit amet suscipit egestas, odio nulla tincidunt nibh, nec auctor ipsum nulla non odio. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam egestas tincidunt dolor, vitae sollicitudin purus eleifend vel. Curabitur at libero ut metus bibendum dapibus. Integer non lacus id turpis maximus malesuada. Vivamus vel consequat ante.&#xa;&#xa;Aliquam vitae gravida diam. Cras ac nulla ut velit faucibus hendrerit. Nunc maximus leo ut lorem auctor, tempus dignissim mauris gravida. Maecenas risus risus, efficitur at nibh non, vulputate ornare quam. In hac habitasse platea dictumst. Suspendisse rhoncus mi neque. Sed et blandit tellus. Nulla elementum vel mauris vitae maximus. Aliquam dictum blandit diam id molestie. Vestibulum sed nibh ligula. Curabitur est felis, accumsan quis finibus a, sodales eu sapien. Nam laoreet sem dolor, ut laoreet leo malesuada vel.&#xa;&#xa;Fusce porta placerat dui laoreet interdum. Vivamus pharetra auctor ipsum, ut elementum odio dictum sed. Curabitur eu tincidunt tortor. In dictum tortor at justo sodales blandit. Curabitur gravida orci mattis quam scelerisque, eget dapibus libero consectetur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor metus vel velit gravida, et tincidunt dui ultrices. Morbi sit amet lorem lorem. Nam malesuada lobortis ipsum vitae dapibus. Curabitur posuere molestie elementum. Duis venenatis ut urna vulputate ultricies. Maecenas molestie diam eget arcu tincidunt viverra. Nulla facilisi. Sed sagittis sem elit, id ornare ipsum rutrum a."/>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
+  </SubComponents>
+</Form>
