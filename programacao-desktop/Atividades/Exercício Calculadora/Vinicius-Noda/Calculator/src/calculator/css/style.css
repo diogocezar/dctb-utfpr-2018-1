@@ -1,0 +1,75 @@
+@font-face {
+    src: url("../css/fonts/System_San_Francisco_Display_Regular.ttf");
+}
+
+* {
+    -fx-base: #B3E5FC;
+    -fx-neutral: #fff;
+    -fx-btn-clear: #4DB6AC;
+    -fx-btn-operation: #4FC3F7;
+    -fx-btn-equal: #4DD0E1;
+}
+
+.root {
+    -fx-font-family: "SFNS Display";
+    -fx-fill: black;
+    -fx-stroke: black;
+    -fx-font-size: 20px;
+    -fx-background-color: -fx-base;
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+
+.result {
+    -fx-font-size: 30px;
+    -fx-background-color: -fx-neutral;
+    -fx-max-width: infinity;
+    -fx-max-height: infinity;
+}
+
+
+.btn {
+    -fx-max-width: infinity;
+    -fx-max-height: infinity;
+    -fx-background-color: -fx-neutral;
+    -fx-text-alignment: center;
+    -fx-border-width: 0px;
+    -fx-border-radius: 0 0 0 0;
+    -fx-background-radius: 0;
+}
+.btn:hover {
+    -fx-background-color: derive(-fx-neutral,-10%);
+}
+.btn:pressed {
+    -fx-background-color: derive(-fx-neutral,-20%);
+}
+
+.clear {
+    -fx-background-color: -fx-btn-clear;
+}
+.clear:hover {
+    -fx-background-color: derive(-fx-btn-clear,-10%);
+}
+.clear:pressed {
+    -fx-background-color: derive(-fx-btn-clear,-20%);
+}
+
+.operation {
+    -fx-background-color: -fx-btn-operation;
+}
+.operation:hover {
+    -fx-background-color: derive(-fx-btn-operation,-10%);
+}
+.operation:pressed {
+    -fx-background-color: derive(-fx-btn-operation,-20%);
+}
+
+.equal {
+    -fx-background-color: -fx-btn-equal;
+}
+.equal:hover {
+    -fx-background-color: derive(-fx-btn-equal,-10%);
+}
+.equal:pressed {
+    -fx-background-color: derive(-fx-btn-equal,-20%);
+}
