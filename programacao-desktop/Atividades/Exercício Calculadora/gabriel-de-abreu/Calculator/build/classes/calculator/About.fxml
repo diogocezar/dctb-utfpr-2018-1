@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="288.0" prefWidth="369.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.141">
+   <children>
+      <Text layoutX="17.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Calculadora" />
+      <TextArea editable="false" layoutX="17.0" layoutY="68.0" prefHeight="202.0" prefWidth="335.0" text="A calculadora pode ser operada em dois modos:&#10;&#10;Modo parser: Permite o uso de expressoes, que podem ser adicionadas com o teclado fisico ou virtual&#10; Sequencia de resoluçao:&#10;- Todas as multiplicaçoes&#10;- Todas as divisoes&#10;- Todas as Adiçoes&#10;- Todas as subtraçoes&#10;&#10;O modo basico executa as operaçoes uma a uma como uma calculadora comum.&#10;&#10;" wrapText="true" />
+   </children>
+</AnchorPane>
