@@ -1,0 +1,2 @@
+controllers.accountManager
+controllers.GerenciadorDeConta
