@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lója Virtual Nike</title>
+
+    <style>
+       
+		.flex {
+			display: flex;
+		}
+		.grow {
+			flex-grow: 0;
+		}
+		
+		.stretch {
+			align-items: stretch;
+		}
+		.center {
+			align-self: center;
+		}
+		.column {
+			flex-direction: column;
+		}
+		.wrap {
+			flex-wrap: wrap;
+		}
+		.wrap-reverse {
+	    flex-wrap: wrap-reverse;
+        }
+		.space-between {
+			justify-content: space-between;
+		}
+		.resolucao { 
+        	height: 10em;
+        	width: 10em;
+        	margin: 4em;
+        }
+		.item {
+            margin: 5px;
+            background: white;
+            text-align: center;
+            font-size: 1.5em;
+
+        }
+        .resolucao { 
+        	height: 11em;
+        	width: 11em;
+        	margin: 2em;
+        }
+        
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+            border: 2px solid;
+            display: flex;
+        }
+
+        
+        h1 {
+            text-align: center;
+            margin: 15px 0 0 0;
+            font-size: 3em;
+            font-weight: normal;
+            
+        }
+        body {
+            font-family: Arial;
+            background: #ccc;
+        }
+        
+        .grid {
+
+            display: grid;
+            grid-auto-rows: 100px;
+            margin: 0 auto;
+            border: 2px solid ;
+            max-width: 850px;
+        }
+        .grid-column .item-1 {
+            grid-column-start: 1; 
+            grid-column-end: 2; 
+            grid-row-start: 1; 
+            grid-row-end: 2;
+            text-align: right;
+            
+
+        }
+        .grid-column .item-2 {
+            grid-column-start: 2;
+            grid-column-end: 3; 
+            grid-row-start: 1; 
+            grid-row-end: 2;
+            text-align: center;
+        }
+        .grid-column .item-3 {
+            grid-column-start: 3;
+            grid-column-end: 4; 
+            grid-row-start: 1; 
+            grid-row-end: 2;
+            text-align: left;
+        }
+
+        .flex-end  {
+	       align-self: flex-end;
+        }
+
+        .baseline {
+     	align-self: baseline;
+        }
+
+        .center {
+	     align-self: center;
+        }
+
+
+    </style>
+
+</head>
+<body>
+
+	<h1>Menu</h1>
+	<section class="container">
+		<div class="item">Academia / Fitness</div>
+		<div class="item">Corrida e Caminhada</div>
+		<div class="item">Futebol</div>
+		<div class="item">Lazer, Piscina e Praia</div>
+	</section>
+
+	<h1>Categoria</h1>
+	<section class="container column">
+		<div class="item">Esportes</div>
+		<div class="item">Homens</div>
+		<div class="item">Mulheres</div>
+		<div class="item">Crianças</div>
+		<div class="item">Calçados</div>
+		<div class="item">Roupas</div>
+		<div class="item">Acessórios</div>
+	</section>
+
+	<h1>Galeria</h1>
+	<section class="container wrap">
+		<div class="item"> <img src="https://io.convertiez.com.br/m/nativoexclusive/shop/products/images/793886/large/tenis-nike-sb-portmore-ii-solar-nike_6128.jpg" class="resolucao" alt="modelo1"/> </div>
+
+		<div class="item"> <img src="https://http2.mlstatic.com/camiseta-nike-personalizada-promoco-camisa-nike-logo-D_NQ_NP_152625-MLB25465152872_032017-F.jpg" class="resolucao" alt="modelo2"/> </div>
+
+		<div class="item"> <img src="https://c.static-nike.com/a/images/t_PDP_1280_v1/f_auto/sgz3maxlkfqprtlaibka/hypervenom-phantom-iii-academy-dynamic-fit-ag-pro-football-boot-KyTwABwL.jpg" class="resolucao" alt="modelo3"/> </div>
+
+
+	</section>
+	<h1>Galeria Reversa</h1>
+	<section class="container wrap-reverse">
+		<div class="item"> <img src="https://io.convertiez.com.br/m/nativoexclusive/shop/products/images/793886/large/tenis-nike-sb-portmore-ii-solar-nike_6128.jpg" class="resolucao" alt="modelo1"/> </div>
+
+		<div class="item"> <img src="https://http2.mlstatic.com/camiseta-nike-personalizada-promoco-camisa-nike-logo-D_NQ_NP_152625-MLB25465152872_032017-F.jpg" class="resolucao" alt="modelo2"/> </div>
+
+		<div class="item"> <img src="https://c.static-nike.com/a/images/t_PDP_1280_v1/f_auto/sgz3maxlkfqprtlaibka/hypervenom-phantom-iii-academy-dynamic-fit-ag-pro-football-boot-KyTwABwL.jpg" class="resolucao" alt="modelo3"/> </div>
+
+
+	</section>
+
+	</br>
+	<section class="grid grid-column">
+		<div class="item flex-end item-1"> item-1</div>
+
+		<div class="item center item-2"> item-2</div>
+
+		<div class="item baseline item-3"> item-3 </div>
+	</section>
+</body>
+</html>
