@@ -107,7 +107,7 @@ public class ProcessCalc {
     }
 
     public String percent(String number){
-        float value = (float) 5 / 100;
+        float value = (float) Integer.parseInt(number) / 100;
         return new Float(value).toString();
     }
 }
