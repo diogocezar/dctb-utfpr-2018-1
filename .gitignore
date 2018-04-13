@@ -11,8 +11,9 @@ nbdist/
 .AppleDouble
 .LSOverride
 Icon
-
 ._*
+Icon?
+Icon^M^M
 
 .DocumentRevisions-V100
 .fseventsd
