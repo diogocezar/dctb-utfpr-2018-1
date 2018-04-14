@@ -1,0 +1,136 @@
+{
+	"configs" : {
+		"title" : "Bazar do Diogo",
+		"subTitle" : "Olá, bem vindo a mais um Bazar do Diogo",
+		"email" : "diogo@diogocezar.com",
+		"subject" : "[QUERO COMPRAR] ",
+		"bodyMail" : "Olá, estou interessado no produto: ",
+		"bodyWhats" : "Veja este produto: ",
+		"url" : "https://diogocezar.github.io/bazar/",
+		"phone" : "+5543996299435",
+		"description" : [
+			{ "p"  : "São produtos que não servem mais para mim, mas que podem ser úteis para você, por um preço abaixo do encontrado no mercado." },
+			{ "p"  : "Todos os produtos deverão ser pagos em dinheiro e retirados em Cornélio Procópio. Se houver necessidade de envio o frete será por conta do comprador." },
+			{ "h2" : "Se interssou? Quer comprar?" },
+			{ "p"  : "Basta clicar no botão, e enviar um e-mail." }
+		]
+	},
+	"products" : [
+		{
+			"active" : true,
+			"name" : "Notebook Sony Vaio sve1112m1e",
+			"image" : "https://diogocezar.github.io/bazar/assets/images/products/product_vaio.jpg",
+			"description" : [
+				{ "h4" : "Notebook Sony Vaio" },
+				{ "p"  : "Usado, mas em perfeito estado!" },
+				{ "p"  : "4GB memória" },
+				{ "p"  : "500GB HD" }
+			],
+			"price" : 600
+		},
+		{
+			"active" : true,
+			"name" : "GABINETE SLIM ITX ATX SENTEY SS1-2420 MINI",
+			"image" : "https://diogocezar.github.io/bazar/assets/images/products/product_gabinete.jpg",
+			"description" : [
+				{ "h4" : "Não Possui Fonte" },
+				{ "p"  : "Modelo: SS1-2420 Slim" },
+				{ "p"  : "Placa mãe suportada: Micro ATX / ITX" },
+				{ "p"  : "Fonte suportada: Micro ATX PS2" },
+				{ "p"  : "Posição da fonte: Superior frontal" },
+				{ "p"  : "Placas de vídeo suportadas: Não especificado" },
+				{ "p"  : "Slots de Expansão: 4" },
+				{ "p"  : "Chassis: Aço (SECC)" },
+				{ "p"  : "Cor: Preta" },
+				{ "h4"  : "Baias" },
+				{ "p"  : "Internas: 01 x 3,5" },
+				{ "p"  : "Externa: 01 x 3,5" },
+				{ "p"  : "Externas: 01 x 5,25" },
+				{ "p"  : "Refrigeração:" },
+				{ "p"  : "01 x Ventoinha de 80 mm superior (inclusa)" },
+				{ "h4"  : "Recursos" },
+				{ "p"  : "Design Fino e Compacto" },
+				{ "p"  : "Pintura em preto brilhante" },
+				{ "p"  : "Com fonte de alimentação já inclusa" },
+				{ "h4"  : "Conexões" },
+				{ "p"  : "02 x USB 2.0" },
+				{ "p"  : "01 x Microfone" },
+				{ "p"  : "01 x Fone de ouvido" },
+				{ "p"  : "Dimensões (L x A x P): 435 x 104 x 325 mm" },
+				{ "p"  : "Peso: 4,2 Kg Peso Bruto: 5 Kg" }
+			],
+			"price" : 65
+		},
+		{
+			"active" : true,
+			"name" : "SMARTPHONE ZENFONE 5 ASUS BRANCO",
+			"image" : "https://diogocezar.github.io/bazar/assets/images/products/product_zenfone.jpg",
+			"description" : [
+				{ "h4" : "Smartphone ZenFone 5 ASUS Branco, com memória RAM de 2GB você consegue executar várias funções no aparelho." },
+				{ "p"  : "Memória interna de 8GB e tecnologia Bluetooth V4.0 para transferência de músicas, fotos e documentos." },
+				{ "p"  : "Câmera traseira de 8 Mega-Pixel, tela retroiluminada e alta resolução 1280 x 800 HD IPS. Sistema operacional Android JellyBean 4.3." }
+			],
+			"price" : 300
+		},
+		{
+			"active" : false,
+			"name" : "APARELHO DE SOM AIWA NSX-S909",
+			"image" : "https://diogocezar.github.io/bazar/assets/images/products/product_som.jpg",
+			"description" : [
+				{ "h4" : "Produto Usado, Com defeito no volume (físico)." },
+				{ "p"  : "Controle funcionando" }
+			],
+			"price" : 60
+		},
+		{
+			"active" : true,
+			"name" : "XBOX 360 4G +11 JOGOS C/2 CONTROLES S/FIO",
+			"image" : "https://diogocezar.github.io/bazar/assets/images/products/product_xbox360.jpg",
+			"description" : [
+				{ "h4" : "Acompanha 11 jogos Originais" },
+				{ "p"  : "Aparelho Bloquado e Original" },
+				{ "h4" : "Jogos" },
+				{ "p"  : "Skyrim" },
+				{ "p"  : "Dantes Inferno" },
+				{ "p"  : "Mortal Kombat 9" },
+				{ "p"  : "Brutal Legend" },
+				{ "p"  : "Tomb Raider" },
+				{ "p"  : "Fear" },
+				{ "p"  : "Gears of War" },
+				{ "p"  : "DarkSiders" },
+				{ "p"  : "Prince of Percia" },
+				{ "p"  : "Call of Duty - Black Ops" }
+			],
+			"price" : 700
+		},
+		{
+			"active" : true,
+			"name" : "SERVIDOR DELL POWEREDGE T110 II",
+			"image" : "https://diogocezar.github.io/bazar/assets/images/products/product_servidor.jpg",
+			"description" : [
+				{ "h4" : "Processador Intel® Xeon® E3-1240v2 3.40 GHz, 8M Cache, Turbo, Quad " },
+				{ "p"  : "Core/8T (69W)" },
+				{ "p" : "4 GB" },
+				{ "p"  : "500 GB" },
+				{ "p"  : "Chassi" },
+				{ "p"  : "Torre" },
+				{ "p"  : "Altura: 46,38 cm" },
+				{ "p"  : "Largura: 18.93 5 cm" },
+				{ "p"  : "Profundidade: 42.03 cm" },
+				{ "p"  : "Placa de vídeo Matrox® G200eW com 8MB de memória" }
+			],
+			"price" : 1500
+		},
+		{
+			"active" : true,
+			"name" : "GPS GARMIN NUVI 255 W",
+			"image" : "https://diogocezar.github.io/bazar/assets/images/products/product_gps.jpg",
+			"description" : [
+				{ "h4" : "GPS Garmin Nuvi 255 W" },
+				{ "p"  : "Usado, mas em perfeito estado!" },
+				{ "p"  : "Acompanha: carregador de carro e mount (suporte para o para-brisa)." }
+			],
+			"price" : 50
+		}
+	]
+}

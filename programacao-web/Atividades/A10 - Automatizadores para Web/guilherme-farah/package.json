@@ -1,0 +1,20 @@
+{
+  "name": "dctb-dev-is-selling",
+  "version": "1.0.0",
+  "description": "Just a simple project to sell your stuffs with an unique JSON configurations file.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diogocezar/dctb-dev-is-selling.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/diogocezar/dctb-dev-is-selling/issues"
+  },
+  "homepage": "https://github.com/diogocezar/dctb-dev-is-selling#readme"
+}
