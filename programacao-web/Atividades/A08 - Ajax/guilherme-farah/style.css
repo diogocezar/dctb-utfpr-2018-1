@@ -1,0 +1,14 @@
+*{
+	background-color: #887474;
+}
+
+.container {
+    width: 980px;
+    margin: 0 auto;
+    align-content:  center;
+}
+
+
+.color{
+	background-color: rgb(17, 55, 160);
+}
