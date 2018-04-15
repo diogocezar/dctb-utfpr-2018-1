@@ -5,7 +5,7 @@ class TestaSaida{
 		OutputStream os = new FileOutputStream("saida.txt");
 		OutputStreamWriter osw = new OutputStreamWriter(os);
 		BufferedWriter bw = new BufferedWriter(osw);
-		bw.write("Olá Java!");
+		bw.write("Olá Java! Testando agora!");
 		bw.close();
     }
 }

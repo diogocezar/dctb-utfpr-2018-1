@@ -1,2 +1,1 @@
-Testando 123
-Novo teste!
+Olá Java! Testando agora!
