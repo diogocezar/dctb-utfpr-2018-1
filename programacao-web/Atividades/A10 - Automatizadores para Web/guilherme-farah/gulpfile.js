@@ -3,9 +3,9 @@ var gulp = require('gulp'),
     jsmin = require('gulp-uglify');
 
 gulp.task('build-css', function(){
-    gulp.src('dist/css/**/*.css')
-    .pipe(cssmin())
-    .pipe(gulp.dest('dist/css'));
+    gulp.src('dist/css/**/*.css').
+    pipe(cssmin()).
+    pipe(gulp.dest('dist/css'));
 });
 
 gulp.task('build-js', function(){
