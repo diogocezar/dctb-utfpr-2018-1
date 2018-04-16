@@ -1,0 +1,19 @@
+{
+  "name": "my-page",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Exercício 1",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Luis Gustavo Miara <luisgustavomiara@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.23.6",
+    "gulp": "^3.9.1"
+  },
+  "dependencies": {
+    "bootstrap": "^4.1.0"
+  }
+}
