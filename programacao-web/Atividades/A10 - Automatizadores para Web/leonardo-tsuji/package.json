@@ -1,0 +1,22 @@
+{
+  "name": "automatizador",
+  "version": "1.0.0",
+  "description": "otimizar",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "automatizar"
+  ],
+  "author": "Leonardo Tsuji",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-jsmin": "^0.1.5",
+    "gulp-uglify": "^3.0.0"
+  },
+  "dependencies": {
+    "gulp-uglifycss": "^1.0.9"
+  }
+}
