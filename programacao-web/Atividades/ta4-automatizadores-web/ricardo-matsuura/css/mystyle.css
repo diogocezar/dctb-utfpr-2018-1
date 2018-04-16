@@ -1,0 +1,46 @@
+html{
+	font-size: 18px;
+	font-family: "Times New Roman", serif;
+	margin: 0px;
+	background-color: #F5D3B3;
+}
+
+.container {
+	width: 90%;
+	margin: 0 auto;
+}
+
+h1 {
+	font-size: 50px;
+	margin: 15px 0 0 0;
+	font-weight: normal;
+}
+
+h2 {
+	font-size: 50px;
+	margin: 15px 0 0 0;
+	font-weight: normal;
+}
+
+h3 {
+	font-size: 50px;
+	margin: 15px 0 0 0;
+	font-weight: normal;
+}
+
+section{
+	position: relative;
+	float: left;
+	width: 100%;
+}
+
+#album{ /*como é diposto os albuns*/
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 20px;
+}
+
+.imagem{
+	width: 250px;
+	height:250px;
+}
