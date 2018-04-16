@@ -1,0 +1,30 @@
+*{
+	background-color: #e0ebeb;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    align-content:  center;
+    margin-top: 2em;
+    margin-bottom: 3em;
+}
+
+
+.color{
+	background-color: rgba(0,255,128,0.7);
+}
+
+.resolucao { 
+    width: 40em;
+    margin-left: 1.7em;
+    height: 35em;
+}
+
+.color-info{
+	background-color: rgba(255,204,128,0.7);
+}
+
+.espaco{
+	margin-right: 2em;
+}
