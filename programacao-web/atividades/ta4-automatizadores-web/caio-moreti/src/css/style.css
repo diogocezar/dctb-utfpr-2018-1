@@ -1,0 +1,15 @@
+
+
+.container{
+	max-width: 900px;
+	margin: 0 auto;
+	border: 1px solid #ccc;
+}
+
+
+.resolucao { 
+    height: 7em;
+    width: 12em;
+  
+}
+

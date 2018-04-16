@@ -5,20 +5,20 @@ watch = require('gulp-watch');
 
 //realiza minificação do css
 gulp.task('build-css', function(){
-	gulp.src('dist/css/*.css').
+	gulp.src('src/css/*.css').
 	pipe(cssmin()).
-	pipe(gulp.dest('dist/cssmin'));
+	pipe(gulp.dest('src/cssmin'));
 });
 
 //realiza minificação do javascript
 gulp.task('build-js', function(){
-	gulp.src('dist/js/*.js').
+	gulp.src('src/js/*.js').
 	pipe(jsmin()).
-	pipe(gulp.dest('dist/jsmin'));
+	pipe(gulp.dest('src/jsmin'));
 });
 
 //olhar se os arquivos foram modificados, e realizar a alteração em jsmin e cssmin
 gulp.task('watch', function() {
-  gulp.watch('dist/css/*.css', ['build-css']);
-  gulp.watch('dist/js/*.js', ['build-js']);
+  gulp.watch('src/css/*.css', ['build-css']);
+  gulp.watch('src/js/*.js', ['build-js']);
 });
