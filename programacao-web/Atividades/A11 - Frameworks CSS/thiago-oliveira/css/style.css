@@ -1,0 +1,11 @@
+.wrap{
+  margin-top: 20px;
+  padding: 20px;
+  background-color: rgb(248, 249, 250);
+}
+
+.products{
+  background-color: #FFF;
+  padding: 10px;
+  margin: 5px 0; 
+}
