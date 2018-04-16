@@ -1,0 +1,16 @@
+{
+    "name": "diogo/dctb-php-mvc",
+    "description": "Just a simple repository with mvc pattern implemented in PHP.",
+    "authors": [
+        {
+            "name": "Diogo Cezar",
+            "email": "diogo@diogocezar.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "App\\" : "app"
+        }
+    },
+    "require": {}
+}
