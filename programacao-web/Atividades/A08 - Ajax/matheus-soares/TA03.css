@@ -1,0 +1,140 @@
+body {
+    background-color: rgba(0, 0, 0, 0.05);
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    font-size: 14px;
+    line-height: 1.42857;
+    max-width: 100%;
+}
+
+h1{
+	text-transform: uppercase;
+	font-size: 42px;
+	font-weight: 600;
+	margin-bottom:20px;
+	margin-top:10px;
+	color: #444;
+}
+h2{
+	text-align: center;
+	font-size: 2em;
+	font-weight:400;
+	color: #444;
+}
+
+a{
+	text-decoration: none;
+	color: #000;
+}
+a:hover{
+	text-decoration: underline;
+}
+
+p{
+	 display: block;
+	 line-height: 1;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+	/*margin-bottom:5px;
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 18px;
+	color: #444;*/
+}
+button{
+	width: 100%;
+    opacity: 1;
+    position: relative;
+    padding: 0.3em 1em;
+    border: 2px solid;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    background: transparent;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.7em !important;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    transition: all 0.2s;
+    text-transform: uppercase!important;
+    font-family: 'Montserrat', Helvetica, Arial, Lucida, sans-serif!important;
+    color: #000;
+}
+
+.configs{
+	display: block;
+	background-color:#FFF;
+	text-align:center;
+	padding: 2% 15%;
+}
+
+.configs .description{
+	margin-top: 20px;
+}
+.products {
+	display: flex;
+	flex-direction: column;
+	/* justify-content: flex-start;
+	align-items: flex-start; */
+	flex-wrap: wrap;
+	height: 2654px;
+	padding: 30px;
+	max-width: 100%;
+}
+.elementListFalse{
+	display: flex;
+	opacity: 0.3;
+	flex-direction: column;
+	justify-content: flex-start;
+	background-color: #fff;
+	margin: 20px;
+	width: 28%;
+	padding: 10px;
+}
+.elementListFalse img{
+	width: 100%;
+	opacity: 0.3;
+}
+.elementList{
+	display: flex;
+	margin-bottom: 2em;
+	flex-direction: column;
+	justify-content: flex-start;
+	background-color: #fff;
+	margin: 20px;
+	width: 28%;
+	padding: 10px;
+}
+.elementList img{
+	width: 100%;
+}
+.price {
+	text-align: center;
+	font-size: 40px;
+	font-weight:bold;
+	color: #444;
+}
+.button:hover {
+	width: 100%;
+    opacity: 1;
+    position: relative;
+    padding: 0.3em 1em;
+    border: 2px solid;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    border-color: rgba(0, 0, 0, 0.00);
+    background: rgba(0, 0, 0, 0.05);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.7em !important;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    transition: all 0.2s;
+    text-transform: uppercase!important;
+    font-family: 'Montserrat', Helvetica, Arial, Lucida, sans-serif!important;
+    color: black;
+}
