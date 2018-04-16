@@ -1,0 +1,100 @@
+html{
+    font-size:16px;
+    font-family: 'Happy Monkey', cursive;
+    background-color:rgba(255, 255, 253, 0.541);
+}
+#menu{
+    position:fixed;
+    z-index: 999;
+    float: left;
+    width: 100%;
+    background-color: rgba(6, 49, 75, 0.925);
+    box-shadow: -2px -3px 20px 3px rgba(17, 8, 8, 0.384);
+    margin: 0 auto;
+}
+
+#menu ul{
+    position: relative;
+    float: left;
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    margin-left: 13%;
+   
+}
+#menu ul li{
+    list-style: none;
+}
+#menu ul li a {
+    text-decoration: none;
+    color: aliceblue;
+    display: block;
+    text-align: right;
+    position: relative;
+    display: block;
+    margin-right: 35%;
+    text-align: center;
+    font-weight: 500;
+    line-height: 40px;
+    font-size: 1.25em;
+    padding-top: 5px;
+
+}
+#id01{
+    padding-top:5%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 25%;
+    background: linear-gradient(rgba(19, 160, 241, 0.84), rgba(255, 255, 255, 0.84)),
+    url('https://i.pinimg.com/originals/c0/c1/3f/c0c13fcfce70c7d3d060b1308a2368cc.jpg');
+    box-shadow: -2px -3px 20px 3px rgba(17, 8, 8, 0.384);
+
+}
+#id01 p{
+    font-size: 14px;
+}
+.containerFlex{
+    display: flex;
+    justify-content:center;
+    flex-wrap: row wrap;
+    position: relative;
+    align-content: flex-start;
+
+}
+.products{
+    border-radius: 25px;
+    flex-wrap: wrap;
+    float: left;
+    margin: 1%;
+    padding: 1%;
+    align-self: flex-start;
+    box-shadow: -2px -3px 20px 3px rgba(46, 106, 235, 0.384);
+    flex-direction: column;
+    width: 21%;
+    min-width: 21%;
+}
+
+.products img{
+    height: 100%;
+    width: 100%;
+} 
+
+#btnBuy{
+    text-decoration: none;
+    background-color:rgb(0, 0, 0);
+    color:aliceblue;
+    padding: 2%;
+    border-radius: 5px;
+    margin-left: 35%;
+    transition-property: background-color;
+    transition-duration: 1s;
+    
+}
+#btnBuy:hover{
+    background-color: rgba(31, 129, 185, 0.84);
+    transition-property: background-color;
+    transition-duration: 1s;
+}
