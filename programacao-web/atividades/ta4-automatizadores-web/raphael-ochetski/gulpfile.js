@@ -3,13 +3,13 @@ var gulp = require('gulp'),
 	uglify = require('uglify-js');
 
 gulp.task('build-js', function(){
-	gulp.src('../FrameworkCSS/dist/js/*.js')
+	gulp.src('src/js/*.js')
         .pipe(uglify())
-        .pipe(gulp.dest('../FrameworkCSS/dist/js/*.js'))
+        .pipe(gulp.dest('src/js/*.js'))
 	});
 gulp.task('build-cssmin', function(){
-	gulp.src('../FrameworkCSS/mystyle.css')
+	gulp.src('mystyle.css')
         .pipe(cssmin())
-        .pipe(gulp.dest('../FrameworkCSS/mystyle.css'))
+        .pipe(gulp.dest('mystyle.css'))
 	});
 

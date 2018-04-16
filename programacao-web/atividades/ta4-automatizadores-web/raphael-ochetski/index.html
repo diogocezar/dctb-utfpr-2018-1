@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <title>Atividade Bootstrap</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Raphael">
+    <meta name="keywords" content="bootstrap, frameworks">
+    
+    <link href="src/css/bootstrap.min.css" rel="stylesheet"> 
+    <link href="navbar-top-fixed.css" rel="stylesheet">
+    <link href="mystyle.css" rel="stylesheet">
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#produtos">Produtos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contatos">Contatos</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <div id="produtos">
+    
+        <div class="container">
+            <h1>Produtos</h1>
+            <h3>Processadores</h3>
+                <div class="row">
+                    <div class="col-md-3">
+                        <h4>Intel Core i5-7400</h4>
+                        <h6>R$755,00</h6>
+                        <ul>
+                            <li>Kaby Lake - 7 geração</li>
+                            <li>Cache 6MB</li>
+                            <li>LGA 1151</li>
+                            <li>3.0GHz</li>
+                        </ul>
+                        <img class="processador" src="imagens/i57400.jpg">
+                    </div>
+                    <div class="col-md-3">
+                        <h4>Intel Core i5-8400</h4>
+                        <h6>R$768,00</h6>
+                        <ul>
+                            <li>Coffe Lake - 8 geração</li>
+                            <li>Cache 9MB</li>
+                            <li>LGA 1151</li>
+                            <li>2.8GHz</li>
+                        </ul>
+                        <img class="processador" src="imagens/i58400.jpg">
+                    </div>
+                    <div class="col-md-3">
+                        <h4>Intel Core i3-7100</h4>
+                        <h6>R$478,00</h6>
+                        <ul>
+                            <li>Kaby Lake - 7 geração</li>
+                            <li>Cache 6MB</li>
+                            <li>LGA 1151</li>
+                            <li>3.9GHz</li>
+                        </ul>
+                        <img class="processador" src="imagens/i37100.jpg">
+                    </div>
+                    <div class="col-md-3">
+                        <h4>Intel Core i7-8700k</h4>
+                        <h6>R$1600,00</h6>
+                        <ul>
+                            <li>Coffe Lake - 8 geração</li>
+                            <li>Cache 12MB</li>
+                            <li>LGA 1151</li>
+                            <li>3.7GHz</li>
+                        </ul>
+                        <img class="processador" src="imagens/i78700.jpg">
+                    </div>
+                </div>
+            <h3>Memórias RAM</h3>
+                <div class="row">
+                    <div class="col-md-3">
+                        <h4>HyperX Fury - 8GB</h4>
+                        <h6>R$499,00</h6>
+                        <ul>
+                            <li>2400MHz</li>
+                            <li>DDR4</li>
+                        </ul>
+                        <img class="memoria" src="imagens/fury8gb2400mhz.jpg">
+                    </div>
+                    <div class="col-md-3">
+                        <h4>Corsair Vengeance - 4GB</h4>
+                        <h6>R$270,00</h6>
+                        <ul>
+                            <li>2400MHz</li>
+                            <li>DDR4</li>
+                        </ul>
+                        <img class="memoria" src="imagens/vengeance4gb2400mhz.jpg">
+                    </div>
+                    <div class="col-md-3">
+                        <h4>HyperX Fury - 4GB</h4>
+                        <h6>R$300,00</h6>
+                        <ul>
+                           <li>2133MHz</li>
+                            <li>DDR4</li>
+                        </ul>
+                        <img class="memoria" src="imagens/fury8gb2133mhz.jpg">
+                    </div>
+                    <div class="col-md-3">
+                        <h4>Corsair Vengeance - 8GB</h4>
+                        <h6>360,00</h6>
+                        <ul>
+                            <li>1600MHz</li>
+                            <li>DDR3</li>
+                        </ul>
+                        <img class="memoria" src="imagens/vengeance8gb1600mhz.jpg">
+                    </div>
+                </div>
+        </div>
+    
+    </div>
+        <div id="contatos">
+            <div class="container">
+                <h1>Contato</h1>
+                    <form>
+                        <div class="row">
+                            <div class="form-group col-lg-8 col-md-7 col-sm-6 col-xs-12">
+                                <label for="nome">Nome:</label>
+                                    <input type="text" class="form-control" id="nome">
+                            </div>  
+                            <div class="form-group col-lg-4 col-md-5 col-sm-6 col-xs-12">
+                                <label for="assunto">Assunto:</label>
+                                    <input type="text" class="form-control" id="assunto">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-lg-8 col-md-7 col-sm-6 col-xs-12">
+                                <label for="email">E-mail:</label>
+                                    <input type="text" class="form-control" id="email">
+                            </div>  
+                            <div class="form-group col-lg-4 col-md-5 col-sm-6 col-xs-12">
+                                <label for="mensagem">Mensagem:</label>
+                                    <input type="text" class="form-control" id="mensagem">
+                            </div>
+                        </div>
+                          
+                    </form>
+            </div>
+    </div>
+    
+    <!-- Bootstrap Javascript-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="src/js/bootstrap.min.js"></script>
+</body>
+</html>
