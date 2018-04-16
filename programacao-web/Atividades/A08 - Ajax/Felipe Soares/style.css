@@ -1,0 +1,79 @@
+body{
+  margin: 0;
+  border: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: #194837;
+  line-height: 1.1;
+}
+#cabecalho{
+  width: 100%;
+  text-align: center;
+  background-color: #2B7A5D;
+  margin: 0;
+}
+#titlelogo{
+  font-size: 50px;
+  font-family: fantasy;
+  margin-top: 0;
+}
+#cabecalho>p{
+  font-size: 15px;
+}
+#cabecalho > h3{
+  font-size: 22px;
+  font-family: cursive;
+}
+#conteiner{
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.produto{
+  width: 20%;
+  min-width: 300px;
+  background-color: #CCC;
+  padding: 10px;
+  border-radius: 5px;
+  border: solid #999 1px;
+  margin: 5px;
+  text-align: center;
+}
+.produto > h4,#preco{
+  text-align: center;
+  font-size: 20px;
+  margin: 0;
+}
+.produto img{
+  width: 100%;
+  border-radius: 5px;
+}
+.produto > p{
+  text-align: left;
+}
+#preco{
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#btnComprar{
+  width: 100%;
+  opacity: 5;
+  position: relative;
+  padding: 0.3em 1em;
+  border: 2px solid;
+  border-radius: 0px;
+  background: transparent;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.7em !important;
+  transition: all 0.2s;
+  text-transform: uppercase!important;
+  font-family: Helvetica, Arial, Lucida, sans-serif!important;
+  color: #000;
+}
