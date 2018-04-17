@@ -1,0 +1,110 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    background: fixed;
+    background-image: url('https://img2.goodfon.ru/wallpaper/big/2/99/tekstury-tekstura-texture-fon.jpg');
+    background-size: 100% 100%;
+}
+
+#banner{
+    width: 100%;
+    height: 500px;
+    background: fixed;
+    background-color: lightblue;
+    background-image: url('https://static.vecteezy.com/system/resources/previews/000/109/440/original/free-vector-grunge-textura-background.jpg');
+    background-size: 100% 100%; 
+    display: flex;
+    box-shadow: inset 0 0 30px #333;
+}
+
+#nav-tab{
+    width: 100%;
+    background-color:#666;
+}
+
+#nav-tab a{
+    color: #333;
+    font-weight: bold;
+}
+
+#title{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+	align-items: center;
+    font-weight: bold;
+    font-size: 100px;
+    margin: 0 auto;
+    color: slategrey;
+    text-align: center;
+}
+
+#gridprodutos{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#itemproduto{
+    max-width: 265px;
+    background-color: #FFF;
+    padding: 5px;
+    margin: 5px;
+}
+
+#itemproduto h4{
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #FFF;
+    text-align: center;
+    background-color:slateblue;
+    padding: 5px; 
+    border-radius: 2px;
+}
+
+#itemproduto h5{
+    font-size: 12px;
+    text-align: center;
+}
+
+#itemproduto p{
+    text-align: center;
+}
+
+#itemproduto img{
+    width: 100%;
+    max-height: 250px;
+    margin:0 auto;
+}
+
+#itemproduto button{
+    width: 100%;
+    margin:0 auto;
+}
+
+#contato{
+    width: 100%;
+    background: fixed;
+    background-color: lightblue;
+    background-image: url('https://static.vecteezy.com/system/resources/previews/000/109/440/original/free-vector-grunge-textura-background.jpg');
+    background-size: 100% 100%; 
+    display: flex;
+    box-shadow: inset 0 0 30px #333;
+    padding: 50px;
+}
+
+#form{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+	align-items: center;
+    font-weight: bold;
+    margin: 0 auto;
+    color: slategrey;
+    text-align: center;
+}
+
+#form h1{
+    font-size: 50px;
+}
