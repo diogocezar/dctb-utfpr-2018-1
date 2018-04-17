@@ -1,0 +1,62 @@
+/* Flex */
+    
+	.space-between {
+		justify-content: space-between;
+	}
+
+	.stretch{
+		align-content: stretch;
+	}
+	
+	.wrap{
+		flex-wrap: wrap;
+	}
+
+	.column {
+		flex-direction: column;
+	}
+
+	/* Flex Item */
+	.item {
+		margin: 5px;
+		padding: 0 10px;
+		background: deepskyblue;
+		text-align: center;
+		font-size: 1.5em;
+	}
+
+	.item1{
+		margin: 0px;
+		padding: 0 0px;
+		text-align: center;
+	}
+
+	.container {
+		max-width: 1200px;
+		margin: 0 auto;
+		display: flex;
+		border: 1px solid #ccc;
+	}
+
+	.container1 {
+		max-width: 400px;
+		margin: 0 auto;
+		display: flex;
+		border: 1px solid #ccc;
+	}
+
+	.flex {
+		flex: 1;
+	}
+
+	h1 {
+		text-align: center;
+		margin: 20px 0 0 0;
+		font-size: 1.25em;
+		font-weight: normal;
+	}
+
+	body {
+		font-family: monospace;
+		color: #333;
+	}
