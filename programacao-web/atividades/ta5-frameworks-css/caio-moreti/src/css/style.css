@@ -1,0 +1,24 @@
+.container{
+	max-width: 1200px;
+	margin: 0 auto;
+	border: 1px solid #ccc;
+}
+
+.resolucao { 
+    width: 14em;
+    margin-left: 1.7em;
+    height: 9.5em;
+}
+
+.container .row h4{
+	margin-left: 0.6em;
+}
+
+#contato{
+	margin-bottom: 2em;
+}
+
+#produtos {
+	margin-top: 3em;
+}
+
