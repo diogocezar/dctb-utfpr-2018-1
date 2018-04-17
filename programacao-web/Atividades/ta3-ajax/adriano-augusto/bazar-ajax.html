@@ -1,0 +1,86 @@
+<html>
+
+<head>
+    <link href="css/bootstrap/bootstrap.css" rel="stylesheet">
+    <link href="css/style-bazar.css" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css?family=Vidaloka|Roboto+Slab:400,700|Pacifico" rel="stylesheet">
+</head>
+
+<body>
+    <div id="dev-is-selling">
+        <div class="container-fluid">
+            <div class="row my-infos">
+                <div class="col-lg-12">
+                    <h1> {{ configs.title }}</h1>
+                    <h2>{{ configs.subTitle }}</h2>
+                    <p>
+                        <a :href="configs.email">{{ configs.email }}</a>
+                    </p>
+                    <p>
+                        <a :href="configs.phone">{{ configs.phone }}</a>
+                    </p>
+                    <div class="description" v-for="data in generateHtml(configs.description)">
+                        <div>
+                            <div v-html="data"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row my-row">
+                <div class="item well" v-for="product in products" v-bind:class="{ selled : !product.active }">
+                    <h2>{{ product.name }}</h2>
+                    <a :href="product.image">
+                        <img :src="product.image" class="product-image">
+                    </a>
+                    <div v-for="data in generateHtml(product.description)">
+                        <div class="description">
+                            <div class="description" v-html="data"></div>
+                        </div>
+                    </div>
+                    <h2 class="price">R${{ product.price }},00</h2>
+                    <a :href="'mailto:'+configs.email+'?subject='+product.subject+ product.name+'body='+configs.bodyMail + product.name + product.price">
+                        <button>Comprar</button>
+                    </a>
+                    <a :href="'whatsapp://send?text=' + configs.bodyWhats + ':' + product.name + 'por' + product.price + '- Acesse aqui: ' + configs.url"
+                        class="whatsapp">
+                        <button>WhatsApp</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.16/vue.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $.ajax({
+            type: "GET",
+            url: 'https://diogocezar.github.io/bazar/json/database.json',
+            success: function (result) {
+                var app = new Vue({
+                    el: '#dev-is-selling',
+                    data: result,
+                    methods: {
+                        generateHtml: function (data) {
+                            let html = [];
+
+                            data.forEach((value) => {
+                                html.push("<" + Object.keys(value)[0] + ">" + Object.values(value)[0] + "</" + Object.keys(value)[0] + ">")
+                            });
+
+                            return html
+                        }
+                    }
+                })
+            },
+        });
+    });
+
+
+</script>
+
+</html>
