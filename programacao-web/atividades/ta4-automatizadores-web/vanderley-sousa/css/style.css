@@ -1,0 +1,116 @@
+html, body{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+#menu{
+    width: 100%;
+    background-color: #333;
+    position: fixed;
+}
+
+#menu ul{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly; 
+    align-items: center;
+}
+
+#menu ul li{
+    list-style-type: none;
+    color: white;
+    font-weight: bold;
+}
+
+#menu ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+#titlelogo{
+    font-size: 20px;
+    
+}
+
+#cabecalho{
+    width: 100%;
+    background: url('https://agenciaweblab.com.br/wp-content/uploads/2013/09/bg-04-e1476453911602.png');
+    padding-top: 70px;
+    padding-bottom: 30px;
+    color: #666;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+#cabecalho h2{
+    margin-left: 40px;
+    margin-right: 40px;
+    text-transform: uppercase;
+}
+
+#cabecalho h3{
+    margin-left: 40px;
+    margin-right: 40px;
+    text-transform: uppercase;
+}
+
+#cabecalho p{
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+#conteiner{
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.produto{
+    width: 20%;
+    min-width: 300px;
+    background-color: #CCC;
+    padding: 10px;
+    border-radius: 5px;
+    border: solid #999 1px;
+    margin: 5px;
+}
+
+.produto h3{
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.produto h4{
+    text-decoration: underline;
+}
+
+.produto p{
+    
+}
+
+.produto img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+#btnComprar{
+    background-color: cornflowerblue;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    text-decoration: none;
+    margin-left: 35%;
+    transition-property: background-color;
+    transition-duration: 1s;
+}
+
+#btnComprar:hover{
+    background-color: teal;
+    transition-property: background-color;
+    transition-duration: 1s;
+}
