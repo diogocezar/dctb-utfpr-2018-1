@@ -1,0 +1,20 @@
+{
+  "name": "atividade_fram",
+  "version": "1.0.0",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Camila de Lima Martins",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "bootstrap": "^4.0.0-beta.2",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.3"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.1"
+  }
+}
