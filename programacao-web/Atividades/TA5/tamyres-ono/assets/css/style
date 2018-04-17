@@ -1,0 +1,7 @@
+.container{
+	display:flex;
+}
+
+.produto{
+	flex-direction:row;
+}
