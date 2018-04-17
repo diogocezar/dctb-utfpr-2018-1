@@ -1,0 +1,41 @@
+
+/*MENU*/
+
+#menu{
+	background-color: black;
+	color: white;
+	/*position: fixed;*/
+/*	width: 100%;
+	height: 80px;
+	z-index: 999;*/
+	/*float: left;*/
+}
+
+#menu ul{
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 20px;
+	padding-right: 3em;
+}
+
+#menu ul li {
+	list-style: none;
+}
+
+#menu ul li a {
+	text-decoration: none;
+	font-weight: 600;
+	color: white;
+	font-size: 1.55em;
+	line-height: 40px;
+}
+
+
+.tamanho{
+	width: 15em;
+    margin-left: 1em;
+    margin-bottom: 1em;
+	/*height: 9.5em;*/
+}

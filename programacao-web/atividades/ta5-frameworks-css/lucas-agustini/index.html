@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Atividade 05 - Framework CSS</title>
+		<meta charset="utf-8">
+		<meta name="author" content="Lucas Agustini">
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+		<link href="style.css" rel="stylesheet">
+  		 <!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+</head>
+
+<body>
+	<div class="container-fluid">
+		<nav id="menu">
+					<!--menu-->
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li><a href="#product">Produtos</a></li>
+						<li><a href="#contact">Contato</a></li>
+					</ul>
+			</nav>
+
+    
+	</div>
+
+	<section id="product">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-3 col-xs-12">
+					<img src="img/blink.jpg" class="tamanho">
+					<p class="tamanho">Album Blink 182 - Greatest Hits Valor: R$ 29,99</p>
+				</div>
+				<div class="col-sm-3 col-xs-12">
+					<img src="img/disturbed.jpg" class="tamanho">
+					<p class="tamanho">Album Disturbed - Indestructible Valor: R$ 28,99</p>
+				</div>
+				<div class="col-sm-3 col-xs-12">
+					<img src="img/ghost.jpg" class="tamanho">
+					<p class="tamanho">Album Ghost - Infestissumam<br> Valor: R$ 39,99</p>
+				</div>
+				<div class="col-sm-3 col-xs-12">
+					<img src="img/linkinpark1.jpg" class="tamanho">
+					<p class="tamanho">Album Linkin Park - Meteora<br> Valor: R$ 15639,99</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-3 col-xs-12">
+					<img src="img/misfits.jpg" class="tamanho">
+					<p class="tamanho">Album Misfts - Famous Monsters<br> Valor: R$ 439,99</p>
+				</div>
+				<div class="col-sm-3 col-xs-12">
+					<img src="img/monolord.jpg" class="tamanho">
+					<p class="tamanho">Album Monolord - Rust<br> Valor: R$ 939,99</p>
+				</div>
+				<div class="col-sm-3 col-xs-12">
+					<img src="img/pantera.jpg" class="tamanho">
+					<p class="tamanho">Album Pantera - Vulgar Display of Power<br> Valor: R$ 10654868939,99</p>
+				</div>
+				<div class="col-sm-3 col-xs-12">
+					<img src="img/cex.jpg" class="tamanho">
+					<p class="tamanho">Album Chitãozinho e Xororó - Cowboy do Asfalto<br> Valor: R$ 789436546897987,99</p>
+				</div>
+			</div>  	
+		</div>
+	</section>
+
+	<section id="contact">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4 col-md-7 col-sm-6 col-xs-12">
+					<form>
+						<div class="form-group">
+							<label>Nome</label>
+							<input type="text" name="name" class="form-control"  placeholder="Digite seu nome aqui...">
+						</div>
+						 <div class="form-group">
+			                  <label>Email</label>
+			                  <input type="email" name="email" class="form-control" placeholder="Digite seu email aqui...">
+						</div>
+					</form>
+
+				</div>
+				<div class="col-lg-6 col-md-5 col-sm-6 col-xs-12">
+						<div class="form-group">
+							<label>Assunto</label>
+							<input type="text" name="subject" class="form-control"  placeholder="Digite o assunto aqui...">
+						</div>
+						<div class="form-group">
+							<label for="message">Mensagem</label>
+							<!-- <textarea rows="2" cols="30" name="comment" placeholder="Digite sua mensagem aqui..."></textarea> -->
+							<input type="text" name="message" class="form-control"  placeholder="Digite sua ensagem aqui...">
+						</div>
+				</div>			
+			</div>
+		<input type="submit" name="">		
+		</div>
+	</section>
+</body>
+</html>
