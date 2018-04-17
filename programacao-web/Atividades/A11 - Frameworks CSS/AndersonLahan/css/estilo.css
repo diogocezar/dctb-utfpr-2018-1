@@ -1,0 +1,24 @@
+article{
+	margin-top: 30px; 
+	box-shadow: 2px 3px 9px black;
+
+}
+
+
+.panel-body{
+	width: 200px;
+	height: 200px;
+}
+
+.panel-body img{
+	width: 100%;
+}
+
+form{
+	box-shadow:1px 2px 3px black;
+}
+
+#Contato{
+	margin-top: 30px;
+	margin-bottom: 50px;
+}
