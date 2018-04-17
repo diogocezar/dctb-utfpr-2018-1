@@ -1,0 +1,28 @@
+.icone-produto{
+  background-color: rgba(143, 143, 143, 0.411);
+  height: 420px;
+  margin: 3px;
+}
+.rounded{
+  width: 190px;
+  height: 190px;
+  padding-top: 20px;
+  margin-bottom: 10px;
+}
+.tit{
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+.container{
+  padding: 10px;
+  padding-left: 20px;
+}
+header {
+  position: fixed;
+  z-index: 2;
+}
+.nav-link{
+  width: 100px;
+  text-align: center;
+}
