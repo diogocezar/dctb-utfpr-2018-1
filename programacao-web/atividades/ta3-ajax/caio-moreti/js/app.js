@@ -11,7 +11,7 @@ function json(){
 
 
 		// Estrutura de resultado.
-		$.getJSON('./json/database.json', function(data){
+		$.getJSON('https://diogocezar.github.io/bazar/json/database.json', function (data) {
 
 			this.qtd = data.products.length;
 			this.retorno = '';
