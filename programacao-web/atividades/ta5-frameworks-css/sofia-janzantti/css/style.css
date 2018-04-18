@@ -1,0 +1,49 @@
+.flex {
+    display: flex;
+    }
+
+.flex {
+    flex: 1;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.row {
+flex-direction: row;
+}
+.grow1 {
+    flex-grow: 1;
+}
+
+.space-around {
+    justify-content: space-around;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    margin-top: 30px;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0 0 0;
+    font-size: 1.25em;
+    font-weight: normal;
+}
+
+body {
+    font-family: monospace;
+    color: #333;
+}
+
+.nav {
+    background-color: rgb(240, 224, 11);
+}
