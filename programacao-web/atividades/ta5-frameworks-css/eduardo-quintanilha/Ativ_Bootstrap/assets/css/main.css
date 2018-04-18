@@ -1,0 +1,43 @@
+html{
+    background-color: turquoise;
+}
+
+section{
+  
+    border-color: black;    
+}
+
+
+
+section h2{
+    color: white;
+    text-align: center;   
+}
+
+img{
+    width:100%;
+    height:auto;
+  }
+.card-img-top{
+    width:100%;
+    height:auto;
+  }
+
+
+
+.row{
+    margin-bottom: 24px;
+}
+.nav-item .nav-link{
+    color: white;
+}
+
+#products{
+    background-color: blueviolet;
+   
+    margin-top: 50px;
+}
+
+#contact{
+    background-color: turquoise;
+}
