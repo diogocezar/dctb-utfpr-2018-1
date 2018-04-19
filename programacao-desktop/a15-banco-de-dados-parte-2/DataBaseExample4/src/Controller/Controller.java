@@ -6,7 +6,7 @@ package Controller;
 
 import Model.Course;
 import Model.DAO.CourseDAO;
-import Model.DAO.ImplementCourse;
+import Model.Interfaces.ImplementCourse;
 import Model.Table.TabelModelCourse;
 import View.PanelForm;
 import java.util.List;

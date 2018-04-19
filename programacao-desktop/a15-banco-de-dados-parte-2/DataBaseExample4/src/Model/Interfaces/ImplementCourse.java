@@ -2,7 +2,7 @@
 * Créditos: https://github.com/ucuptimposu/mvc-dao-simple-java-swing
 **/
 
-package Model.DAO;
+package Model.Interfaces;
 
 import Model.Course;
 import java.util.List;

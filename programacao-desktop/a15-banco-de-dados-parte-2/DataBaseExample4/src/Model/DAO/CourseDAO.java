@@ -4,6 +4,7 @@
 
 package Model.DAO;
 
+import Model.Interfaces.ImplementCourse;
 import Configurations.ConfigurationsMySQL;
 import DataBase.DataBase;
 import Model.Course;
