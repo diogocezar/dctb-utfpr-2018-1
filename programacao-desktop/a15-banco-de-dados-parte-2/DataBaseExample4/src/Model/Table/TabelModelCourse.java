@@ -40,7 +40,7 @@ public class TabelModelCourse extends AbstractTableModel{
     public String getColumnName(int column) {
         switch (column) {
             case 0  : return "ID";
-            case 1  : return "NAME";
+            case 1  : return "NOME";
             default : return null;
         }
     }

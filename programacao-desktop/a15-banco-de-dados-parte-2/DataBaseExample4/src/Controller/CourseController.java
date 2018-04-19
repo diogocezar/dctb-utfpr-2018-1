@@ -8,16 +8,16 @@ import Model.Course;
 import Model.DAO.CourseDAO;
 import Model.Interfaces.ImplementCourse;
 import Model.Table.TabelModelCourse;
-import View.PanelForm;
+import View.CoursePanelForm;
 import java.util.List;
 import javax.swing.JOptionPane;
 
-public class Controller {
-    private final PanelForm panel;
+public class CourseController {
+    private final CoursePanelForm panel;
     private final ImplementCourse implementCourse;
     private List<Course> list;
     
-    public Controller(PanelForm panel) {
+    public CourseController(CoursePanelForm panel) {
         this.panel = panel;
         implementCourse = new CourseDAO();
         list = implementCourse.getAllCourse();

@@ -4,19 +4,19 @@
 
 package View;
 
-import Controller.Controller;
+import Controller.CourseController;
 import javax.swing.JTable;
 import javax.swing.JTextField;
 
-public class PanelForm extends javax.swing.JPanel {
+public class CoursePanelForm extends javax.swing.JPanel {
     
     private static final long serialVersionUID = 1L;
     
-    private final Controller controller;
+    private final CourseController controller;
 
-    public PanelForm() {
+    public CoursePanelForm() {
         initComponents();
-        controller = new Controller(this);
+        controller = new CourseController(this);
         controller.setTabel();
     }
     

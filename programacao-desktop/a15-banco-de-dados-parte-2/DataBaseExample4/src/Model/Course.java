@@ -8,6 +8,8 @@ public class Course{
     
     private int id;
     private String name;
+    
+    // É nesta classe que as operações com os dados devem ser realizadas;
 
     public int getId() {
         return id;
