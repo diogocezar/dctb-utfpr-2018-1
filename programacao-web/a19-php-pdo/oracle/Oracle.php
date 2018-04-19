@@ -9,7 +9,7 @@
 		}
 
 		public function get_item($id = null){
-			$sql   = "SELECT * FROM item";
+			$sql   = "SELECT * FROM php_item";
 			$array = array();
 			if(!empty($id)){
 				$sql .= " WHERE id = ?";
@@ -34,7 +34,7 @@
 		public function save_item($post, $id = null){
 			$array = array();
 			if(empty($id)){
-				$sql = "INSERT INTO `item` (`id`, `name`) VALUES (NULL, ?)";
+				$sql = "INSERT INTO `php_item` (`id`, `name`) VALUES (NULL, ?)";
 				$rs = DataBase::$pdo->prepare($sql);
 				$rs->bindParam(1, $post['name']);
 				try{
@@ -45,7 +45,7 @@
 				}
 			}
 			else{
-				$sql = "UPDATE `item` SET name = ? WHERE id = ?";
+				$sql = "UPDATE `php_item` SET name = ? WHERE id = ?";
 				$rs = DataBase::$pdo->prepare($sql);
 				$rs->bindParam(1, $post['name']);
 				$rs->bindParam(2, $id);
@@ -61,7 +61,7 @@
 		}
 
 		public function delete_item($id){
-			$sql = "DELETE FROM `item` WHERE id = ?";
+			$sql = "DELETE FROM `php_item` WHERE id = ?";
 			$rs = DataBase::$pdo->prepare($sql);
 			$rs->bindParam(1, $id);
 			try{

@@ -10,9 +10,9 @@ public class InsertIntoDatabase {
         
         Class.forName("com.mysql.jdbc.Driver");
         
-        String url = "jdbc:mysql://localhost:3306/items?useUnicode=true&characterEncoding=utf-8";
+        String url = "jdbc:mysql://localhost:3306/utfpr_tests?useUnicode=true&characterEncoding=utf-8";
         
-        String sql = "INSERT INTO item_java (id, name) VALUES (?, ?)";
+        String sql = "INSERT INTO java_item (id, name) VALUES (?, ?)";
        
         con = DriverManager.getConnection(url, "root", "");
         

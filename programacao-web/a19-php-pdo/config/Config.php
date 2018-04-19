@@ -7,7 +7,7 @@
 				'host' => 'localhost',
 				'user' => 'root',
 				'pass' => '',
-				'base' => 'items'
+				'base' => 'utfpr_tests'
 			)
 		);
 	}

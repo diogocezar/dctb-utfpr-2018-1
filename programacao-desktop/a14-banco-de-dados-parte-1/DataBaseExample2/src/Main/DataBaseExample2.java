@@ -9,7 +9,7 @@ public class DataBaseExample2 {
         DataBase db  = new DataBase();
         
         // Exemplo Select
-        ResultSet rs = db.query("SELECT * FROM item_java");
+        ResultSet rs = db.query("SELECT * FROM java_item");
         try {
             while(rs.next()){
                 System.out.println("Id: " + rs.getString("id"));
@@ -20,13 +20,13 @@ public class DataBaseExample2 {
         }
         
         // Exemplo Insert
-        db.execute("INSERT INTO item_java (id, name) VALUES (?, ?)", 4, "Almeida");
+        db.execute("INSERT INTO java_item (id, name) VALUES (?, ?)", 4, "Almeida");
         
         // Exemplo Update
-        db.execute("UPDATE item_java SET name=? WHERE id=?", "Almeida Gomes", 4);
+        db.execute("UPDATE java_item SET name=? WHERE id=?", "Almeida Gomes", 4);
         
         // Exemplo Delete
-        db.execute("DELETE FROM item_java WHERE id=?", 4);
+        db.execute("DELETE FROM java_item WHERE id=?", 4);
         
         db.disconnect();
     }

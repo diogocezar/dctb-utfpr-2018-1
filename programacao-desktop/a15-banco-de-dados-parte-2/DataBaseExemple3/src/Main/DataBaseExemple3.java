@@ -14,11 +14,12 @@ public class DataBaseExemple3 {
         // Exemplo de Inserção
         
         String[] names = {"ADS", "Computação", "Engenharia"};
+        int i = 1;
         
         CourseDAO db = DataBaseExemple3.getCourseDB();
         
         for(String name: names){
-            db.create(name);
+            db.insert(new Course(i++, name));
         }
         
         // Exemplo de Consulta

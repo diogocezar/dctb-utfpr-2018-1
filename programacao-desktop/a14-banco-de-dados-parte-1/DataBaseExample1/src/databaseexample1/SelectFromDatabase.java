@@ -13,9 +13,9 @@ public class SelectFromDatabase {
         
         Class.forName("com.mysql.jdbc.Driver");
         
-        String url = "jdbc:mysql://localhost:3306/items?useUnicode=true&characterEncoding=utf-8";
+        String url = "jdbc:mysql://localhost:3306/utfpr_tests?useUnicode=true&characterEncoding=utf-8";
         
-        String sql = "SELECT * FROM item_java";
+        String sql = "SELECT * FROM java_item";
        
         con = DriverManager.getConnection(url, "root", "");
         stm = con.createStatement();

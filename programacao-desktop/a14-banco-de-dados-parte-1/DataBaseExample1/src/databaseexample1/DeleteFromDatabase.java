@@ -10,9 +10,9 @@ public class DeleteFromDatabase {
         
         Class.forName("com.mysql.jdbc.Driver");
         
-        String url = "jdbc:mysql://localhost:3306/items?useUnicode=true&characterEncoding=utf-8";
+        String url = "jdbc:mysql://localhost:3306/utfpr_tests?useUnicode=true&characterEncoding=utf-8";
         
-        String sql = "DELETE FROM item_java WHERE id=?";
+        String sql = "DELETE FROM java_item WHERE id=?";
        
         con = DriverManager.getConnection(url, "root", "");
         

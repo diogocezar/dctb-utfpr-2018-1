@@ -4,13 +4,13 @@ import Class.Course;
 import java.util.ArrayList;
 
 public interface CourseDAO {
-    public void create(String name);
+    public void insert(Course course);
     
-    public void update(long id, Course course);
+    public void update(Course course);
     
-    public void delete(long id);
+    public void delete(Course course);
     
-    public Course findByName(String name);
+    public Course findByName(Course course);
     
     public ArrayList<Course> getAll();
 }

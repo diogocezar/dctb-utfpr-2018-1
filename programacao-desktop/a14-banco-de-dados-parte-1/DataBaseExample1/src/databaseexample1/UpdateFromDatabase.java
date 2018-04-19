@@ -11,9 +11,9 @@ public class UpdateFromDatabase {
         
         Class.forName("com.mysql.jdbc.Driver");
         
-        String url = "jdbc:mysql://localhost:3306/items?useUnicode=true&characterEncoding=utf-8";
+        String url = "jdbc:mysql://localhost:3306/utfpr_tests?useUnicode=true&characterEncoding=utf-8";
         
-        String sql = "UPDATE item_java SET name=? WHERE id=?";
+        String sql = "UPDATE java_item SET name=? WHERE id=?";
        
         con = DriverManager.getConnection(url, "root", "");
         
