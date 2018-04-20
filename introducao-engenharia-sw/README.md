@@ -1,4 +1,8 @@
-# Intruções Gerais para Escrita dos Textos;
+# Introdução a Engenharia de Software
+
+Olá, este repositório é para organizar as principais informações, recados e instruções para a disciplina de _Introdução a Engenharia de Software_.
+
+## Intruções Gerais para Escrita dos Textos;
 
 Com base nos primeiros textos escritos pela turma, tenho algumas dicas!
 
@@ -14,3 +18,37 @@ Com base nos primeiros textos escritos pela turma, tenho algumas dicas!
 10. Cuidado com a formataço do arquivo: título, sub-título, parágrafos;
 11. Sempre identifique-se em seu trabalho: Nome, Nome da Disciplina, RA;
 12. Tentem ser o mais didáticos o possível, lembre-se sempre, o leitor não tem as mesmas bases de conhecimento que você, por isso, escreva para que qualquer pessoa possa entender o que está sendo dito;
+
+## Instruções Trabalho Git
+
+Para o trabalho do Git, o aluno deve demonstrar os conhecimentos básicos para:
+
+1. Criar uma conta no GitHub;
+2. Fazer o Login com esta conta criada;
+3. Criar um novo repositório chamado _utfpr-hello-world_;
+3. A descrição do repositório deve ser: _Um simples repositório para testar o GitHub_;
+4. O aluno deverá criar o repositório com um README.md e uma licensa (Apache);
+5. Deve-se baixar a versão do Git correspondente para o seu sistema operacional;
+6. Deve-se clonar o repositório criado;
+7. Deve-se inserir um novo arquivo chamado _ATIVIDADE.md_;
+8. Neste arquivo, demonstrar a utilização de: títulos, subtítulos, items e códigos;
+9. Utilizando a sequência de comandos, para enviar a sua atividade:
+
+```
+    git add --all
+    git commit -m "Adicionando um novo arquivo para a Atividade de Git"
+    git push
+```
+
+10. Enviar pelo moodle o link do repositório criado;
+
+## Aqui estão alguns links interessantes
+
+* conheçam o curso que vocês estão matriculados: https://goo.gl/CtMoHh
+* matriz curricular completa: https://goo.gl/qRUKYa
+* pdf coma matriz curricular: https://goo.gl/oM7PZa
+* ementas das disciplinas: https://goo.gl/LGwv1t
+* planos de ensino das disciplinas: https://goo.gl/asXtbt
+* o projeto pedagógico do curso: https://goo.gl/pEXjae
+* infraestrutura do campus: https://goo.gl/6iq5St
+* para os alunos (importante!) https://goo.gl/LKn17Fx

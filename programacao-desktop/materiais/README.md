@@ -21,3 +21,7 @@
 * https://netbeans.org/kb/docs/java/gui-functionality_pt_BR.html
 
 * https://netbeans.org/kb/trails/matisse_pt_BR.html
+
+* Entendendo o serialVersionUID: http://blog.caelum.com.br/entendendo-o-serialversionuid/
+
+* Trabalhando com o Banco de Dados em Java (Derby): https://netbeans.org/kb/docs/ide/java-db_pt_BR.html#configuring
