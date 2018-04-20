@@ -1,0 +1,3 @@
+@mixin font-size-convert($tam){
+    font-size: ($tam/16px)+rem;
+}

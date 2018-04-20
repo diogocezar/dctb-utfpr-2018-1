@@ -1,0 +1,124 @@
+@import "_Ex2";
+@import "_Ex3";
+@import "_Ex4";
+*{
+    margin: $margin0;
+    padding: $margin0;
+    -webkit-box-sizing: $bordBox;
+    -moz-box-sizing: $bordBox;
+    box-sizing: $bordBox;
+}
+
+html {
+    @include font-size-convert($font3);
+}
+ul {
+    padding: 0;
+    margin: $margin0;
+  }
+  
+  img {
+    border: 0;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  body {
+    background: $cor2;
+  }
+  
+  main {
+    width: 90%;
+    max-width: 935px;
+    margin: $margin0 auto;
+  }
+  header {
+    display: flex;
+    margin: 30px 0;
+    flex-flow: column;
+    .avatar{
+        -webkit-border-radius: $raio;
+        -moz-border-radius: $raio;
+        border-radius: $raio;
+        margin: $margin0 auto;
+    }
+    .desc{
+        text-align: center;
+    }
+    h1{
+        @include font-size-convert($font1);
+    }
+    h1,h2{
+        display: inline-block;
+        margin: 10px 0;
+    }
+    h2{
+        @include font-size-convert($font2);
+    }
+    .links{
+        list-style: none;
+        margin: 10px 0;
+        li{
+            list-style: none;
+  margin: 0 20px 0 0;
+  display: inline-block;
+        }
+    }
+  }
+  .btn-follow {
+    @extend .btn1;
+    margin: 0 20px;
+    border-color: $cor1 ;
+    color: $cor1;
+    &:hover {
+        background: $cor1;
+        color: $cor3;
+      }
+  }
+  .photos {
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    display: flex;
+    li {
+        width: $width;
+        margin: 20px 0;
+        position: relative;
+        img {
+            width: $width;
+          }
+          .img-hover {
+            opacity: 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: $width;
+            height: 100%;
+            background: $cor4;
+            transition: all 0.3s linear;
+          }
+        &:hover{
+            .img-hover{
+            opacity: 1;
+            }
+        }
+      }
+  }
+@media (min-width: 768px) {
+    header{
+        flex-flow: row;
+        .avatar {
+            margin: 0 40px;
+        }
+        .desc {
+            text-align: left;
+        }
+    }
+    .photos{
+        li {
+            width: 30%;
+        }
+    }   
+}
