@@ -1,0 +1,17 @@
+.backsvg{
+	background-image: url(img/spiderweb.svg);
+	width: 800px;
+	height: 500px;
+}
+
+.colorsvg{
+	fill: pink;
+}
+
+.sec{
+	display: flex;
+}
+
+#mma:hover{
+	fill: red;
+}
