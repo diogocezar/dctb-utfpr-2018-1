@@ -1,0 +1,141 @@
+/*Contém os Exercícios 1 e 2 e 4*/
+
+@import 'ex2';
+
+* {
+  margin: $margin-size;
+  padding: $padding-size;
+  -webkit-box-sizing: $w-size;
+  -moz-box-sizing: $m-size;
+  box-sizing: $box-size;
+}
+html { 
+  font-size: #{$f-size} / $f-size/$tam-px + rem;
+}
+ul {
+  padding: $padding-size;
+  margin: $margin-size;
+}
+img { 
+  border: $border-size; 
+}
+a { 
+  text-decoration: none;
+}
+body { 
+  background: $back-color;
+}
+main {
+  width: $main-width;
+  max-width: $main-max-width;
+  margin: $main-margin;
+}
+ 
+  header {
+    display: flex;
+    margin: #{$header-margin};
+    flex-flow: column;
+
+    .avatar {
+      -webkit-border-radius: $avatar-w;
+      -moz-border-radius: $avatar-m;
+      border-radius: $avatar-border;
+      margin: $avatar-margin;
+    }
+    
+    .desc { 
+      text-align: center;
+    }
+    
+    h1, h2 {
+      display: inline-block;
+      margin:  $margin-h1eh2;
+    }
+    
+    h1 { 
+      font-size: #{$font-h1} / $font-h1/$tam-px + rem;
+    }
+    
+    h2 { 
+      font-size: #{$font-h2} / $font-h2/$tam-px + rem;
+    }
+    
+    .links {
+      list-style: none;
+      margin: $margin-link;
+    
+      li {
+        list-style: none;
+        margin: $link-li-margin;
+        display: inline-block;
+      }
+    }
+  }
+
+  .btn-follow {
+    margin: $btn-margin;
+    padding: $btn-padding;
+    border-width: $btn-border-width;
+    border-style: solid;
+    border-color: $btn-border-color;
+    color: $btn-color;
+    -webkit-border-radius: $btn-w;
+    -moz-border-radius: $btn-m;
+     border-radius: $btn-border-radius;
+
+     &:hover {
+      background: $btn-hover;
+      color: $btn-hover-color;
+     }
+  }
+
+  .photos {
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    display: flex;
+
+    li {
+      width: $photos-li-w;
+      margin: $photos-li-margin;
+      position: relative;
+      
+      img { 
+        width: $photos-li-img-w;
+      }
+         
+       .img-hover {
+          opacity: $hover-top;
+          position: absolute;
+          top: $hover-top;
+          left: $hover-left;
+          width: $hover-width;
+          height: $hover-height;
+          background: $photos-back;
+          transition: $hover-transition;
+        }
+        &:hover .img-hover{
+            opacity:1;
+        }        
+    }
+  }
+  
+  
+   @media (min-width: $media-width) {
+
+    header { 
+      flex-flow: row;
+  
+      .avatar {  
+        margin: $media-avatar-margin;
+      }
+      
+      .desc {  
+        text-align: left;
+      }
+      
+      .photos li { 
+        width: $media-photos-width;
+      }
+    }
+  }
