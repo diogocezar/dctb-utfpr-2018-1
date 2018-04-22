@@ -1,0 +1,26 @@
+
+.btn {
+  padding: 10px;
+  border-width: 5px;
+  border-style: dotted;
+  -webkit-border-radius: border-radius2;
+  -moz-border-radius: border-radius2;
+  border-radius: border-radius2;
+}
+
+.btn-follow {
+  @extend .btn
+  margin: margin4;
+  padding: padding1;
+  border-width: border-width1;
+  border-style: solid;
+  border-color: #color2;
+  color: #color2;
+  -webkit-border-radius: border-radius2;
+  -moz-border-radius: border-radius2;
+  border-radius: border-radius2;
+  $:hover {
+    background: #color2;
+    color: #color3;
+  }
+}

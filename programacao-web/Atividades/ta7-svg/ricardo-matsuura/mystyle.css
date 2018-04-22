@@ -1,0 +1,25 @@
+.icon{ 
+	background-image: url(./img/background.svg);
+	width: 500px;
+  	height: 500px;
+  	opacity:0.5;
+}
+
+polygon{
+	fill: lime;
+	stroke: #EEDD82;
+	stroke-width: 4;
+}
+
+h2 {
+	color: #FFFFFF;
+}
+
+.img-size {
+	width: 800px;
+	height: 800px;
+}
+
+.hover:hover {
+	fill:cyan;
+}
