@@ -1,0 +1,172 @@
+$color1: #fafafa;
+$color2: #3897f0;
+$color3: #fff;
+$color4: rgba(0, 0, 0, 0.3);
+
+$zero: 0;
+
+$font-size1: 16px;
+$font-size3: 28px;
+$font-size1: 24px;
+
+
+$width1: 90%;
+$width2: 100%;
+$widht3: 30%;
+$max-width1: 935px;
+
+$margin1: 30px 0;
+$margin2: 10px 0;
+$margin3: 0 20px 0 0;
+$margin4: 0 20px;
+$margin5: 20px 0;
+$margin6: 0 40px;
+
+$padding1: 6px 14px;
+$border-width1: 1px;
+
+$border-radius1: 50%;
+$border-radius2: 4px;
+
+$heigh1t: 100%;
+
+$min-width1: 768px;
+
+
+* {
+  margin: zero;
+  padding: zero;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: font-size1;
+}
+
+ul {
+  padding: zero;
+  margin: zero;
+}
+
+img {
+  border: zero;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background: #color1;
+}
+
+main {
+  width: width1;
+  max-width: max-width1;
+  margin: zero auto;
+}
+
+header {
+  display: flex;
+  margin: margin1;
+  flex-flow: column;
+  .avatar {
+    -webkit-border-radius: border-radius1;
+    -moz-border-radius: border-radius1;
+    border-radius: border-radius1;
+    margin: zero auto;
+  }
+  .desc {
+    text-align: center;
+  }
+  h1, h2 {
+  display: inline-block;
+  margin: margin2;
+  }
+  h1 {
+  font-size: font-size2;
+  }
+  h2 {
+  font-size: font-size3;
+  }
+  .links {
+    list-style: none;
+    margin: margin2;
+    li {
+      list-style: none;
+      margin: margin3;
+      display: inline-block;
+    }
+  }
+
+}
+
+
+.btn-follow {
+  margin: margin4;
+  padding: padding1;
+  border-width: border-width1;
+  border-style: solid;
+  border-color: #color2;
+  color: #color2;
+  -webkit-border-radius: border-radius2;
+  -moz-border-radius: border-radius1;
+  border-radius: border-radius1;
+  $:hover {
+    background: #color2;
+    color: #color3;
+  }
+}
+
+.photos {
+  list-style: none;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  display: flex;
+  li {
+    width: 100%;
+    margin: margin5;
+    position: relative;
+    .img-hover {
+      opacity: zero;
+      position: absolute;
+      top: zero;
+      left: zero;
+      width: width2;
+      height: height1;
+      background: color4;
+      transition: all 0.3s linear;
+    }
+    img {
+      width: width2;
+    }
+    $:hover {
+      .img-hover {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+
+@media (min-width: min-width1) {
+
+  header {
+    flex-flow: row;
+  }
+
+  header .avatar {
+    margin: margin6;
+  }
+
+  header .desc {
+    text-align: left;
+  }
+
+  .photos li {
+  	  width: width3;
+  }
+
+}
