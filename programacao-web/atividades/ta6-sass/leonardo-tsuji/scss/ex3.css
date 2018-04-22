@@ -1,0 +1,12 @@
+  .btn-follow {
+    padding: $btn-padding;
+    border-width: $btn-border-width;
+    border-style: solid;
+    border-radius: $btn-border-radius;
+    
+    &:hover {
+      @extend .btn-follow;
+      background: $btn-hover;
+      color: $btn-hover-color;
+     }
+  }
