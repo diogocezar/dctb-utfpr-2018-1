@@ -1,0 +1,166 @@
+
+@import 'ex2.sass';
+  
+  @mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+@mixin border-sizing($sizing) {
+  -webkit-border-sizing: $sizing;
+     -moz-border-sizing: $sizing;
+      -ms-border-sizing: $sizing;
+          border-sizing: $sizing;
+}
+
+
+
+* {
+  margin: $zero;
+  padding: $zero;
+  @include border-sizing (border-box);
+}
+
+html {
+  font-size: htmlFont;
+}
+
+ul {
+  padding: $zero;
+  margin: $zero;
+}
+
+img {
+  border: $zero;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background: $backgroundBody;
+}
+
+main {
+  width: $widthMain;
+  max-width: $max-widthMain;
+  margin: $zero;
+}
+
+header {
+
+  display: flex;
+  margin: $marginHeader $zero;
+  flex-flow: column;
+
+    .avatar {
+    @include border-radius (50%);
+    margin: $zero auto;
+    }
+
+    .desc {
+    text-align: center;
+    }
+
+    h1, h2 {
+    display: inline-block;
+    margin: $margin_h1_h2_link 0;
+    }
+
+    h1 {
+    font-size: $h1Font;
+    }
+
+    h2 {
+    font-size: $h2Font;
+    }
+
+    .links {
+    list-style: none;
+    margin: $margin_h1_h2_link $zero;
+    
+
+      li {
+      list-style: none;
+      margin: $zero $margin_link_li-btn-photo $zero $zero;
+      display: inline-block;
+      }
+  }
+}
+.btn {
+    padding: 0.375rem 0.875rem;
+    border-width: 0.0625rem;
+    border-style: solid;
+    border-color: $color-btn;
+    @include border-radius (4px); 
+    }
+
+.btn-follow {
+    @extend .btn;
+    margin: $zero $margin_link_li-btn-photo;
+    color: $color-btn;
+  
+    :hover {
+    background: $backgroundHover;
+    color: $colorHover;
+    }
+
+}
+
+
+.photos {
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    display: flex;
+
+
+    li {
+      width: $heightWidthPhotosLi;
+      margin: $margin_link_li-btn-photo $zero;
+      position: relative;
+      
+
+      img {
+      width: $heightWidthPhotosLi;
+      }
+
+      .img-hover {
+      opacity: $zero;
+      position: absolute;
+      top: $zero;
+      left: $zero;
+      width: $heightWidthPhotosLi;
+      height: $heightWidthPhotosLi;
+      background: rgba(0, 0, 0, 0.3);
+      transition: all 0.3s linear;
+      }
+
+      :hover .img-hover {
+      opacity: 1;
+      }
+    }
+}
+
+@media (min-width: $min-width ) {
+
+  header {
+    flex-flow: row;
+  
+
+    .avatar {
+      margin: $zero $marginHAvatarMedia;
+    }
+
+    .desc {
+      text-align: left;
+    }
+  }
+  .photos li {
+  	  width: $photoLiMedia;
+  }
+
+}
