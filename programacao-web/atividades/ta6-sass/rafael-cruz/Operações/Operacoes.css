@@ -1,0 +1,15 @@
+body {font-size:100%;}
+
+html {
+  font-size: 16px;
+  font-size:calc(16 / 16);
+}
+header h1 {
+  font-size: 28px;
+  font-size:calc(28 / 16);
+}
+
+header h2 {
+  font-size: 24px;
+  font-size:calc(24 / 16);
+}

@@ -1,0 +1,32 @@
+.padding{
+padding: 6px 14px;
+color: #3897f0;
+}
+.border-width{
+border-width: 1px;
+border-color: #3897f0;
+color: #3897f0;
+}
+.border-style{
+border-style: solid;
+border-color: #3897f0;
+color: #3897f0;
+}
+.border-radius{
+border-color: #3897f0;
+color: #3897f0;
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+border-radius: 4px;
+}
+
+.btn-follow {
+margin: 0 20px;
+@extend .paddind;
+@extend .border-width;
+@extend .border-style;
+@extend .radius;
+
+.btn-follow:hover {
+  background: #3897f0;
+  color: #fff;

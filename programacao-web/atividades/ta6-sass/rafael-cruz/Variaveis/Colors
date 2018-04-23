@@ -1,0 +1,11 @@
+$main-color: #fafafa
+$borda-color:#3897f0
+
+body{
+	backhround: $main-color;
+}
+
+border-color{
+	$borda-color;
+	background: $borda-color;
+}
