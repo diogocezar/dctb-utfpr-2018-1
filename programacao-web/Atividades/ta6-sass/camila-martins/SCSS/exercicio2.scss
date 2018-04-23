@@ -1,0 +1,19 @@
+$margin: 30px ; 
+$bg-color: #ff1;
+$font-size: 16px;
+$color: #000;
+$bg-section: rgba(255, 255, 255, 0.89);
+$width: 90%;
+
+html{
+    font-size: $font-size;
+    color: $color;
+}
+body{
+    background: $bg-color;
+}
+section{
+    width: $width;
+    background: $bg-section;
+    margin: $margin;
+}
