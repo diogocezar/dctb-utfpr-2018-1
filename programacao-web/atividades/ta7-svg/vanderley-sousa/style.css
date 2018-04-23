@@ -1,0 +1,87 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    background: fixed;
+    background-image: url('img/Ubuntu_alternative_background.svg');
+    background-size: 100% 100%;
+}
+
+#gridprodutos{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#itemproduto{
+    max-width: 265px;
+    background-color: #FFF;
+    padding: 5px;
+    margin: 5px;
+}
+
+#itemproduto h4{
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #FFF;
+    text-align: center;
+    background-color:slateblue;
+    padding: 5px; 
+    border-radius: 2px;
+}
+
+#itemproduto h5{
+    margin-top: 5px;
+    font-size: 12px;
+    text-align: center;
+}
+
+#itemproduto img{
+    width: 100%;
+    min-width: 200px;
+    max-height: 250px;
+    margin:0 auto;
+}
+
+#itemproduto svg{
+    width: 100%;
+    min-width: 200px;
+    max-height: 250px;
+    margin:0 auto;
+}
+
+#itemproduto button{
+    width: 100%;
+    margin:0 auto;
+}
+
+#formgeo{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+#formgeo svg .ceu{
+    transition-property: fill;
+    transition-duration: 0.5s;
+}
+
+#formgeo svg .ceu:hover{
+    fill: #045FB4;
+    transition-property: fill;
+    transition-duration: 0.5s;
+}
+
+#formgeo svg .sol{
+    transition-property: fill;
+    transition-duration: 0.5s;
+}
+
+#formgeo svg .sol:hover{
+    fill:white;
+    transition-property: fill;
+    transition-duration: 0.5s;
+}
