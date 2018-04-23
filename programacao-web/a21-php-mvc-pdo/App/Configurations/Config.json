@@ -1,0 +1,11 @@
+{
+	"config": {
+		"database" : {
+			"type" : "mysql",
+			"host" : "localhost",
+			"user" : "root",
+			"pass" : "123qwepanaca",
+			"base" : "items"
+		}
+	}
+}

@@ -1,0 +1,11 @@
+{
+	"config": {
+		"database" : {
+			"type" : "",
+			"host" : "",
+			"user" : "",
+			"pass" : "",
+			"base" : ""
+		}
+	}
+}
