@@ -1,0 +1,12 @@
+.btn, .btn-follow {
+  padding: 6px 14px;
+  border-width: 1px;
+  border-style: solid;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px; }
+
+.btn-follow {
+  margin: 0 20px;
+  border-color: #3897f0;
+  color: #3897f0; }

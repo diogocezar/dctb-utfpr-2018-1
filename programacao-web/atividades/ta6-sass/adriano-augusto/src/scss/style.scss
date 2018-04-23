@@ -1,0 +1,187 @@
+
+/*
+ * Exercícios 1, 2, 3, 4 da Atividade - ta6-sass.
+ */
+
+/*
+ * Definição das variáveis para cores e medidas
+ */
+
+$color_background: #fafafa;
+$btn_hover_background: #3897f0;
+$btn_hover_color: #fff;
+$avatar_border_radius: 50%;
+$font_size_h1: 28;
+$btn_border_color: #3897f0;
+$btn_color: #3897f0;
+$btn_border_radius: 4px;
+$width: 100%;
+$height: 100%;
+$padding: 0;
+$margin: 0;
+$border: 0;
+
+
+/*
+ * Cria um estilo para botões que contenham: Padding; Border width; Border style e Border radius.
+ */
+.btn_follow_style {
+  margin: $margin 20px;
+  border-style: solid;
+  border-width: 1px;
+  padding: 6px 14px;
+  -webkit-border-radius: $btn_border_radius;
+  -moz-border-radius: $btn_border_radius;
+  border-radius: $btn_border_radius;
+  color: $btn_color;
+  border-color: $btn_color;
+}
+
+
+/*
+ * Converte todos os font-size do estilo de pixel para rem utilizando A diretiva @function
+ */
+
+ @function rem($px) {
+  @return ($px/16) + rem;
+}
+
+
+* {
+  margin: $margin;
+  padding: $padding;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: rem($font_size_h1 - 2);
+}
+
+ul {
+  padding: $padding;
+  margin: $margin;
+  li {
+
+  a {
+  text-decoration: none;}
+  }
+}
+
+img {
+  border: $border;
+}
+
+body {
+  background: $color_background;
+}
+
+main {
+  width: $width - 10;
+  max-width: 935px;
+  margin: $margin auto;
+}
+
+header {
+  display: flex;
+  margin: 30px $margin;
+  flex-flow: column;
+
+  .avatar {
+  -webkit-border-radius: $avatar_border_radius;
+  -moz-border-radius: $avatar_border_radius;
+  border-radius: $avatar_border_radius;
+  margin: $margin auto;
+  }
+
+  h1 {
+  display: inline-block;
+  margin: 10px $margin;
+  font-size: rem($font_size_h1);
+  }
+
+  h2 {
+  display: inline-block;
+  margin: 10px $margin;
+  font-size: rem($font_size_h1 - 4);
+   }
+  }
+
+header .desc {
+  text-align: center;
+}
+
+header .links {
+  list-style: none;
+  margin: 10px $margin;
+}
+
+header .links li {
+  list-style: none;
+  margin: $margin 20px $margin $margin;
+  display: inline-block;
+}
+
+.btn-follow {
+  @extend .btn_follow_style;
+}
+
+.btn-follow:hover {
+  background: $btn_color;
+  color: #fff;
+}
+
+.photos {
+  list-style: none;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  display: flex;
+}
+
+.photos li {
+  width: $width;
+  margin: 20px $margin;
+  position: relative;
+}
+
+.photos li img {
+  width: $width;
+}
+
+.photos li .img-hover {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: $width;
+  height: $height;
+  background: rgba(0, 0, 0, 0.3);
+  transition: all 0.3s linear;
+}
+
+.photos li:hover .img-hover {
+  opacity: 1;
+}
+
+
+@media (min-width: 768px ) {
+
+  header {
+    flex-flow: row;
+  }
+
+  header .avatar {
+    margin: $margin 40px;
+  }
+
+  header .desc {
+    text-align: left;
+  }
+
+  .photos li {
+      width: $width - 70;
+  }
+
+}
+
