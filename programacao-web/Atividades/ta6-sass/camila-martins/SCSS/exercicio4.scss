@@ -1,0 +1,9 @@
+@function convertPxToRem($tam){
+    @return($tam / 16)+rem;
+}
+
+$fontSize : convertPxToRem(32);
+
+p{
+    font: #{$fontSize};
+}
