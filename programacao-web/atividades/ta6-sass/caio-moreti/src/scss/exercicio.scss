@@ -1,0 +1,180 @@
+@mixin border-size($size) {
+	-webkit-box-sizing: $size;
+	-moz-box-sizing: $size;
+	box-sizing: $size;
+}
+
+@mixin border-radius($val){
+	-webkit-border-radius: $val;
+  	-moz-border-radius: $val;
+	border-radius: $val;
+}
+
+@mixin conversao($font-size){
+	font-size :($font-size/16px)rem;
+}
+
+$tamanho-fonte : 16px;
+$decor-texto : none;
+$branco : #fafafa;
+$largura-main : 90%;
+$compr-main : 935px;
+$margin-header: 30px;
+$flex-flow : column;
+$font-h1 : 28px;
+$font-h2 : 24px;
+$btn-color: #3897f0;
+$background-img: rgba(0, 0, 0, 0.3);
+$margin-h1h2: 10px;
+$margin-links: 10px;
+$margin-btn: 20px; 
+$padding-btn: 6px 14px;
+$min-width: 768px;
+
+* {
+	margin: 0;
+	padding: 0;
+	@include border-size(border-box); 
+}
+
+
+ html {
+	@include conversao($tamanho-fonte);
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+}
+
+img {
+	border: 0;
+}
+
+a {
+	text-decoration: $decor-texto;
+}
+
+body {
+	background: $branco;
+}
+
+main {
+	width: $largura-main;
+	max-width: $compr-main;
+	margin: 0 auto;
+}
+
+header {
+	display: flex;
+  	margin: $margin-header 0;
+  	flex-flow: $flex-flow;
+
+  	.avatar{
+  		@include border-radius(50%);
+  		margin: 0 auto;
+  	}
+
+  	.desc{
+  		text-align: center;
+   	}
+
+  	h1,h2{
+  		display: inline-block;
+  		margin: $margin-h1h2 0;
+  	}
+
+  	h1 {
+  		@include conversao($font-h1);
+	}
+
+  	h2 {
+    	@include conversao($font-h2);
+  	}
+
+  	.links{
+  		list-style: none;
+  		margin: $margin-links 0;
+
+  		li{
+  			list-style: none;
+  			margin: 0 ($margin-links*2) 0 0;
+  			display: inline-block;
+  		}
+  	}
+}
+
+.estilo-botao{
+	padding: $padding-btn;
+  	border-width: 1px;
+  	border-style: solid;
+  	@include border-radius(4px);
+}
+
+.btn-follow {
+  	margin: 0 $margin-btn;
+  	border-color: $btn-color;
+  	color: $btn-color;
+  	@extend .estilo-botao;
+ 	
+
+  	:hover{
+  		background: $btn-color;
+  		color: $branco;
+  	}
+}
+
+.photos {
+  	list-style: none;
+  	flex-wrap: wrap;
+  	justify-content: space-between;
+  	display: flex;
+
+  	li {
+  		width: 100%;
+  		margin: 20px 0;
+ 		position: relative;
+
+  		img {
+  			width: 100%;
+  		}
+
+  		.img-hover {
+  			opacity: 0;
+  			position: absolute;
+  			top: 0;
+  			left: 0;
+  			width: 100%;
+  			height: 100%;
+  			background: $background-img;
+  			transition: all 0.3s linear;
+  		}
+
+  		:hover .image-hover{
+  			opacity: 1;
+  		}
+  	}
+}
+
+@media (min-width: 768px ) {
+
+	header {
+    	flex-flow: row;
+  	}
+
+  	header .avatar {
+    	margin: 0 40px;
+  	}
+
+  	header .desc {
+    	text-align: left;
+  	}
+
+  	.photos li {
+  	 	width: 30%;
+  	}
+
+}
+
+
+
