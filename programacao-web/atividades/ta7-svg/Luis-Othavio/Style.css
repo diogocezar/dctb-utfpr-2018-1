@@ -1,0 +1,42 @@
+.icon{
+  background-image: url(img/59.svg);
+  max-width: 1400px;
+  margin: auto;
+  padding-top: 40%;
+}
+
+.body {
+
+  background-color: grey;
+}
+
+.container {
+  max-width: 700px;
+  margin: auto;
+  height: 0;
+  padding-top: 5%;
+  position: relative;
+}
+
+.svg-responsive {
+  margin: auto;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.poligono{
+  fill: blue;
+  stroke: black;
+}
+
+.instagram{
+  transition: 200ms;
+  transition-timing-function: ease-in-out;
+  -webkit-transition: 200ms;
+  -webkit-transition-timing-function: ease-in-out;
+}
+
+svg:hover #instagram{
+  fill: black;
+}
