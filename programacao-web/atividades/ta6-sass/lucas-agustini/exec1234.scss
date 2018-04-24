@@ -1,0 +1,167 @@
+
+/*Atividade 07 - exec 1 2 3 4*/
+
+/*2*/
+$font-size-medium: 18px;
+$font-size-big-1: 24px;
+$font-size-big-2: 28px;
+
+$back-color-1: #fafafa;
+$border-color-1: #3897f0;
+
+$width-main: 90%;
+$margin-padrao: 0;
+$avatar-border-radius: 50%
+
+/*4*/
+@mixin convert($font){
+	font-size: ($font/16px)rem;
+}
+
+
+* {
+  margin: margin-padrao;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+	/* font-size: font-size-medium;*/
+	@include convert($font-size-medium);
+}
+
+ul {
+	padding: 0;
+	margin: margin-padrao;
+}
+
+img {
+	border: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background: back-color-1;
+}
+
+main {
+  width: width-main;
+  max-width: 935px;
+  margin: 0 auto;
+}
+/*1*/
+header {
+    display: flex;
+    margin: 30px 0;
+    flex-flow: column;  
+    .avatar {
+        -webkit-border-radius: avatar-border-radius;
+        -moz-border-radius: avatar-border-radius;
+        border-radius: avatar-border-radius;
+        margin: 0 auto ;
+    }
+    .desc {
+        text-align: center ;
+    }
+    h1,h2 {
+        display: inline-block;
+        margin:10px 0;
+    }
+    h1 {
+        /*font-size: font-size-big-1;*/
+        @include convert($font-size-big-1);
+    }
+    h2 {
+       /* font-size: font-size-big-2;*/ 
+       @include convert($font-size-big-2);
+    }
+    .links {
+        list-style: none;
+        margin: 10px 0;
+        li {
+            list-style: none;
+            margin: 0 20px 0 0 ;
+            display: inline-block;
+        }
+    }
+}
+
+/*3*/
+.btn {
+	padding: 6px 14px;
+	border-width: 1px;
+	border-style: solid;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+.btn-follow {
+	@extend .btn;
+	margin: 0 20px;
+	border-color: border-color-1;
+	color: #3897f0;
+}
+
+.btn-follow:hover {
+	background: #3897f0;
+	color: #fff;
+}
+
+.photos {
+	list-style: none;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	display: flex;
+}
+
+.photos li {
+	width: 100%;
+	margin: 20px 0;
+	position: relative;
+}
+
+.photos li img {
+	width: 100%;
+}
+
+.photos li .img-hover {
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.3);
+	transition: all 0.3s linear;
+}
+
+.photos li:hover .img-hover {
+	opacity: 1;
+}
+
+
+@media (min-width: 768px ) {
+
+  header {
+    flex-flow: row;
+  }
+
+  header .avatar {
+    margin: 0 40px;
+  }
+
+  header .desc {
+    text-align: left;
+  }
+
+  .photos li {
+  	  width: 30%;
+  }
+
+}
