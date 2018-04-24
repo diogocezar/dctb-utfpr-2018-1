@@ -1,0 +1,68 @@
+html{
+    font-family: 'Roboto', sans-serif;
+}
+.home{
+    padding-top:2%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 80%;
+    box-shadow: -2px -3px 20px 3px rgba(17, 8, 8, 0.384);
+}
+.icon{ 
+    background-image: url(https://duffy.fedorapeople.org/art/f15/sky-background.svg);
+    width: 600px;
+    height: 300px;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+   
+}
+.iamgem{
+    box-shadow: -2px -3px 20px 3px rgba(17, 8, 8, 0.384);
+}
+.imagem img{ 
+    margin:0;
+    width: 400px;
+    height: 400px;
+}
+rect{
+    fill: darkgoldenrod;
+    stroke: darkgoldenrod;
+}
+circle{
+    fill: coral;
+    stroke: coral;
+}
+line {
+    stroke: blue;
+}
+
+polygon{
+    fill: crimson;
+    stroke : black;
+}
+
+.h:hover{
+    fill: crimson;
+}
+.conteiner{
+    display: flex;
+    justify-content:center;
+    flex-wrap: column wrap;
+    position: relative;
+    align-content: center;
+    margin-top: 20px;
+}
+.part{
+    flex-wrap: wrap;
+    float: left;
+    margin: 1%;
+    padding: 1%;
+    align-self: flex-start;
+    flex-direction: column;
+    height: 250px;
+    box-shadow: -2px -3px 20px 3px rgba(17, 8, 8, 0.384);
+}
