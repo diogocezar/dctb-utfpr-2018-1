@@ -1,0 +1,30 @@
+.icon{
+    width: 500px;
+    height: 500px;
+    background-image: url(./img/leaves_doily.svg);
+}
+
+.container{
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.container2{
+    max-width: 100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.polygon{
+    fill: purple;
+    stroke: black;
+}
+
+.color{
+    fill:#475993;
+}
+
+.color:hover{
+    fill: orange;
+}
