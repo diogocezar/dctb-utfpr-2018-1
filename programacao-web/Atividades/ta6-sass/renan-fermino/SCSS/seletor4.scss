@@ -1,0 +1,12 @@
+@function conversorPixelParaRem($tamanho){
+    
+    $calculo: $tamanho/16;
+    
+    @return #{$calculo}rem;
+}
+
+
+p{
+    
+    font: conversorPixelParaRem(32);
+}
