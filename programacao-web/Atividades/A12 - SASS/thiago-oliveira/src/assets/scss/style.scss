@@ -1,0 +1,134 @@
+/////VARIAVEIS//////
+
+//cores//
+$white: #fafafa
+$blue: #3897f0
+$gray: rgba(0, 0, 0, 0.3)
+
+//medidas//
+$w100: 100%
+$w90: 90%
+$w30: 30%
+$h100: 100%
+$container: 935px
+
+//////MIXINS///////
+@mixin border-box()
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+ 
+@mixin border-radius($valor)
+  -webkit-border-radius: $valor
+  -moz-border-radius: $valor
+  border-radius: $valor
+  
+  
+  
+@mixin convertPxToRem($px)
+  return $px/16
+    
+    
+//////EXTEND///////
+.btn-follow-style
+  padding: 6px 14px
+  border-width: 1px
+  border-style: solid
+  border-color: $blue
+  color: $blue
+  @include border-radius(4px)
+
+*
+  @include border-box()
+  margin: 0
+  padding: 0
+html
+  @include convertPxToRem(16)
+
+ul
+  padding: 0
+  margin: 0
+
+img
+  border: 0
+
+a
+  text-decoration: none
+
+body
+  background: $white
+
+main
+  width: w90
+  max-width: $container
+  margin: 0 auto
+
+header
+  display: flex
+  margin: 30px 0
+  flex-flow: column
+  .avatar
+    @include border-radius(50%)
+    margin: 0 auto
+  .desc
+    text-align: center
+  h1
+    display: inline-block
+    margin: 10px 0
+
+h2
+  display: inline-block
+  margin: 10px 0
+
+header
+  h1
+    font-size: 28px
+  h2
+    font-size: 24px
+  .links
+    list-style: none
+    margin: 10px 0
+    li
+      list-style: none
+      margin: 0 20px 0 0
+      display: inline-block
+
+      
+.btn-follow
+  margin: 0 20px
+  &:hover
+    background: $blue
+    color: $white
+
+.photos
+  list-style: none
+  flex-wrap: wrap
+  justify-content: space-between
+  display: flex
+  li
+    width: w100
+    margin: 20px 0
+    position: relative
+    img
+      width: w100
+    .img-hover
+      opacity: 0
+      position: absolute
+      top: 0
+      left: 0
+      width: w100
+      height: h100
+      background: $gray
+      transition: all 0.3s linear
+    &:hover .img-hover
+      opacity: 1
+
+@media (min-width: 768px)
+  header
+    flex-flow: row
+    .avatar
+      margin: 0 40px
+    .desc
+      text-align: left
+  .photos li
+    width: w30
