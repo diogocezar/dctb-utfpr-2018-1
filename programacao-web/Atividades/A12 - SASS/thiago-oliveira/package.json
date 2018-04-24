@@ -1,0 +1,16 @@
+{
+  "name": "gulp-begin",
+  "version": "1.0.0",
+  "description": "just-4fun",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test  specified\" && exit 1"
+  },
+  "author": "Thiago Oliveira",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^4.0.1"
+  }
+}
