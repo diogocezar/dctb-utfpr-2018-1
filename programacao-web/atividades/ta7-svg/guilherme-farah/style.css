@@ -3,3 +3,12 @@
     height: 288px;;
     background-image: url(./433-github.svg); 
 }
+
+.poligono{
+    stroke: lime;
+    fill: yellow;
+}
+
+.git:hover{
+    fill:red;
+}
