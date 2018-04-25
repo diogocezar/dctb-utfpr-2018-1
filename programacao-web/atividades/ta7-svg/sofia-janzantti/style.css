@@ -1,0 +1,13 @@
+.background{ 
+    width: 496px;
+    height: 288px;;
+    background-image: url(./back.svg); 
+}
+
+.poligono{
+    fill: rgb(0, 0, 0);
+}
+
+.img:hover{
+    fill:blueviolet;
+}

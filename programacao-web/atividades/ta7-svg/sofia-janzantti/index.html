@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <title>SVG</title>
+
+    <link href="./style.css" rel="stylesheet">
+  </head>
+
+  <body>
+    
+    <center>
+      <h2>Imagem</h2>
+      <img src="./postcard3.svg" alt "Space"/>
+
+      <h2>Backgroung</h2>
+      <div class = "background"></div>
+
+      <h2>SVG como código inliner</h2>
+      
+
+        <svg xmlns="http://www.w3.org/2000/svg" width="150" height="150" viewBox="0 0 47.25 38.25">
+            <path d="M10.734 20.435">
+            </path>
+            <path  class="img"  fill="#1D1D1B" d="M33.762 13.17c-.036-5.59-4.613-10.107-10.201-10.071-5.59.036-10.108 4.612-10.072 10.202.009 1.455.33 2.837.892 4.084h-.002l9.407 20.57 9.14-20.689h-.002c.546-1.255.847-2.641.838-4.096zm-10.086 7.844c-4.289.027-7.801-3.439-7.829-7.729-.027-4.288 3.439-7.801 7.729-7.829 4.289-.027 7.801 3.44 7.829 7.729.027 4.29-3.441 7.801-7.729 7.829z">
+            </path>
+        </svg>
+
+
+
+      <section>
+        <h2>Retângulo</h2>
+        <svg>
+          <rect class="img" width="150" height="100" />
+        </svg>
+
+        <h2>Círculo</h2>
+        <svg>
+          <circle class="img" r="25" cx="150" cy="70" />
+        </svg>
+
+        <h2>Linha</h2>
+        <svg>
+            <line x1="15" y1="15" x2="500" y2="10" stroke="#000" stroke-width="4"/>
+        </svg>
+
+        <h2>Polígono</h2>
+        <svg>
+          <polygon class="poligono img" points="35,80 30,10 100,5 125,30 125,80 100,105 50,105" stroke-width="0"/>
+        </svg>
+
+      </section>
+    </center>
+
+  </body>
+</html>
