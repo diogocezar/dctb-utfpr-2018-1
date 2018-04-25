@@ -1,0 +1,58 @@
+
+    .cloud{
+        background-image: url(../img/a-cloud.svg);
+        background-color: aqua;
+        width: 100%;
+        height: 20vh;
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+
+    svg {
+        width: 200px;
+        height: 200px;
+        cursor: pointer;
+    }
+
+    @-webkit-keyframes rotate {
+        from {
+            -webkit-transform: rotate(0deg)
+        }
+        to {
+            -webkit-transform: rotate(360deg);
+        }
+    }
+
+    .cor1 {
+        fill: #3F51B5;
+        transition: all 0.5s linear;
+        -webkit-transition: all 0.5s linear;
+    }
+
+    .cor2 {
+        fill: #B3E5FC;
+    }
+
+    svg:hover .cor1 {
+        fill: black;
+    }
+
+    svg:hover .cor2 {
+        -webkit-animation-name: rotate;
+        -webkit-animation-duration: 0.5s;
+        -webkit-animation-timing-function: ease-in-out;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-direction: alternate;
+        transform-origin: center center;
+    }
+
+    .color{
+        fill: transparent;
+        stroke:green;
+
+    }
