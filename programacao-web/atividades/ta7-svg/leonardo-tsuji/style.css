@@ -1,0 +1,17 @@
+body{
+		background-image: url(images/wall.svg);
+
+}	
+
+h2{
+	color: white;
+}
+
+svg:hover .cor2{
+	fill: red;
+	transition: all 0.3s linear;
+}
+
+svg .cor0{
+	fill: yellow;
+}
