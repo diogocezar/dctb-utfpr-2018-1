@@ -1,0 +1,11 @@
+.circulo:hover {
+	fill: #4D4DFF;
+	stroke: #FF0000;
+}
+
+.retangulo {
+	fill: #4D4DFF;
+	stroke: #FFFF33;
+	stroke-width:10;
+}
+           
