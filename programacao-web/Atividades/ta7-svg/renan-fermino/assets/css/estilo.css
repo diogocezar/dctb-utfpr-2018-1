@@ -1,0 +1,48 @@
+.icon{ 
+    background-image: url('https://duffy.fedorapeople.org/art/f18/nebula/spericalcow3.svg');
+    width: 600px;
+    height: 300px;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+   
+}
+.iamgem{
+    box-shadow: -2px -3px 20px 3px rgba(17, 8, 8, 0.384);
+}
+.imagem img{ 
+    margin:0;
+    width: 400px;
+    height: 400px;
+}
+rect{
+    fill: rgb(74, 213, 238);
+    stroke: rgb(11, 80, 184);
+}
+circle{
+    fill: rgb(196, 43, 170);
+    stroke: rgb(196, 47, 163);
+}
+line {
+    stroke: blue;
+}
+
+polygon{
+    fill: rgb(69, 243, 0);
+    stroke : black;
+}
+
+.hoverson:hover{
+    fill: rgb(37, 247, 9);
+    stroke : black;
+}
+
+.alinhamento{
+    flex-wrap: wrap;
+    float: left;
+    margin: 1%;
+    padding: 1%;
+    align-self: flex-start;
+    flex-direction: column;
+    height: 250px;
+}
