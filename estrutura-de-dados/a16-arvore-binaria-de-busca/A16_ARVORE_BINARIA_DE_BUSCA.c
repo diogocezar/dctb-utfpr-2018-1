@@ -9,8 +9,8 @@
 #include <stdlib.h>
 
 typedef struct BinarySearchTree{
-	int value;
-	struct BinarySearchTree * left;
+    int value;
+    struct BinarySearchTree * left;
     struct BinarySearchTree * right;
 } BinarySearchTree;
 
@@ -88,7 +88,7 @@ BinarySearchTree * removeNode(BinarySearchTree * bst, int value){
             free(aux);
         }
         else{
-			BinarySearchTree * aux = bst->right;
+            BinarySearchTree * aux = bst->right;
             while(aux->left != NULL)
                 aux = aux->left;
             bst->value = aux->value;
