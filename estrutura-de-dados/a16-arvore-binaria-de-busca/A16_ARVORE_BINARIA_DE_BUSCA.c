@@ -102,7 +102,7 @@ BinarySearchTree * removeNode(BinarySearchTree * bst, int value){
 
 int main(){
     BinarySearchTree * bst;
-	bst = create();
+    bst = create();
     bst = insert(bst, 50);
     bst = insert(bst, 1);
     bst = insert(bst, 23);
