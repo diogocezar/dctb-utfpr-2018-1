@@ -15,11 +15,11 @@ typedef struct BinarySearchTree{
 } BinarySearchTree;
 
 BinarySearchTree * create(){
-	return NULL;
+    return NULL;
 }
 
 int isEmptyTree(BinarySearchTree * bst){
-	return (bst == NULL);
+    return (bst == NULL);
 }
 
 BinarySearchTree * insert(BinarySearchTree * bst, int value){
@@ -39,10 +39,10 @@ BinarySearchTree * insert(BinarySearchTree * bst, int value){
 }
 
 void printTree(BinarySearchTree * bst){
-	if(!isEmptyTree(bst)){
-		printTree(bst->left);
-		printf("%d\n", bst->value);
-		printTree(bst->right);
+    if(!isEmptyTree(bst)){
+        printTree(bst->left);
+        printf("%d\n", bst->value);
+        printTree(bst->right);
     }
 }
 
@@ -58,10 +58,10 @@ BinarySearchTree * search(BinarySearchTree * bst, int value){
 }
 
 BinarySearchTree * freeTree(BinarySearchTree * bst){
-	if(!isEmptyTree(bst)){
-		freeTree(bst->left);
-		freeTree(bst->right);
-		free(bst);
+    if(!isEmptyTree(bst)){
+        freeTree(bst->left);
+        freeTree(bst->right);
+        free(bst);
     }
     return NULL;
 }
@@ -89,8 +89,8 @@ BinarySearchTree * removeNode(BinarySearchTree * bst, int value){
         }
         else{
 			BinarySearchTree * aux = bst->right;
-			while(aux->left != NULL)
-				aux = aux->left;
+            while(aux->left != NULL)
+                aux = aux->left;
             bst->value = aux->value;
             aux->value = value;
             bst->right = removeNode(bst->right, value);
