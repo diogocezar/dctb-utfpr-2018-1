@@ -1,0 +1,286 @@
+/*
+** Matheus Ferreira Flausino        1582623
+**
+** Esse arquivo contem todos os estilos do site, tamanhos de fonte, cor entre outras propriedades que pode ser modificadas com CSS
+** Como o Link está corrompido (https://fonts.google.com/specimen/Droid+Serif)
+** Para os paragrafos foi utilizado a fonte Times New Roman
+** Seguindo a proposta do trabalho que é a utilização de duas fontes
+*/
+
+h2, h3, h4 {
+    margin-top: 0;
+}
+body{
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+}
+
+p{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.navbar{
+    background-color: #223843;
+    color: #f1f7ee;
+}
+.navbar ul li {
+    display: inline;
+    float: none;
+}
+
+.navbar ul li a {
+    display: inline-block;
+}
+
+#home, #produtos, .footer{
+    background-color: #b0bea9;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.box-title .title{
+    font-size: 1.8em;
+    color: #f1f7ee;
+    font-style: italic;
+}
+
+.box-title .featured{
+    display: block;
+    font-size: 3.5em;
+    font-weight: 900;
+    color: #223843;
+}
+
+#produtos .box-title .title{
+    color: #223843;
+}
+#produtos .box-title .featured{
+    color: #f1f7ee;
+}
+
+#novidades .box-title .title{
+    color: #b0bea9;
+}
+
+.box-title p{
+    width: 350px;
+    font-size: .8em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.box-title{
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#home .box-title:before{
+    content: '';
+    display: block;
+    width: 250px;
+    height: 30px;
+    margin: 0 auto;
+    background-image: url(../images/detalhe_1.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.box-title::after{
+    content: '';
+    display: block;
+    width: 250px;
+    height: 30px;
+    margin: 0 auto;
+    background-image: url(../images/detalhe_1.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.card-text{
+    background-color: #223843;
+    text-align: center;
+    padding: 15px 10px;
+}
+
+.title-text{
+    color: #f1f7ee;
+    font-size: 1.6rem;
+    font-weight: 900;
+}
+
+.description{
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #b0bea9;
+    font-size: .9rem;
+}
+
+.title-text::after{
+    content: '';
+    display: block;
+    width: 15%;
+    height: 5px;
+    margin: 0 auto;
+    margin-top: 4%;
+    border-bottom: 3px solid #b2bd7e;
+}
+
+.bg-1{
+    padding: 60px 0;
+    text-align: center;
+    background-image: url(../images/bg_01.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.bg-2{
+    padding: 60px 0;
+    text-align: center;
+    background-image: url(../images/bg_02.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+h2.title-text{
+    font-size: 3em;
+}
+
+.button{
+    display: inline-block;
+    padding: 15px 60px;
+    margin-top: 60px;
+    background-color: #b2bd7e;
+    border: none;
+    border-radius: 25px;
+    color: #223843;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.card-item{
+    background-color: #ffffff;
+    text-align: center;
+    padding: 25px 10px;
+}
+
+.card-item img{
+    display: block;
+    width: 90%;
+    margin: 0 auto 10px;
+}
+
+.card-item .title-item{
+    color: #b2bd7e;
+    font-size: 1.4em;
+}
+
+.card-item .more:hover{
+    background-color: #b2bd7e;
+    color: #ffffff;
+}
+
+
+.card-item .more,
+.card-item .more:active {
+    width: 60%;
+    margin-top: 10px;
+    padding: 15px 10px;
+    background-color: #ffffff;
+    border: 1px solid #b2bd7e;
+    font-size: .6em;
+    color: #b2bd7e;
+}
+
+#novidades{
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.box-news *{
+    color: #223843;
+}
+
+.box-news .title-news{
+    font-size: 1.4em;
+    font-weight: 700;
+}
+
+#contato .container{
+    max-width: 500px;
+}
+
+.alert{
+    display: none;
+    height: 30px;
+    background-color: #23B123;
+    border-radius: 25px;
+    font-weight: 900;
+    color: #ffffff;
+}
+
+i{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+}
+.facebook{
+    background-image: url(../images/facebook-logo-button.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.instagram{
+    background-image: url(../images/instagram-logo.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.twitter{
+    background-image: url(../images/twitter-logo-button.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+input[type=text],
+input[type=email],
+textarea{
+    background-color: #ffffff !important;
+    border: none !important;
+    border-radius: 25px !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+}
+
+input{
+    width: calc(100% - 30px) !important;
+}
+
+textarea{
+    height: 120px !important;
+}
+
+label{
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #223843 !important;
+    left: 1.8rem !important;
+}
+
+label.active{
+    color: #ffffff !important;
+    font-size: 1rem;
+}
+
+button{
+    cursor: pointer;
+}
