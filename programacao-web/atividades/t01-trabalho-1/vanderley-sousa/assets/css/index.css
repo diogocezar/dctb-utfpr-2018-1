@@ -1,0 +1,481 @@
+/*
+Nome: Vanderley Sousa da Silva Junior
+RA: 1885022
+Turma: N14
+Este arquivo contém o CSS da página principal.
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Droid+Serif');
+
+html, body{
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+#menu{
+    width: 100%;
+    min-width: 1200px;
+    height: 60px;
+    background-color: rgb(40, 57, 70);
+    font-family: 'Droid-serif';
+    color: #FFF;
+    display: flex;
+    align-items: center;
+    position: fixed;
+}
+
+#menu ul{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#menu ul li{
+    margin: 30px;
+    list-style-type: none;
+    font-size: 21px;
+}
+
+#menu ul li a{
+    color: #FFF;
+    text-decoration: none;
+    transition-property: color;
+    transition-duration: 0.5s;
+}
+
+#menu ul li a:hover{
+    color: rgb(163, 199, 117);
+    transition-property: color;
+    transition-duration: 0.5s;
+}
+
+#introducao{
+    width: 100%;
+    min-width: 1200px;
+    height: auto;
+    background-color: rgb(170, 195, 166);
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+#separador{
+    width: 280px;
+    height: 100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+#separador img{
+    width: 100%;
+    height: 30px;
+    justify-content: center;
+}
+
+#introducao-info{
+    width: 600px;
+    margin: 0 auto;
+    margin-top: -70px;
+}
+
+#introducao-info h3{
+    font-size: 70px;
+    font-style: italic;
+    color:#FFF;
+    font-family: 'Raleway';
+}
+
+#introducao-info h1{
+    font-size: 140px;
+    color:rgb(40, 57, 70);
+    margin-top:-90px;
+    font-family: 'Raleway';
+}
+
+#introducao-info p{
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Droid-sefit';
+    color:rgb(40, 57, 70);
+    margin-top:-90px;
+    padding-left: 100px;
+    padding-right: 100px;
+    
+}
+
+#introducao-objetivos{
+    width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+}
+
+#introducao-objetivos #obj-item{
+    width: 33%;
+    height: 170px;
+    background-color: rgb(40, 57, 70);
+    margin-right: 20px;
+}
+
+#obj-item h4{
+    color: #FFF;
+    font-family: 'Raleway';
+    text-align: center;
+    font-weight: bold;
+}
+
+#obj-item h4::after{
+    content: '';
+    width: 40px;
+    height: 2px;
+    background-color: rgb(163, 199, 117);
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+#obj-item p{
+    color: rgb(239, 250, 237);
+    font-family: 'Droid-sefit';
+    text-align: center;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+#traco{
+    width: 15%;
+    border: solid 1px rgb(163, 199, 117);
+    margin: 0 auto;
+}
+
+#primeirasection{
+    width: 100%;
+    min-width: 1280px;
+    height: 400px;
+    background-image: url('../images/bg_01.png');
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 60px;
+}
+
+#primeirasection #primeirasection-info{
+    width: 900px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#primeirasection-info h1{
+    font-size: 50px;
+    color: #FFF;
+    font-family: 'Raleway';
+    text-align: center;
+}
+
+#primeirasection-info h1::after{
+    content: '';
+    width: 100px;
+    height: 2px;
+    background-color: rgb(163, 199, 117);
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+#primeirasection-info p{
+    margin-top: -20px;
+    color: rgb(163, 199, 117);
+    font-family: 'Droid-sefit';
+    text-align: center;
+    padding-left: 270px;
+    padding-right: 270px;
+}
+
+.btnSection{
+    width: 200px;
+    height: 60px;
+    background-color: rgb(163, 199, 117);
+    border-radius: 30px;
+    font-size: 20px;
+    color: rgb(40, 57, 70);
+    font-weight: 900;
+    border: 0;
+    margin-top: 20px;
+    transition-property: background color;
+    transition-duration: 0.5s;
+}
+
+.btnSection:hover{
+    background: #FFF;
+    color: rgb(163, 199, 117);
+    transition-property: background color;
+    transition-duration: 0.5s;
+}
+
+#catalogosection{
+    width: 100%;
+    min-width: 1200px;
+    height: auto;
+    background-color: rgb(170, 195, 166);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+#catalogosection #catalogo-info{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#catalogosection #titulosection{
+    width: 500px;
+    height:200px;
+    padding-left: 35px;
+}
+
+#catalogosection h3{
+    font-size: 48px;
+    font-style: italic;
+    color:rgb(40, 57, 70);
+    font-family: 'Raleway';
+}
+
+#catalogosection h1{
+    font-size: 110px;
+    color:#FFF;
+    margin-top:-70px;
+    font-family: 'Raleway';
+}
+
+#catalogosection p{
+    font-size: 18px;
+    text-align: center;
+    font-family: 'Droid-sefit';
+    color:rgb(40, 57, 70);
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+#catalogo-itens{
+    width: 960px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    
+}
+
+#catalogo-itens #item{
+    width: 290px;
+    height: auto;
+    background-color: #FFF;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#catalogo-itens #item img {
+    width: 85%;
+    margin: 0 auto;
+}
+
+#catalogo-itens #item h4{
+    font-family: 'Raleway';
+    color: rgb(163, 199, 117);
+}
+
+#catalogo-itens #item p{
+    margin-top: -8px;
+    font-family: 'Droid-sefit';
+    color:rgb(40, 57, 70);
+    font-size: 14px;
+}
+
+#catalogo-itens #item button {
+    width: 50%;
+    height: 45px;
+    border-radius: 20px;
+    border: solid rgb(163, 199, 117) 1px;
+    color: rgb(163, 199, 117);
+    background-color: #FFF;
+    font-weight: 900;
+    transition-property: background color;
+    transition-duration: 0.5s;
+}
+
+#catalogo-itens #item button:hover{
+    transition-property: background color;
+    transition-duration: 0.5s;
+    color: #FFF;
+    background-color: rgb(163, 199, 117);
+}
+
+#novidadessection{
+    width: 100%;
+    min-width: 1200px;
+    height: auto;
+    background-color: rgb(239, 250, 237);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+#novidadessection #novidades-info{
+    width: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#novidadessection #titulosection{
+    width: 460px;
+    height:200px;
+}
+
+#novidadessection h3{
+    text-align: right;
+    font-size: 42px;
+    font-style: italic;
+    color:rgb(170, 195, 166);
+    font-family: 'Raleway';
+    padding-right: 8px;
+}
+
+#novidadessection h1{
+    font-size: 90px;
+    color:rgb(40, 57, 70);
+    margin-top:-60px;
+    font-family: 'Raleway';
+}
+
+#novidadessection #novidades-itens{
+    width: 900px;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+#novidades-itens #item{
+    width: 45%;
+    margin-right: 45px;
+}
+
+#novidades-itens #item h2{
+    font-family: 'Raleway';
+    color:rgb(40, 57, 70);
+}
+
+#novidades-itens #item p{
+    font-family: 'Droid-sefit';
+    color:rgb(40, 57, 70);
+}
+
+#contatosection{
+    width: 100%;
+    min-width: 1200px;
+    height: auto;
+    background-image: url('../images/bg_02.png');
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+#contatosection h1{
+    font-family: 'Raleway';
+    font-size: 50px;
+    color: #FFF;
+    font-weight: 900;
+    margin: 20px;
+}
+
+#contatosection h1::after{
+    content: '';
+    width: 100px;
+    height: 2px;
+    background-color: rgb(163, 199, 117);
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+#contatosection #form-linha{
+    width: 500px;
+    font-family: 'Raleway';
+    background-color: #FFF;
+    padding: 10px;
+    border-radius: 30px;
+    margin-top: 50px;
+    margin-bottom: -40px;
+}
+
+#contatosection #form-linha label{
+    width: 15%;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+#contatosection #form-linha input{
+    width: 85%;
+    height: 30px;
+    border: 0;
+    margin-left: 5px;
+    font-size: 18px;
+}
+
+#contatosection #form-linha select{
+    width: 85%;
+    height: 30px;
+    border: 0;
+    background-color: #FFF;
+    font-family: 'Raleway';
+}
+
+#contatosection .coluna{
+    display: flex;
+    flex-direction: column;
+}
+
+#contatosection #form-linha textarea{
+    height: 150px;
+    border: 0;
+    font-family: 'Raleway';
+}
+
+#contatosection button{
+    margin-top: 80px;
+    margin-left: 160px;
+}
+
+#rodape{
+    width: 100%;
+    min-width: 1280px;
+    background-color: rgb(170, 196, 166);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+#rodape h3{
+    font-weight: lighter;
+    font-family: 'Droid-sefit';
+    color:rgb(40, 57, 70);
+    margin-top: 40px;
+    margin-bottom: -10px;
+}
+
+#rodape #social img{
+    margin: 5px;
+}
