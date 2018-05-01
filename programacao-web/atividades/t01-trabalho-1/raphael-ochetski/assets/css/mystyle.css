@@ -1,0 +1,552 @@
+/*
+Raphael Ochetski de Queiroz
+1633465
+Código CSS para construção do layout do T01.
+A fonte Droid+Serif não está disponível. Então, optei por utilizar a Open Sans no lugar.
+*/
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(179, 190, 169);
+}
+html{
+    font-size: 12px;
+    font-family: 'Raleway', sans-serif;
+}
+p{
+    margin: 0 auto;
+    line-height: 1.5;
+    
+    color:rgb(34, 56, 67);
+}
+h2{
+    font-size: 3em;
+}
+h1{
+    font-size: 5em;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 900;
+}
+h3{
+    font-family: "Open Sans", sans-serif;
+}
+
+.row{
+    position: relative;
+    float: none;
+    justify-content: center;
+}
+.container {
+    width: 980px;
+    margin: 0 auto;
+}
+
+.detalhe{
+    width: 300px;
+}
+
+/*Menu*/
+#menu{
+    background-color: rgb(34, 56, 67);
+    position: fixed;
+    z-index: 999;
+    float: left;
+    width: 100%;
+    height: 60px;
+}
+
+#menu ul{
+    position: relative;
+    float: left;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#menu ul li{
+    list-style: none;
+}
+
+#menu ul li a{
+    text-decoration: none;
+    position: relative;
+    display: block;
+    text-align: center;
+    padding-top: 16px;
+    color: #FFF;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+}
+
+/*Sections*/
+section{
+    position: relative;
+    float: left;
+    width: 100%;
+}
+
+/*Home*/
+#home{
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#home h1{
+    position: relative;
+    float: left;
+    width: 100%;
+    color: rgb(34, 56, 67);
+    margin-bottom: 1.5rem;
+}
+
+#home h2{
+    font-style: italic;
+    position: relative;
+    float: left;
+    width: 100%;
+    color: #fff;
+    margin-top: 3rem;
+}
+
+#home .boxes h3{
+    text-decoration: none;
+    position: relative;
+    float: left;
+    width: 100%;
+    color: #fff;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    font-size: 1.3rem;
+}
+
+#home .boxes h3:after{
+    content: '';
+    width: 35px;
+    margin-left: 106px;
+    position: absolute;
+    left: 0;
+    bottom: -15px;
+    border-color: rgb(178,189,126);
+    border-width: 0 0 2px;
+    border-style: solid;  
+}
+
+#home .boxes-row{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+#home p{
+    
+    width: 280px;
+    margin-bottom: 3rem;
+}
+#home .boxes{
+    height: 180px;
+    width: 250px;
+    background-color: rgb(34, 56, 67);
+    
+}
+   
+#home .boxes p{
+    color: #fff;
+    width: 100%;
+    max-width: 200px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+/*Fundo 1*/
+#fundo-1{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: url('../images/bg_01.png');
+    background-repeat: no-repeat;
+    background-position: center; 
+    height: 650px;
+    width: 100%;
+}
+#fundo-1 p{
+    color: rgb(179, 190, 169);
+    width: 400px;
+    font-size: 1.2em;
+    margin-bottom: 4rem;
+}
+
+#fundo-1 h1{
+    text-decoration: none;
+    position: relative;
+    float: left;
+    width: 100%;
+    color: #fff;
+    margin-bottom: 6rem;
+}
+#fundo-1 h1:after{
+    content: '';
+    width: 100px;
+    margin-left: 45%;
+    position: absolute;
+    left: 0;
+    bottom: -30px;
+    border-color: rgb(178,189,126);
+    border-width: 0 0 3px;
+    border-style: solid;
+    
+}
+
+#fundo-1 a {
+    background-color: rgb(178,189,126);
+    border-radius: 25px;
+    text-indent: 0px;
+    text-decoration: none;
+    border: 1px solid rgb(178,189,126);
+    display: inline-block;
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: 800;
+    letter-spacing: -1px;
+    color: rgb(34, 56, 67);
+    height: 50px;
+    line-height: 50px;
+    width: 180px;
+    margin-top: 3rem;
+}
+#fundo-1 a:hover{
+    background-color: #fff;
+    color: rgb(178,189,126);
+}
+
+/*Produtos*/
+#produtos{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#produtos h1{
+    position: relative;
+    float: left;
+    width: 100%;
+    color: #fff;
+    margin-bottom: 2rem;
+}
+#produtos h2{
+    font-style: italic;
+    position: relative;
+    float: left;
+    width: 100%;
+    color: rgb(34, 56, 67);
+}
+#produtos p{
+    color: rgb(34, 56, 67);
+    width: 300px;
+    font-size: 1.2em;
+    margin-bottom: 4rem;
+}
+.imagem-produto{
+    width: 240px;
+    height: 160px;
+}
+#listagem-produtos{
+    margin-top: 3rem;
+    position: relative;
+    float: left;
+    width: 980px;
+    height: 860px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.subproduto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    align-content: center;
+    width: 320px;
+    height: 420px;
+    background-color: #fff;
+}
+#produtos p{
+    color: rgb(34, 56, 67);
+    width: 250px;
+    font-size: 12px;
+    margin-bottom: 1rem;
+}
+#produtos h3{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: rgb(178,189,126);
+    font-size: 1.5rem;
+}
+#produtos a{
+    border-radius: 25px;
+    text-indent: 0px;
+    text-decoration: none;
+    border: 1px solid rgb(178,189,126);
+    display: inline-block;
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: 800;
+    letter-spacing: -1px;
+    color: rgb(178,189,126);
+    height: 40px;
+    line-height: 40px;
+    width: 120px;
+}
+
+#produtos a:hover{
+    background-color: rgb(178,189,126);
+    color: rgb(34, 56, 67);
+}
+
+/*Novidades*/
+#novidades{
+    background-color: rgb(241,247,238);
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#novidades h1{
+    position: relative;
+    float: left;
+    width: 100%;
+    color: rgb(34, 56, 67);
+    margin-bottom: 3.5rem;
+}
+#novidades h2{
+    margin-top: 70px;
+    font-style: italic;
+    position: relative;
+    width: 100%;
+    float: left;
+    color: rgb(179, 190, 169);
+}
+
+#novidades h3{
+    color: rgb(34, 56, 67);
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+}
+
+#datas-novidades{
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#datas-novidades p{
+    color: rgb(34, 56, 67);
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    width: 350px;
+}
+.data{
+    display: flex;
+    flex-direction: column;
+}
+
+/*Contato*/
+#contato{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: url('../images/bg_02.png');
+    background-repeat: no-repeat;
+    background-position: center; 
+    height: 900px;
+    width: 100%;
+}
+
+#contato h1{
+    position: relative;
+    float: left;
+    width: 100%;
+    color: rgb(241,247,238);
+}
+
+#contato h1:after{
+    content: '';
+    width: 100px;
+    margin-left: 45%;
+    position: absolute;
+    left: 0;
+    bottom: -15px;
+    border-color: rgb(178,189,126);
+    border-width: 0 0 3px;
+    border-style: solid;  
+}
+
+#contato a {
+    background-color: rgb(178,189,126);
+    border-radius: 25px;
+    text-indent: 0px;
+    text-decoration: none;
+    border: 1px solid rgb(178,189,126);
+    display: inline-block;
+    text-align: center;
+    font-size: 1.4em;
+    font-weight: 800;
+    letter-spacing: -1px;
+    color: rgb(34, 56, 67);
+    height: 50px;
+    line-height: 50px;
+    width: 180px;
+    margin-top: 6rem;
+}
+
+#contato a:hover{
+    background-color: #fff;
+    color: rgb(178,189,126);
+}
+
+/*Form Contato*/
+#contato #form-contato{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    float: left;
+    width: 100%;
+    margin-top: 8rem;
+    margin-bottom: 2rem;
+}
+
+#button-form{
+    display: inline-block;
+    border-radius: 25px;
+    width: 200px;
+    height: 60px;
+    margin-top: 2rem;
+    background-color: rgb(178,189,126);
+    border: none;
+    color: rgb(34, 56, 67);
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+.edita-form{
+    display: inline-block;
+    padding: 5px;
+    border: 1px solid rgb(241,247,238);
+    border-radius: 25px;
+    background-color: rgb(241,247,238);
+    margin-bottom: 1rem;
+    
+}
+label{
+    padding-top: 3px;
+    padding-left: 5px;
+    float: left;
+    font-weight: 800;
+    letter-spacing: -1px;
+    color: rgb(34, 56, 67);
+}
+input, select, textarea{
+    background-color: rgb(241,247,238);
+    outline: none;
+    border: none;
+    display: block;
+    width: 400px;
+    padding-left: 15px;
+    font-weight: 800;
+}
+textarea{
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+.selectdiv:after{
+    content: '>';
+    color: rgb(34, 56, 67);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    right: 275px;
+    top: 86px;
+    font-size: 1.5rem;
+    position: absolute;
+    
+}
+select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    display: block;
+    width: 385px;  
+    
+}
+select::-ms-expand{
+    display: none;
+}
+textarea{
+    width: 370px;
+    height: 140px
+}
+
+/*Footer*/
+footer{
+    position: relative;
+    float: left;
+    width: 100%;
+    margin-top: 3rem;
+    text-align: center;
+    
+}
+footer p{
+    color: rgb(34, 56, 67);
+    margin-bottom: 3rem;
+    font-size: 1.2rem;
+}
+
+footer .row{
+    width: 100%;
+}
+
+footer ul{
+    position: relative;
+    float: left;
+    width: 100%;
+    margin: 0px;
+    margin-top: 5em;
+    margin-bottom: 3em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 43%;
+}
+footer ul li{
+    list-style: none;
+}
+footer ul li a img{
+    height: 40px;
+    width: 40px;
+    -webkit-transition: all 0.25s ease-in-out 0s;
+    -moz-transform: all 0.25s ease-in-out 0s;
+    -ms-transition: all 0.25s ease-in-out 0s;
+    transition: all 0.25s ease-in-out 0s;
+}
+.alert{
+    display: none;
+    height: 30px;
+    background-color: #23B123;
+    border-radius: 25px;
+    font-weight: 900;
+    color: #ffffff;
+}
