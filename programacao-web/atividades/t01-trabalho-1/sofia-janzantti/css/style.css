@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Droid+Serif');
+
+body {
+    font-family: monospace;
+}
+
+.container {
+    margin: 100px;
+}
+
+.navbar {
+    width: 100%;
+    min-width: 1200px;
+    height: 60px;
+    background-color: #223843; 
+    display: flex;
+    align-items: center;
+    font-family: 'Droid-serif';
+    position: fixed;
+    z-index: 9;
+    
+}
+
+.navbar ul {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center; 
+    flex-direction: row;
+}
+
+
+.navbar ul li a{
+    color: #F1F7EE;
+    text-decoration: none;
+    margin: 30px;
+}
+
+.home {
+    padding: 100px 0;
+    width: 100%;
+    min-width: 1200px;
+    height: auto;
+    background-color: #AAC1A7;
+    text-align: center;
+}
+
+
+
+h1 {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 2.0em;
+    font-weight: normal;
+    color: #F1F7EE;
+    font-family: 'Droid-sefit';
+}
+
+h2 {
+    margin: 0px;
+    text-align: center;
+    font-size: 4.0em;
+    font-weight: normal;
+    color: #223843;
+    font-family: 'Raleway';
+    font-weight:bolder;
+}
+
+h3 {
+    margin-top: 40px;
+    font-size: 0.8em;
+    color: #223843;
+    padding-left: 500px;
+    padding-right: 500px;
+    font-family: 'Droid-sefit';
+}
+
+.img {
+    padding: 20px;
+}
+
+.grid {
+    margin-top: 30px;
+    justify-content: center;
+}
+
+.home-grid {
+    background-color: #223843; 
+    height: 200px;
+    width: 100px;
+    margin: 10px;
+    align-content: center;
+}
+
+.title {
+    margin-top: 20px;
+    font-size: 1.5em;
+    font-family: 'Raleway';
+    color: #EFF9Ed;
+    font-weight: 900;
+    text-align: center;
+}
+
+.text {
+    font-size: 0.8em;
+    color: #EFF9Ed;
+    text-align: center;
+    font-family: 'Droid-sefit';
+}
+
+.esp2 {
+    width: 100%;
+    height: 20px;
+    background-color: #223843;
+    justify-content: center;
+}
+
+.home2 {
+    padding: 100px;
+    margin: 0%;
+    width: 100%;
+    height: 400px;
+    background-image: url('../assets/bg_01.png');
+    min-width: 1200px;
+    height: auto;
+    text-align: center;
+}
+
+h4 {
+    text-align: center;
+    font-size: 3.0em;
+    font-weight: normal;
+    color: #F1F7EE;
+    font-family: 'Raleway';
+    font-weight:bolder;
+}
+
+h5 {
+    text-align: center;
+    font-size: 1.0em;
+    font-weight: normal;
+    color: #F1F7EE;
+    font-family: 'Raleway';
+    padding-left: 300px;
+    padding-right: 300px;
+    padding-top: 50px;
+}
+
+.button{
+    display: inline-block;
+    padding: 15px 60px;
+    margin-top: 60px;
+    background-color: #A9C67B;
+    border: none;
+    border-radius: 25px;
+    color: #223843;
+    font-weight: 900;
+}
+
+.esp {
+    padding-top: 20px;
+    width: 100%;
+    height: 20px;
+    justify-content: center;
+}
+
+.produtos-grid {
+    background-color: #FFFFFF; 
+    height: 450px;
+    width: 100px;
+    margin: 10px;
+    align-content: center;
+}
+
+.titleProd {
+    margin-top: 10px;
+    font-size: 1.5em;
+    font-family: 'Raleway';
+    color: #A9C67B;
+    font-weight: 900;
+    text-align: center;
+}
+
+.textProd {
+    font-size: 0.8em;
+    color: #000000;
+    text-align: center;
+    font-family: 'Droid-sefit';
+}
+
+.imgProd {
+    margin-top: 10px;
+    padding: 10px 10px 10px 10px;
+}
+
+h6 {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 2.0em;
+    font-weight: normal;
+    color: #223843;
+    font-family: 'Droid-sefit';
+}
+
+h7 {
+    margin: 0px;
+    text-align: center;
+    font-size: 4.0em;
+    font-weight: normal;
+    color: #F1F7EE;
+    font-family: 'Raleway';
+    font-weight:bolder;
+}
+
+.button2{
+    display: inline-block;
+    padding: 15px 10px;
+    background-color: #FFFFFF;
+    border: solid #A9C67B 1px;
+    border-radius: 25px;
+    color: #A9C67B;
+    font-weight: 900;
+    transition-property: background color;
+    transition-duration: 0.5s;
+}
+
+.button2:hover{
+    transition-property: background color;
+    transition-duration: 0.5s;
+    color: #FFF;
+    background-color: rgb(163, 199, 117);
+}
+
+.novi {
+    padding: 100px;
+    margin: 0%;
+    width: 100%;
+    height: 400px;
+    background-color: #EFF9ED;
+    min-width: 1200px;
+    height: auto;
+    text-align: center;
+}
+
+h8 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 2.0em;
+    font-weight: normal;
+    color: #AAC1A7;
+    font-family: 'Droid-sefit';
+}
+
+.novi-grid {
+    background-color: #EFF9ED;
+    height: 150px;
+    width: 700px;
+}
+
+.h9 {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 2.0em;
+    font-weight: bolder;
+    color: #223843;
+    font-family: 'Raleway';
+}
+
+.h10 {
+    text-align: center;
+    font-size: 1.0em;
+    font-weight: normal;
+    color: #223843;
+    font-family: 'Raleway';
+    margin-top: 20px;
+}
+
+.contato {
+    padding: 100px;
+    margin: 0%;
+    width: 100%;
+    height: 400px;
+    background-image: url('../assets/bg_02.png');
+    min-width: 1200px;
+    height: auto;
+    text-align: center;
+}
+
+input[type=text],
+input[type=email],
+input[type=ast],
+textarea{
+    background-color: #ffffff;
+    border: none;
+    border-radius: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+label {
+    margin-top: 10px;
+    padding-right: 175px;
+}
+
+.footer {
+    background-color: #AAC1A7;
+    padding: 50px;
+    width: 100%;
+    min-width: 1200px;
+    text-align: center;
+    font-family: 'Droid-sefit';
+}
