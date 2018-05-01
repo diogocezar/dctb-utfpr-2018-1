@@ -19,6 +19,7 @@ html{
 .row{
     position: relative;
     float: left;
+    max-width: 650px;
 }
 
 /* Menu */
@@ -174,9 +175,6 @@ section{
     font-weight: 600;
 }
 
-.row {
-    max-width: 650px;
-}
 
 .title-cta {
     color: #FFF;
