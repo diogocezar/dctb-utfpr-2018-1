@@ -1,0 +1,505 @@
+/*Leonardo Hideki Koga Tsuji - N14 - Contém toda a formatação do site, como tamanho, cor de fonte, flex box, hover dos botões*/
+
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.container{
+	width: 980px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.row{
+    position: relative;
+    float: left;   
+}
+
+#menu{
+	position: fixed;
+    z-index: 999;
+	float: left;
+    width: 100%;
+    height: 60px;
+    background-color: rgb(34,56,67); 
+}
+
+#menu ul{
+	position: relative;
+    float: left;
+    width: 100%;
+    display: flex;
+    justify-content: row;
+    align-items: center;
+    width: 60%;
+}
+
+#menu ul li{
+	margin: 30px;
+	list-style: none;
+    line-height: 0px;
+}
+
+#menu ul li a{
+    text-decoration: none;
+    color: rgb(241,247,238);
+    font-size: 24px;
+}
+
+#home{
+    width: 100%;
+    height: calc(100vh - 70px);
+    display: flex;
+    align-items: center;  
+    background-color: rgb(176, 190, 169);
+}
+
+#home .row{
+    max-width: 450px;
+}
+
+#home h1{
+    margin-bottom: 2rem;
+}
+
+#home .titulo-2{
+    margin-left: 50px;
+}
+
+#home p{
+    margin-bottom: 3rem; 
+}
+
+#home .detalhe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20%;
+}
+   
+.cabecalho{
+    text-align: center;
+}
+
+.titulo{
+    font-size: 45px;
+    font-family: "Droid Serif", sans-serif;
+    font-style: italic;
+    color: white;
+    font-weight: 500;
+}
+
+.titulo-2{
+    font-size: 70px;    
+    position: absolute;
+    font-family: "Raleway", sans-serif;
+    text-align: center; 
+    color: rgb(34,56,67);
+    font-weight: 1000;
+}
+
+.titulo-b{
+    font-size: 70px;    
+    position: absolute;
+    font-family: "Raleway", sans-serif;
+    text-align: center; 
+    font-weight: 930;   
+}
+
+.titulo-b:after{
+    content: '';
+    width: 40px;
+    height: 3px;
+    display: block;
+    margin: 20px auto;
+    background: rgb(178, 189, 126);
+}
+
+.titulo-3{
+    font-size: 50px;
+    font-family: "Raleway", sans-serif;
+    text-align: center;
+    color: white;
+    margin-top: 3rem;
+    margin-bottom: 30px;
+    font-weight: 1000;
+}
+
+.titulo-3:after{
+    content: '';
+    width: 100px;
+    height: 4px;
+    display: block;
+    margin: 40px auto;
+    background: rgb(178, 189, 126);
+}
+
+.titulo-4{
+    font-size: 20px;
+    font-family: "Raleway", sans-serif;
+    text-align: center;
+    color: rgb(178, 189, 126); 
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.titulo-5{
+    font-family: "Droid Serif", sans-serif;
+    font-size: 20px;
+    margin-bottom: 1rem;
+    text-align: initial;
+}
+
+#home .texto{
+    margin-top: 70px; 
+}
+
+.detalhe{
+	margin-bottom: 20px;
+    width: 60%;
+}
+
+#caracteristicas .p-padrao1{
+    margin-top: 6rem; 
+}
+
+#caracteristicas .titulo-b{
+    top: 0;
+    margin-top: 30px;
+    left: 38%;
+    text-align: center;
+}
+
+#caracteristicas div.container{
+    width: 500px;
+}
+
+#sobre .row{
+    margin-top: 20px;
+    text-align: center;
+}
+
+#sobre .p-padrao-2{
+    margin-top: 0;
+    color: rgb(176, 190, 169);
+}
+
+#novidades{ 
+    height: 800px;
+    background-color: rgb(241,247,238);
+}
+
+#novidades .cabecalho{
+    margin-top: 5rem;
+}
+
+#novidades h2{
+    color: rgb(176, 190, 169);
+    font-weight: 300;
+}
+
+#novidades .detalhe{
+    margin-top: 8rem;
+    margin-left: 15%;
+    margin-bottom: 4rem;
+}
+
+.art{
+    display: flex;
+    width: 1000px;
+    flex-direction: row;  
+    color: rgb(34,56,67);
+}
+
+.p-padrao-3{
+    letter-spacing: 1px;
+}
+
+#produtos{
+    background-color: rgb(176, 190, 169);
+    height: 1500px;
+}
+
+#produtos .titulo{
+    color: rgb(34,56,67);
+    text-align: center;
+    margin-top: 4rem;
+    margin-bottom: 0rem;
+    margin-left: 6rem;
+    width: 550px;
+}
+
+#produtos .titulo-2{
+    color: white;
+    text-align: center; 
+    left: 35%;
+    font-size: 85px;    
+}
+
+#produtos .p-padrao{
+    margin-top: 8rem;
+    line-height: 20px;
+    margin-bottom: 2rem; 
+    left: 25%;
+}
+
+#produtos .detalhe{
+    display: flex;
+    align-items: center;
+    position: relative;
+    float: left;
+    left: 45%;    
+}
+
+#produtos div.row{
+    justify-content: center;
+    right: 10%;
+}
+
+#contato{
+    height: 800px;
+    background: url('../images/bg_02.png');
+}
+
+#contato .titulo-2{
+    color: white;
+    text-align: center; 
+    left: 25%;
+    font-size: 60px;
+    margin-top: 3rem; 
+}
+
+#contato .titulo-2:after{
+    content: '';
+    width: 100px;
+    height: 4px;
+    display: block;
+    margin: 10px auto;
+    background: rgb(178, 189, 126);
+}
+
+#envia{
+    margin-top: 3rem;
+    margin-left: 10rem;
+}
+
+form{
+    margin: 200px auto;
+}
+
+section{
+    position: relative;
+    float: left;
+    width: 100%;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width:  260px;
+	height: 170px;
+	line-height: 50px;
+	font-size: 0.8em;
+    margin: 10px;
+    color: white;
+    background-color: rgb(34,56,67);
+}
+
+.box h2{
+   font-family: "Raleway", sans-serif;
+   color: white;
+   font-size: 1.6em;
+   text-align: center;
+   line-height: 10px;
+}
+
+.box1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 300px;
+    height: 200px;
+    text-align: center;
+    line-height: 10px;
+    border: 1px solid black;
+}
+
+.row {
+    max-width: 500px;
+}
+
+.btn{
+    margin-top: 90px; 
+	border: none;
+	border-radius: 30px;
+    height: 3em;
+    width: 10rem;
+    background-color: rgb(178, 189, 126);
+    font-weight: 1000;
+    font-size: 1rem;
+    color: rgb(34,56,67);
+}
+
+.btn:hover{
+    background-color: white;
+}
+
+#produtos .btn{ 
+    border: 1px solid rgb(178, 189, 126);
+    border-radius: 30px;
+    height: 3em;
+    width: 10rem;
+    background-color: white;
+    font-weight: 900;
+    font-size: 1rem;
+    color: rgb(178, 189, 126); 
+    margin: 10px auto;
+    margin-top: 1.5rem;
+}
+
+#produtos .btn:hover{
+    background-color: rgb(2,230,177); 
+    color: rgb(255,255,255);
+}
+
+.caixa-form{
+    font-family: "Raleway", sans-serif;
+    font-weight: 1000;
+    border: 1px solid white;
+	border-radius: 40px;
+    width: 500px;
+    height: 50px;
+    padding-left: 25px; 
+    margin-top: 1em;
+
+}
+
+#mensagem{
+    border-radius: 25px;
+    height: 160px;
+}
+
+::placeholder{
+    color: rgb(34,56,67);
+}
+
+.cta {
+    background: url('../images/bg_01.png');
+    height: 550px;
+}
+
+
+.cta .row{
+    max-width: 100%;
+}
+
+.p-padrao{
+    position: relative;
+    float: left;
+    width: 100%;
+    text-align: center; 
+    margin-top: 3em;
+    margin-bottom: 5em;
+    line-height: 1.2rem; 
+    color: rgb(34,56,67); 
+}
+
+.p-padrao1{
+    position: relative;
+    float: left;
+    width: 100%;
+    text-align: center; 
+    margin-bottom: 5em;
+    line-height: 1rem; 
+    color: white;
+}
+
+.p-padrao-2{
+    position: relative;
+    float: left;
+    width: 100%;
+    text-align: center;
+    margin-top: 4em;
+    line-height: 1.5rem;  
+}
+
+.p-padrao-4{
+    position: relative;
+    float: left;
+    width: 100%;
+    text-align: center;
+    line-height: 1.4rem;
+}
+
+.artigo{
+    text-align: center;
+    margin: 40px;
+    margin-top: 0;
+}
+
+.col{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    width: 330px;
+    height: 450px;
+    padding: 30px;
+    text-align: center;
+    margin: 12px;
+    padding-bottom: 5px;
+    background-color: white;
+    margin-top: 1em;
+}
+
+
+footer{
+	position: relative;
+	float: left;
+	width: 100%;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+    text-align: center;
+    background-color: rgb(176, 190, 169);
+    color: rgb(34,56,67);   
+}
+
+footer .row{
+    margin-top: 2rem;
+    max-width: 100%;
+    width: 100%;
+}
+
+footer ul{
+	position: relative;
+    float: left;
+    width: 100%;
+    margin: 0px;
+    margin-top: 1em;
+    margin-bottom: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 38%;
+}
+
+footer ul li{
+    list-style: none;
+}
+
+footer .detalhe{
+	margin-bottom: 1rem;
+    margin-top: 2rem;
+    width: 30%;
+}
+
+footer .icones li{
+	margin: 4px;
+}
