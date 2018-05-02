@@ -1,0 +1,376 @@
+/*
+    Nome: Felipe Soares da Silva
+    R.A: 1478613
+    Turma: N14
+*/
+
+/* Neste arquivo eu estou definindo todo o estilo do site, formatação dos textos, cores das fontes, fundo, tamanho das imagens, estilos dos botões, etc*/
+
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Droid+Serif');
+
+html, body{
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+.navbar{
+    width: 100%;
+    min-width: 1200px;
+    height: 60px;
+    background-color: rgb(40, 57, 70)!important;
+    position: fixed!important;
+    z-index: 2;
+}
+
+.nav-item{
+    font-family: 'Droid-Serif'!important;
+    color: #FFF!important;
+    margin: 50px;
+    font-size: 21px;
+}
+#nossa-empresa{
+    padding-top: 60px;
+    background-color: rgb(176, 176, 169);
+    height: 1000px;
+    width: 100%;
+}
+.titulo-geral{
+    width: 600px;
+    margin: 0 auto;
+}
+
+#conheca-empresa h3{
+    color:#FFF;
+}
+.h3-topo{
+    font-size: 60px;
+    font-style: italic;
+    font-family: 'Raleway';
+    padding-bottom: 40px;
+}
+.h1-titulo{
+    font-size: 140px;
+    font-family: 'Raleway';
+    padding-bottom: 40px;
+    font-weight: bolder;
+    margin-top:-90px;
+    padding-top: 10px;
+
+}
+
+#conheca-empresa h1{
+    color:rgb(40, 57, 70);
+}
+
+#conheca-empresa p{
+    text-align: center;
+    color:rgb(40, 57, 70);
+    margin-top:-90px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 60px;
+    font-size: 20px;
+    font-family: 'Droid-Serif';
+}
+#detalhe img{
+    margin: 0 auto;
+    display: flex;
+    align-items: center; 
+    padding: 55px;
+}
+
+#objetivos{
+    width: 900px;
+    margin: 0 auto;
+    display: flex;
+}
+.obj-elemento{
+    background-color: rgb(40, 57, 70);
+    height: 230px;
+    width: 300px;
+    margin: 8px;
+    float: left;
+}
+.obj-elemento h4{
+    color: white;
+    font-family: 'Raleway';
+    text-align: center;
+    font-weight: bolder;
+    padding-top: 15px;
+}
+.obj-elemento h4::after{
+    content: '';
+    width: 40px;
+    height: 2px;
+    background-color: rgb(163, 199, 117);
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.obj-elemento p{
+    color: rgb(239, 250, 237);
+    font-family: 'Droid-Serif';
+    text-align: center;
+    padding: 20px;
+}
+
+
+#secao2{
+    width: 100%;
+    height: 700px;
+    background: url('../imagens/bg_01.png');
+}
+
+#secao2 h1{
+    font-size: 80px;
+    color: #FFF;
+    font-family: 'Raleway';
+    text-align: center;
+    font-weight: 800;
+    padding-top: 40px;
+}
+#secao2 p{
+    margin-top: 40px;
+    color: rgb(178, 189, 126);
+    font-family: 'Droid-Serif';
+    text-align: center;
+    padding-left: 430px;
+    padding-right: 430px;
+    font-size: 20px;
+    padding-top: 40px;
+}
+#secao2 p::before{
+    content: '';
+    width: 120px;
+    height: 6px;
+    background-color:rgb(178, 189, 126);
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+#btnContato{
+    background-color: rgb(163, 199, 117);
+    width: 230px;
+    height: 70px;
+    border-radius: 30px;
+    font-size: 25px;
+    color: rgb(40, 57, 70);
+    font-weight: 900;
+    border: 0;
+    margin-top: 80px;
+    margin-left: 42%;
+}
+#btnContato:hover{
+    background: #FFF;
+    color: rgb(163, 199, 117);
+    transition-property: background color;
+    transition-duration: 0.5s;
+}
+#titulo-produtos h3{
+    color: rgb(34, 56, 67)
+}
+#titulo-produtos h1{
+    color: rgb(241, 247, 238)
+}
+#produtos{
+    background-color: rgb(176, 176, 169);
+    width: 100%;
+    height: 1800px;
+}
+#titulo-produtos p{
+    text-align: center;
+    color:rgb(40, 57, 70);
+    margin-top:-90px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 60px;
+    font-size: 20px;
+    font-family: 'Droid-Serif';
+}
+#catalogo-informacao{
+    padding-top: 50px;
+}
+
+#itens{
+    width: 960px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.icone-produto{
+    background-color: #FFF;
+    margin: 15px;
+    height: 500px;
+}
+.icone-produto img{
+    padding-top: 30px;
+}
+.icone-produto h4{
+    text-align: center;
+    font-size: 30px;
+    padding-top: 20px;
+    color: rgb(178, 189, 126);
+    font-family: "Raleway";
+    font-weight: bolder;
+}
+.icone-produto p{
+    font-family: 'Droid-Serif';
+    font-size: 14px;
+    color:rgb(40, 57, 70);
+    text-align: center;
+    padding: 20px;
+    padding-top: 0;
+}
+.icone-produto button{
+    width: 50%;
+    height: 45px;
+    border-radius: 20px;
+    border: solid rgb(163, 199, 117) 1px;
+    color: rgb(163, 199, 117);
+    background-color: #FFF;
+    font-weight: 900;
+    margin-left: 25%;
+}
+.icone-produto button:hover{
+    transition-property: background color;
+    transition-duration: 0.5s;
+    color: #FFF;
+    background-color: rgb(163, 199, 117);
+}
+#novidades{
+    background-color: rgb(241, 247, 238);
+    width: 100%;
+    height: 900px;
+}
+#nvdd-titulo{
+    padding: 30px;
+}
+#nvdd-titulo h3{
+    color: rgb(176, 190, 169)
+}
+#nvdd-titulo h1{
+    color: rgb(34, 56, 67)
+}
+#nvdd-itens{
+    width: 900px;
+    display: flex;
+    flex-flow: row wrap;
+    margin-left: 20%;
+}
+.art-geral{
+    width: 45%;
+    margin-right: 45px;
+    text-align: center;
+}
+.art-geral h3{
+    color:rgb(40, 57, 70);
+    font-family: 'Raleway';
+    font-size: 30px;
+    font-weight: bolder;
+}
+.art-geral p{
+    color:rgb(40, 57, 70);
+    font-family: 'Droid-Serif';
+}
+#contato{
+    background:url(../imagens/bg_02.png);
+    width: 100%;
+    height: 700px;
+}
+#contato h2{
+    font-size: 60px;
+    color: #FFF;
+    font-weight: bolder;
+    margin: 20px;
+    font-family: 'Raleway';
+    text-align: center;
+    padding-top: 30px;
+}
+
+#contato h2::after{
+    content: '';
+    width: 140px;
+    height: 4px;
+    background-color: rgb(163, 199, 117);
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.linha{
+    width: 500px;
+    font-family: 'Raleway';
+    background-color: rgb(241, 247, 238);
+    padding: 10px;
+    border-radius: 30px;
+    margin-top: 50px;
+    margin-bottom: -40px;
+}
+.linha input{
+    width: 85%;
+    border: 0;
+    height: 30px;
+    font-size: 18px;
+    margin-left: 5px;
+    background-color: rgb(241, 247, 238);
+}
+
+.linha select{
+    font-family: 'Raleway';
+    width: 85%;
+    height: 30px;
+    border: 0;
+    background-color: rgb(241, 247, 238);
+}
+
+#contato .coluna{
+    display: flex;
+    flex-direction: column;
+}
+.linha textarea{
+    border: 0;
+    background-color: rgb(241, 247, 238);
+    height: 150px;
+}
+#btnEnviar{
+    background-color: rgb(163, 199, 117);
+    width: 230px;
+    height: 70px;
+    border-radius: 30px;
+    font-size: 25px;
+    color: rgb(40, 57, 70);
+    font-weight: 900;
+    border: 0;
+    margin-top: 80px;
+}
+#btnEnviar:hover{
+    background: #FFF;
+    color: rgb(163, 199, 117);
+    transition-property: background color;
+    transition-duration: 0.5s;
+}
+
+#rodape{
+    background-color: rgb(176, 176, 169);
+    width: 100%;
+    height: 300px;
+}
+#rodape-elementos{
+    align-items: center;
+    text-align: center;
+    font-family: 'Droid-sefit';
+}
+#rodape-elementos h3{
+    font-size: 20px;
+    padding-top: 30px;
+}
+
+form{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+

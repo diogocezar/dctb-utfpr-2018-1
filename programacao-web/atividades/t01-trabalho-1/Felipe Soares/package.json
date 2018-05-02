@@ -1,0 +1,25 @@
+{
+  "name": "meuprimeirosite",
+  "version": "1.0.0",
+  "description": "Meu primeiro site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "MeuPrimeiroSite",
+    "Gulp",
+    "CSS",
+    "javaScript",
+    "HTML5",
+    "Bootstrap"
+  ],
+  "author": "Felipe Soares",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-uglify": "^3.0.0",
+    "gulp-watch": "^5.0.0"
+  }
+}
