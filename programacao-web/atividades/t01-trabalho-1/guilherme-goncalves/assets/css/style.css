@@ -1,0 +1,496 @@
+/*Guilherme Gonçalves Borges da Silva 
+    AN34A
+    CSS utilizado
+*/
+*{
+    margin: 0 auto;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 14px;
+    background-color: rgb(176, 190, 169);
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container_texto{  
+    width: 400px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.row{
+    position: relative;
+    float: left;
+
+}
+
+/* Menu */
+
+#menu{
+    position: fixed; 
+    z-index: 999;   
+    width: 100%;
+    height: 60px;
+    background-color: #000;
+}
+
+
+#menu ul{
+    position: relative;
+    display: flex;
+    float: left;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    margin-left: 15%;
+    background-color: black;
+}
+
+#menu ul li{
+    list-style: none;
+}
+
+#menu ul li a{
+    text-decoration: none;
+    position: relative;
+    display: flex;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.25em;
+    padding-top: 16px;
+    color: #fff;
+}
+
+/* Defaults */
+
+
+
+.title-small-white {
+    font-family: 'verdana', sans-serif;
+    font-size: 1rem;
+    text-align: center;
+    color: #FFF;
+}
+
+.title-small-produto {
+    font-family: "Raleway";
+    font-size: 1rem;
+    text-align: center;
+    color: #9acc94;
+}
+
+.title-small-bgColor {
+    font-family: "Raleway";
+    font-size: 1.4rem;
+    width: 40%;
+    text-align: center;
+    color: #b5c6b4;
+}
+
+.title-big-white {
+    font-family: 'Raleway', sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    color: #FFF;
+}
+
+.title-big-novidade {
+    font-family: "Raleway";
+    font-size: 2rem;
+    text-align: center;
+    color: #000;
+}
+
+.container_texto .title-big-novidade{
+    color: rgb(176, 190, 169);
+}
+
+.title-small-novidade {
+    font-family: "Raleway";
+    font-size: 0.8rem;
+    text-align: center;
+    color: #000;
+    padding-top: 0.5rem;
+}
+
+#home_2 .title-big-white{
+    font-size: 5rem;
+    text-align: center;
+}
+
+
+
+#botao_contato{
+     border: 1px solid rgb(178, 189, 126);
+     border-radius: 20px;
+     color: black;
+     background-color: rgb(178, 189, 126); 
+     display: block;
+     font-family: "";
+     font-size: 14px;
+     font-weight: bold;
+     line-height: 25px;
+     text-align: center;
+     text-transform: uppercase;
+     padding: 5px 15px;
+     margin-top: 50px;
+     position: relative;
+     width: 150px;
+}
+
+#botao_contato:hover{
+    background-color: rgb(176, 190, 169); 
+}
+
+a:link{
+    text-decoration: none;
+}
+
+a {
+    color: inherit;
+}
+
+
+
+
+
+.p-light {
+
+    font-family: "Raleway";
+    color: #fff;
+    font-size: 0.8rem;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.produto .p-light {
+
+    font-family: "Raleway";
+    color: #000;
+    font-size: 0.8rem;
+    margin-top: 1rem;
+    margin-bottom: 0.8rem;
+    text-align: center;
+}
+
+#produtos .p-light {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.img-decorative {
+    height: 40px;
+    width: 300px;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+.img-produtos {
+    height: 120px;
+    width: 200px;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    padding-left: 0.7em;
+}
+
+.title-h2 {
+    width: 100%;
+    font-family: 'verdana', sans-serif;
+    font-size: 4rem;
+    color: #000;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#contato .title-h2{
+    color: #fff;
+    font-size: 5rem;
+}
+
+
+.p-default {
+    width: 100%;
+    font-family: "droid";
+    font-size: 1.2rem;
+    color: #000;  
+    text-align: center;  
+}
+
+
+
+/* Forms */
+
+label{
+    font-family: 'verdana', sans-serif;
+    color: green;
+}
+
+#nome:place-holder{
+    
+}
+input,
+textarea,
+select {
+    border-radius: 30px;
+    width: 30%;
+    font-family: "verdana", sans-serif;
+    font-size: 1.3rem !important;
+    font-weight: 400;
+    border: 1px solid #000;
+    height: 50px;
+    padding: 0 1em;
+    font-size: 1em;
+    margin-bottom: 1em;
+    -webkit-transition: all 0.25s ease-in-out 0s;
+    -moz-transform: all 0.25s ease-in-out 0s;
+    -ms-transition: all 0.25s ease-in-out 0s;
+    transition: all 0.25s ease-in-out 0s;
+    background-color: #FFF;
+    border-color: #BE9B47;
+    color: #785E1F;
+}
+
+
+
+
+
+textarea {
+    height: 120px;
+    padding-top: 1em;
+    resize: none;
+}
+
+
+/* Home */
+
+
+
+#home{
+    padding-top: 80px;
+    padding-bottom: 40px;
+    height: 30%;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+#home_2{
+    background-image: url("../images/bg_01.png");
+    height: 550px;
+    display: flex;
+    padding-top: 10px;
+}
+
+.missoes{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row;
+    margin-top: 10px;
+
+
+}
+
+.missao{
+    width: 200px;
+    height: 130px;
+    background-color: black;
+    margin: 0 auto;
+    padding-top: 10px;
+    font-size: 1rem;
+}
+
+#home .row{
+    text-align: center;
+
+}
+
+#home_2 h1{
+    margin-top: 80px;
+}
+
+#home p{
+    margin-bottom: 2rem;
+}
+
+/* Produtos*/
+
+#produtos{
+    padding-top: 80px;
+    padding-bottom: 40px;
+    height: 30%;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.produto{
+    width: 210px;
+    height: 300px;
+    background-color: white;
+    margin: 0 auto;
+    padding-top: 10px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+#botao_produto{
+
+     border: 1px solid #9acc94;
+     border-radius: 20px;
+     color: #9acc94;
+     background-color: transparent; 
+     display: block;     
+     width: 100px;
+     height: 30px;
+     font-family: "";
+     font-size: 10px;
+     font-weight: bold;
+     line-height: 10px;
+     text-align: center;
+     text-transform: uppercase;
+     padding: 5px 15px;
+     position: relative;
+     margin-bottom: 10px;
+}
+
+#botao_produto:hover{
+    color: #fff;
+    background-color: #9acc94;
+}
+
+.btProduto{
+    padding-top: 4px;
+}
+
+/* Novidades */
+
+#novidades{
+    padding-top: 80px;
+    padding-bottom: 40px;
+    height: 30%;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    background-color: rgb(241, 247, 238);
+
+}
+
+#novidades .title-big-white{
+    text-align: right;
+}
+
+#novidades .container{
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.novidade_itens{
+    width: 350px;
+    height: 100px;
+}
+
+
+/* Contato */
+
+#contato{
+    padding-top: 80px;
+    padding-bottom: 40px;
+    height: 30%;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-image: url("../images/bg_02.png");;
+
+}
+
+
+#botao_enviar{ 
+     border: 1px solid rgb(178, 189, 126);
+     border-radius: 20px;
+     color: black;
+     background-color: rgb(178, 189, 126); 
+     display: block;
+     font-family: "";
+     font-size: 14px;
+     font-weight: bold;
+     line-height: 25px;
+     text-align: center;
+     text-decoration: none;
+     text-transform: uppercase;
+     padding: 5px 15px;
+     margin-top: 50px;
+     position: relative;
+     width: 150px;
+}
+
+#botao_enviar:hover{
+    background-color: rgb(176, 190, 169)
+}
+
+
+
+/* Footer */
+
+footer .container{
+
+    height: 200px;
+
+}
+
+footer {
+    position: relative;
+    float: left;
+    width: 100%;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    background-color: #b5c6b4;
+    color: #FFF;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+footer .row{
+    max-width: 100%;
+    width: 100%;
+}
+
+footer ul{
+    position: relative;
+    float: left;
+    width: 100%;
+    margin-top: 5em;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 38%;
+}
+
+footer ul li{
+    list-style: none;
+}
+
+footer ul li a img{
+    height: 40px;
+    width: 40px;
+}
