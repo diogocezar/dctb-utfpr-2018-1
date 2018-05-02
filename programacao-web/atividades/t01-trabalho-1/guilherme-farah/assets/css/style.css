@@ -1,0 +1,429 @@
+/* Guilherme da Silva Farah - AN34A 
+   Este é o arquivo que possui toda a estilização da página web */
+
+*{
+    margin: 0 auto;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.row{
+    position: relative;
+    width: 100%;
+    max-width: 650px;
+}
+
+.squares{
+    width: 110%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 10px;   
+    justify-content: space-between;
+}
+
+.novids{
+    width: 60%;
+}
+
+.prod{
+    height: 400px;
+    width: 250px;
+    background-color: #FFF;
+}
+
+#produtos .squares{
+    padding-right: 70px;
+}
+
+.square{
+    height: 170px;
+    width: 250px;
+    background-color: rgb(38, 35, 75);
+}
+
+#home .squares .square .title-small-white{
+    margin-top: 20px;
+}
+
+.news{
+    height: 100px;
+    width: 350px;
+    background-color: transparent;
+}
+
+/* Menu */
+
+#menu{
+    position: fixed;
+    z-index: 999;
+    float: left;
+    width: 100%;
+    height: 70px;
+    background-color: rgb(38, 35, 75);
+    box-shadow: -2px -3px 20px 3px rgba(0, 0, 0, 0.11);
+}
+
+#menu ul{
+    position: relative;
+    float: left;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    margin-left: 10%;
+}
+
+#menu ul li{
+    list-style: none;
+}
+
+#menu ul li a{
+    margin-left: 100px;
+    text-decoration: none;
+    position: relative;
+    display: block;
+    text-align: center;
+    font-weight: 500;
+    line-height: 40px;
+    font-size: 1.25em;
+    padding-top: 16px;
+    font-family: 'Raleway', sans-serif;
+    color: #FFF;
+    font-weight: 400;
+}
+
+/* Defaults */
+
+section{
+    position: relative;
+    float: left;
+    width: 100%;
+}
+
+.title-white {
+    font-family: 'Raleway', sans-serif;
+    font-size: 3em;
+    line-height: 1.2em;
+    color: #FFF;
+}
+
+.second{
+    margin-top:70px;
+}
+
+.title-small-white {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.8em;
+    line-height: 1.2em;
+    color: #FFF;
+    margin-right: 70px;
+}
+
+#contato .title-small-white{
+    margin-right: 0px;
+}
+
+#lorem .title-white:after{
+    content: '';
+    position: relative;
+    bottom: 1em;
+    width: 3em;
+    height: 4px;
+    background-color: rgba(139, 184, 109, 0.84);
+    top: 0.7em;
+    float: left;
+    left: 260px;
+}
+
+#contato .title-white{
+    margin-top: 10px;
+    margin-bottom: 90px;
+    margin-right: 130px;
+}
+
+#contato .title-white:after{
+    content: '';
+    position: relative;
+    bottom: 1em;
+    width: 3em;
+    height: 4px;
+    background-color: rgba(139, 184, 109, 0.84);
+    top: 2em;
+    float: left;
+    left: 260px;
+}
+
+#home h3:after {
+    content: '';
+    position: relative;
+    bottom: 1em;
+    width: 3em;
+    height: 3px;
+    background-color: rgba(139, 184, 109, 0.84);
+    top: 1.5em;
+    float: left;
+    left: 90px;
+}
+
+.title-small-green {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.8em;
+    line-height: 1.2em;
+    color: rgba(139, 184, 109, 0.84);
+}
+
+.title-big-blue {
+    font-family: 'Raleway', sans-serif;
+    font-size: 4.5em;
+    line-height: 1.2em;
+    color: rgb(38, 35, 75);
+}
+
+.title-medium-blue {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5em;
+    line-height: 1.2em;
+    color: rgb(38, 35, 75);
+}
+
+.title-small-blue {
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.9em;
+    line-height: 1.2em;
+    color: rgb(38, 35, 75);
+}
+
+.p-white {
+    font-family: "Open Sans", sans-serif;
+    color: #F6E8C7;
+    font-size: 1em;
+    font-weight: 1000;
+}
+
+.detail{
+    margin-top: 4em;
+    margin-bottom: 4em;
+}
+
+.img-prod{
+    margin-top: 25px;
+    height: 150px;
+    width: 200px;
+}
+
+.b-button{
+    border-radius: 20px;
+    margin-top: 50px;
+    height: 5rem;
+    width: 14.28rem;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    background-color: rgba(139, 184, 109, 0.84);
+    color: rgb(38, 35, 75);
+    padding: 0px;
+    font-size: 1.2rem;
+    letter-spacing: 0.5px;
+    -webkit-transition: all 0.25s ease-in-out 0s;
+    -moz-transform: all 0.25s ease-in-out 0s;
+    -ms-transition: all 0.25s ease-in-out 0s;
+    transition: all 0.25s ease-in-out 0s;
+    cursor: pointer;
+}
+
+.small{
+    margin-top: 20px;
+    height: 3rem;
+    width: 10rem;
+}
+
+/* Forms */
+
+input,
+textarea,
+select {
+    -webkit-appearance: none;
+    border-radius: 20px;
+    resize: none;
+}
+
+textarea:focus,
+input:focus {
+    outline: none;
+}
+
+input,
+textarea {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.3rem !important;
+    font-weight: 400;
+    border: 1px solid #000;
+    width: 100%;
+    height: 60px;
+    padding: 0 1em;
+    font-size: 1em;
+    margin-bottom: 1em;
+    -webkit-transition: all 0.25s ease-in-out 0s;
+    -moz-transform: all 0.25s ease-in-out 0s;
+    -ms-transition: all 0.25s ease-in-out 0s;
+    transition: all 0.25s ease-in-out 0s;
+    background-color: #FFF;
+    color: #000;
+}
+
+label {
+    width: 100%;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+}
+
+input:focus,
+textarea:focus {
+    border-left-width: 5px;
+}
+
+textarea {
+    height: 120px;
+    padding-top: 1em;
+    resize: none;
+}
+
+/* Home */
+#home{
+    margin-top: 70px;
+    background-color: rgb(139, 184, 161);
+    height: calc(130vh - 70px);
+    display: flex;
+}
+
+#home .row{
+    max-width: 450px;
+}
+
+#home h1{
+    margin-bottom: 1.5rem;
+}
+
+#home p{
+    margin-bottom: 2rem;
+}
+
+/* Lorem */
+#lorem{
+    background: url('../images/bg_01.png');
+    height: 90vh;
+    display: flex;
+}
+
+/* Produtos */
+#produtos{
+    background-color: rgb(139, 184, 161);
+    height: 230vh;
+    display: flex;
+}
+
+/* Novidades */
+#novidades{
+    background-color: seashell;
+    height: calc(120vh - 70px);
+}
+
+/* Contato */
+#contato{
+    background: url('../images/bg_02.png');
+}
+
+#contato .row button {
+    border: none;
+    background-color: rgba(139, 184, 109, 0.84);
+    color: rgb(38, 35, 75);
+    margin-top: 1em;
+    margin-bottom: 3em;
+    font-size: 1.2em;
+}
+
+#contato .row button:hover {
+    background-color: transparent;
+    border: 1px solid rgba(139, 184, 109, 0.84);
+    color: rgba(139, 184, 109, 0.84);
+}
+
+/* Footer */
+
+footer {
+    position: relative;
+    float: left;
+    width: 100%;
+    padding-top: 0rem;
+    padding-bottom: 1rem;
+    background-color: rgb(139, 184, 161);
+    color: #FFF;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+footer .row{
+    max-width: 100%;
+    width: 100%;
+}
+
+footer ul{
+    position: relative;
+    float: left;
+    width: 100%;
+    margin: 0px;
+    margin-top: 5em;
+    margin-bottom: 3em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 38%;
+}
+
+footer ul li{
+    list-style: none;
+}
+
+footer ul li img{
+    margin-top: 0px;
+    height: 40px;
+    width: 40px;
+    -webkit-transition: all 0.25s ease-in-out 0s;
+    -moz-transform: all 0.25s ease-in-out 0s;
+    -ms-transition: all 0.25s ease-in-out 0s;
+    transition: all 0.25s ease-in-out 0s;
+}
+
+footer .row .detail{
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+footer .row .second{
+    margin-top: 20px;
+}
+
+footer .row .icon-decoration {
+    height: 35px;
+    width: 35px;
+    margin-bottom: 1.5rem;
+    margin-top: 1rem;
+}
