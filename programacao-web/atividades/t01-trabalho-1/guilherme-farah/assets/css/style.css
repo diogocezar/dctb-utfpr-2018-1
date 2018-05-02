@@ -254,25 +254,21 @@ section{
 
 /* Forms */
 
-input,
-textarea,
-select {
+input, textarea, select {
     -webkit-appearance: none;
     border-radius: 20px;
     resize: none;
 }
 
-textarea:focus,
-input:focus {
+textarea:focus, input:focus {
     outline: none;
 }
 
-input,
-textarea {
+input, textarea, select {
     font-family: 'Raleway', sans-serif;
     font-size: 1.3rem !important;
     font-weight: 400;
-    border: 1px solid #000;
+    border: 1px solid rgb(0, 0, 0);
     width: 100%;
     height: 60px;
     padding: 0 1em;
@@ -295,8 +291,7 @@ label {
     margin-top: 0.5em;
 }
 
-input:focus,
-textarea:focus {
+input:focus, textarea:focus {
     border-left-width: 5px;
 }
 
@@ -355,7 +350,7 @@ textarea {
     border: none;
     background-color: rgba(139, 184, 109, 0.84);
     color: rgb(38, 35, 75);
-    margin-top: 1em;
+    margin-top: 5em;
     margin-bottom: 3em;
     font-size: 1.2em;
 }
