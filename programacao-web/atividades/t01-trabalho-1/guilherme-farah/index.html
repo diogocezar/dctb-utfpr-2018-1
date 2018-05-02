@@ -275,17 +275,24 @@
 					<h1 class="title-white second">Contato</h1>
 					<form id="form-contact" data-validate="true">
 						<label class="title-small-white">Nome</label>
-						<input type="text" class="name" placeholder="Nome"/>
+						<input type="text" class="yourname" placeholder="Nome"/>
 
 						<label class="title-small-white">Email</label>
 						<input type="text" class="email" placeholder="Email"/>
 
-						<label class="title-small-white">Telefone</label>
-						<input type="text" class="phone" placeholder="(XX) XXXXX-XXXX"/>
+						<label class="title-small-white">Assunto</label>
+						<select id="assunto" class="subject" name="assunto">
+							<option></option>
+							<option>Mensagem 1</option>
+							<option>Mensagem 2</option>
+						</select> 
 
 						<label class="title-small-white">Mensagem</label>
 						<textarea placeholder="Mensagem"></textarea>
-						<button class="b-button" id="send">Enviar</button>
+						<label class="title-small-white warning"> </label>
+						<a href="#contato">
+							<button class="b-button" id="send">Enviar</button>
+						</a>
 					</form>
 				</div>
 			</div>

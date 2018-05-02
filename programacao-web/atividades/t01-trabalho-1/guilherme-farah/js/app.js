@@ -3,26 +3,31 @@
    e também para fazer o scroll suave do menu */
 
 const obj = {
-    name: null, email: null, phone: null,
+    name: null, email: null, subject: null,
 
     validate: function () {
-        this.name = document.querySelector(".name")
+        this.name = $(".yourname").val();
         this.email = document.querySelector(".email")
-        this.phone = document.querySelector(".phone")           //certo seria usar a funcao, mas não funciona
+        this.subject = document.querySelector(".subject")       
+
+        if (this.name.value == null) 
+            $(".yourname").css("border-color", "red");
+        else
+            $(".yourname").css("border-color", "black");
+        if (this.subject.value != '')
+            $(".subject").css("border-color", "black");
+        else
+            $(".subject").css("border-color", "red");
+        if (this.email.value.search('@') != -1)
+            $(".email").css("border-color", "black");
+        else
+            $(".email").css("border-color", "red");
+                                                                //certo seria usar a funcao, mas não funciona
                                                                 //this.validateEmail() == 1 
-        if (this.name.value != '' && this.phone.value != '' && this.email.value.search('@') != -1) {
-            alert('Formulário Enviado com Sucesso');
+        if (this.name.value != '' && this.subject.value != '' && this.email.value.search('@') != -1){
+            $(".warning").html("Mensagem enviada com sucesso!").css("margin-right", "2.5em");
+            $(".warning").show();
         }
-        else if (this.name.value == '') {
-            alert('Preencher Nome');
-        }
-        else if (this.phone.value == '') {
-            alert('Preencher Telefone');
-        }
-        else if (this.validateEmail() == 0) {
-            alert('Email Inválido');
-        }
-        window.location.href = ('./index.html#contato');
     },
 
     validateEmail: function () {
