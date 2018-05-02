@@ -1,0 +1,426 @@
+/**
+Disciplina: Programação Web
+Professor: Diogo Cezar
+Atividade: Meu Primeiro Site
+Aluno: Eduardo Quintanilha
+*/
+
+/* Reset CSS */
+* {
+    padding:0;
+    margin:0;
+    vertical-align:baseline;
+    list-style:none;
+    border:0
+    }
+
+/*Nav bar of menu */
+.menu{
+    position: fixed;
+    width: 100%;
+    z-index: 500;
+}
+nav ul{
+    border-width:1px 0;
+    list-style:none;
+    margin:0;
+    padding:0;
+    text-align:center;
+    background-color: #273945;
+}
+nav li{
+    display: inline;
+}
+nav li a {
+    color: #E8F7F4;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    display:inline-block;
+    font-family: 'Droid Serif'; 
+    font-size: 1em;    
+}
+nav li a:hover { /*Hover for nav bar*/
+    background-color: #E8F7F4;
+    color:#273945;
+}
+
+
+/*Home Section*/
+#home{
+    padding-top: 3em;
+    background-color:#AAC3A6;
+}
+
+.container-know-company{
+    display: flex;
+    justify-content: center;   
+    flex-flow: column wrap;
+    align-content: center;
+    padding-top: 3em;   
+    align-items: center;
+    text-align: center;
+    margin-bottom: 2em; 
+}
+.item-title1 h3{
+    text-align: center;
+    color:#E8F7F4;
+    font-family: 'Raleway';font-style: italic;
+    font-size: 2.5em;
+    margin-bottom: 0;
+    padding-top: 1em;
+}
+
+.item-title2 h1{
+    text-align: center;
+    color: #273945;
+    font-family: 'Raleway';
+    font-weight: 900;
+    font-size: 4em;
+}
+.item-text{
+    width: 350px;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    font-family: 'Droid Serif';
+    color: #273945;
+    
+}
+
+.container-know-company::after,.container-know-company::before{
+    content: "";
+    background-image: url(../images/detalhe_1.png);
+    background-size: 15em 2em; /*For resize detail image*/
+    width: 15em;
+    height: 2em;
+    align-content: center; 
+}
+
+/* Container vision, values and mission of company */
+.container-vision{
+    display: flex;
+    flex-flow: row wrap;
+    width: auto;
+    justify-content: center;  
+    padding-bottom: 1em;  
+}
+.item-vision{
+    background-color: #273945;
+    color: #E8F7F4;
+    text-align: center;
+    width: 12em;
+    height: 8em;
+    margin: 0.5em;
+    padding: 1em;
+}
+
+.item-vision h3{
+    display: inline-block;
+    padding-bottom: 0.8em;
+    position: relative;
+}
+.item-vision h3::before{
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 1px;
+    bottom: 0;
+    left: 25%;
+    border-bottom: 3px solid #A6C977;
+}
+.item-vision p{
+    display: inline-block;
+    padding-top    : 0.8em;
+    position: relative;
+}
+
+/*Home 2 Section*/
+#home2{
+    background-image: url(../images/bg_01.png);
+    background-color: #273945;
+}
+.container-home2{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding: 2em;
+}
+.item-home2-title{   
+    width: 70%;
+    text-align: center;
+    margin: 3em;
+}
+.item-home2-title h1{
+    font-family: 'Raleway';
+    color: #E8F7F4;
+    font-weight: 750;
+    font-size: 2.5em;
+    display: inline-block;
+    padding-bottom: 1em;
+    position: relative;
+}
+.item-home2-title h1::before{
+    content: "";
+    position: absolute;
+    width: 10%;
+    right: 45%;
+    height: 2px;
+    bottom: 0;
+    border-bottom: 3px solid #A6C977;
+}
+.item-home2-text{
+    width: 35%;
+}
+.container-home2 li p{
+    color:#AAC3A6;
+}
+.item-home2-btn{
+    margin: 4em;
+}
+.item-home2-btn a{
+    background-color: #A6C977;
+    border: 0 solid #A6C977;
+    border-radius: 2em;
+    padding: 1em;
+    padding-left: 3em;
+    padding-right: 3em;
+}
+.item-home2-btn a:link, .item-home2-btn a:visited{
+    color: #273945;
+    font-family: 'Raleway';
+    text-decoration: none;
+}
+
+#products{
+    background-color: #AAC3A6;
+}
+.container-products{
+    justify-content: center;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    text-align: center;
+}
+.container-products li h3{
+    color: #273945;    
+}
+.container-products li h1{
+    color: #E8F7F4;    
+}
+.container-products::after{
+    content: "";
+    background-image: url(../images/detalhe_1.png);
+    background-size: 15em 2em; /*For resize detail image*/
+    width: 15em;
+    height: 2em;
+    align-content: center; 
+}
+
+/*Products Cards*/
+.container-products-cards{
+    display: flex;
+    flex-flow: row wrap;
+    padding-left: 15em;
+    padding-right: 15em;
+    justify-content: center;
+    padding-bottom: 4em;
+    margin-top: 2em;
+}
+.card{
+    background-color: white;
+    margin: 0.5em;
+    width: 12em;
+    height: 18em;
+    padding: 1em;
+    color: #273945;
+}
+.container-products-cards li h3{
+    color: #A6C977;
+    padding: 0.5em;
+}
+.card-img{
+    width: 100%;
+}
+.card-text{
+    font-size: 0.8em;
+    margin-bottom: 0.5em;
+    margin-bottom: 2em;
+}
+.card-btn, .card-btn a:link, .card-btn a:visited{
+    color: #A6C977;
+    padding: 0.5em;
+    border: 0.5px solid #A6C977;
+    border-radius: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    text-decoration: none;
+    font-family: 'Raleway';
+}
+
+/*News Section */
+#news{
+    background-color: #EFF9EE;
+    padding-top: 2em;
+    padding-bottom: 4em;
+    
+}
+.container-news li h3{
+    color: #AAC3A6;
+    font-family: 'Raleway';font-style: italic;
+    font-size: 2.5em;
+    margin-bottom: 0;
+    padding-top: 1em;
+}
+.container-news li h1{
+    color:#273945;
+    font-weight: 750;
+    font-size: 2.5em;
+    display: inline-block;
+    padding-bottom: 1em;
+    position: relative;
+    font-family: 'Raleway';
+    font-weight: 900;
+    font-size: 4em;
+}
+
+/* Container for News/Events */
+.container-news-events{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    text-align: center;
+    margin-top: 2em;
+    margin-left: 8em;
+    margin-right: 8em;
+}
+.event{
+    margin: 1em;
+    text-align: center;
+}
+.event-title{
+    color:#273945;
+    font-family: 'Raleway';
+    font-size: 1.4em;
+    margin-bottom: 1em;
+    text-align: center;
+}
+.event-text{
+    color:#273945;
+    font-family: 'Droid Serif';
+    font-size: 1em;
+    width: 80%;
+    align-self: center;
+}
+
+
+/* Contact section */
+#contact{
+    background-image: url(../images/bg_02.png);
+}
+
+.container-contact{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.container-contact li h3{
+    display: inline-block;
+    padding-bottom: 0.3em;
+    position: relative;
+    margin-bottom: 1em;
+}
+.container-contact li h3::before{
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 1px;
+    bottom: 0;
+    left: 25%;
+    border-bottom: 3px solid #A6C977;
+}
+
+
+.item-form{
+    width: 30em;
+    align-self: center;
+    display: block;
+}
+
+#name, #email, #subject, #message{
+    display: inline-block;
+    width: 85%;
+    margin: 0.2em;
+    border-radius: 2em;
+    padding: 1em;
+}
+#message{
+    height: 8em;
+    resize: none;
+}
+#button-form{
+    background-color: #A6C977;
+    border: 0 solid #A6C977;
+    border-radius: 2em;
+    padding: 1em;
+    padding-left: 3em;
+    padding-right: 3em;
+    color: #273945;
+    font-family: 'Raleway';
+    text-decoration: none;
+    margin: 1em;
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #273945;
+    font-family: 'Raleway';
+    font-weight: bold;
+    margin-left: 2em;
+  }
+  ::-moz-placeholder { /* Firefox 19+ */
+    color: #273945;
+    font-family: 'Raleway';
+    font-weight: bold;
+    margin-left: 2em;
+  }
+  :-ms-input-placeholder { /* IE 10+ */
+    color: #273945;
+    font-family: 'Raleway';
+    font-weight: bold;
+    margin-left: 2em;
+  }
+  :-moz-placeholder { /* Firefox 18- */
+    color: #273945;
+    font-family: 'Raleway';
+    font-weight: bold;
+    margin-left: 10%;
+  }
+
+  /* Footer section */
+  #footer{
+    background-color: #AAC3A6;
+  }
+
+  .item-icons{
+      text-align: center;
+      align-content: center;
+      padding: 2em;
+  }
+
+  #validate-message{
+    
+    color: red;
+    
+  }
+
+
+
+
+
+
+
+
+
+
