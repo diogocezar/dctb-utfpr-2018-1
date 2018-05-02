@@ -1,0 +1,477 @@
+/*
+ * Nome: Renan Fermino RA: 1884980
+ * Turma: N14
+ */
+
+/*
+ * Importação das fontes exigitas
+ */
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Droid+Serif');
+
+html, body{
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+#menu{
+    width: 100%;
+    min-width: 1200px;
+    height: 60px;
+    background-color: rgb(63, 80, 107);
+    color: rgb(255, 255, 255);
+    font-family: 'Droid-serif';
+    position: fixed;
+    align-items: center;
+    display: flex;
+}
+
+/*
+ * Menu fixo
+ */
+#menu ul{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+#menu ul li{
+    margin: 80px;
+    font-size: 21px;
+    list-style-type: none;
+    text-transform: uppercase;
+}
+
+#menu ul li a{
+    color: #FFF;
+    text-decoration: none;
+    transition-property: color;
+    transition-duration: 1.0s;
+    text
+}
+
+#home{
+    width: 100%;
+    min-width: 1000px;
+    height: auto;
+    background-color: rgb(194, 235, 188);
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+
+#divisoria{
+    height: 50px;
+    width: 200px;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    margin-bottom: 70px;
+}
+
+#home-info{
+    width: 420px;
+    margin: 0 auto;
+    margin-top: -70px;
+}
+
+#home-info h4{
+    font-size: 30px;
+    font-style: italic;
+    color:rgb(255, 255, 255);
+    font-family: 'Raleway';
+}
+
+#home-info h2{
+    font-size: 100px;
+    color:rgb(40, 57, 70);
+    margin-top:-60px;
+    font-family: 'Raleway';
+}
+
+#home-info p{
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Droid-sefit';
+    color:rgb(40, 57, 70);
+    margin-top:-60px;
+    
+}
+
+#home-missao{
+    width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+}
+
+#home-missao #miss-itens{
+    width: 33%;
+    height: 170px;
+    background-color: rgb(31, 36, 73);
+    margin-right: 20px;
+}
+
+#miss-itens h5{
+    color: rgb(255, 255, 255);
+    font-family: 'Raleway';
+    text-align: center;
+    font-weight: bold;
+}
+
+#miss-itens h5::after{
+    content: '';
+    width: 39px;
+    height: 2px;
+    background-color: rgb(172, 224, 103);
+    display: block;
+    margin: 0 auto;
+    margin-top: 21px;
+}
+
+#miss-itens p{
+    color: rgb(255, 255, 255);
+    font-family: 'Droid-sefit';
+    text-align: center;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+#sessaone{
+    width: 100%;
+    min-width: 1280px;
+    height: 400px;
+    background-image: url('../images/bg_01.png');
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+
+#sessaone #sessaone-info{
+    width: 900px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#sessaone-info h2{
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    font-family: 'Raleway';
+    text-align: center;
+}
+
+#sessaone-info h2::after{
+    content: '';
+    width: 100px;
+    height: 2px;
+    background-color: rgb(142, 189, 80);
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+
+}
+
+#sessaone-info p{
+    margin-top: -20px;
+    color: rgb(158, 223, 73);
+    font-family: 'Droid-sefit';
+    text-align: center;
+    padding-left: 270px;
+    padding-right: 270px;
+}
+
+.botaoSec{
+    width: 200px;
+    height: 60px;
+    background-color: rgb(133, 180, 71);
+    border-radius: 30px;
+    font-size: 20px;
+    color: rgb(31, 37, 92);
+    font-weight: 900;
+    border: 0;
+    margin-top: 20px;
+    transition-duration: 1.0s;
+}
+
+.botaoSec:hover{
+    background: rgb(255, 255, 255);
+    color: rgb(133, 180, 71);
+    transition-duration: 1.0s;
+}
+
+#produtos{
+    width: 100%;
+    min-width: 1200px;
+    height: auto;
+    background-color: rgb(223, 245, 219);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+#produtos #catalogo-info{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#produtos #titles{
+    width: 500px;
+    height:200px;
+    padding-left: 35px;
+}
+
+#produtos h4{
+    font-size: 48px;
+    font-style: italic;
+    color:rgb(40, 57, 70);
+    font-family: 'Raleway';
+}
+
+#produtos h2{
+    font-size: 110px;
+    color:#FFF;
+    margin-top:-80px;
+    font-family: 'Raleway';
+}
+
+#produtos p{
+    font-size: 18px;
+    text-align: center;
+    font-family: 'Droid-sefit';
+    color:rgb(40, 57, 70);
+    padding-left: 60px;
+    padding-right: 60px;
+    margin-top: 100px;
+}
+
+#catalogo-itens{
+    width: 960px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    
+}
+
+#catalogo-itens #item{
+    width: 260px;
+    height: auto;
+    background-color: #FFF;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#catalogo-itens #item img {
+    width: 85%;
+    margin: 0 auto;
+}
+
+#catalogo-itens #item h5{
+    font-family: 'Raleway';
+    color: rgb(163, 199, 117);
+}
+
+#catalogo-itens #item p{
+    margin-top: -8px;
+    font-family: 'Droid-sefit';
+    color:rgb(40, 57, 70);
+    font-size: 14px;
+}
+
+#catalogo-itens #item button {
+    width: 50%;
+    height: 45px;
+    border-radius: 20px;
+    border: solid rgb(163, 199, 117) 1px;
+    color: rgb(163, 199, 117);
+    background-color: #FFF;
+    font-weight: 900;
+    transition-property: background color;
+    transition-duration: 1.0s;
+}
+
+#catalogo-itens #item button:hover{
+    transition-property: background color;
+    transition-duration: 1.0s;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+}
+
+#news{
+    width: 100%;
+    min-width: 1200px;
+    height: auto;
+    background-color: rgb(239, 250, 237);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+#news #novidades-info{
+    width: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#news #titles{
+    width: 460px;
+    height:200px;
+}
+
+#news h4{
+    text-align: right;
+    font-size: 42px;
+    font-style: italic;
+    color:rgb(159, 197, 136);
+    font-family: 'Raleway';
+    padding-right: 8px;
+}
+
+#news h2{
+    font-size: 90px;
+    color:rgb(52, 89, 117);
+    margin-top:-60px;
+    font-family: 'Raleway';
+}
+
+#news #novidades-itens{
+    width: 900px;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+#novidades-itens #item{
+    width: 45%;
+    margin-right: 45px;
+}
+
+#novidades-itens #item h3{
+    font-family: 'Raleway';
+    color:rgb(28, 40, 92);
+}
+
+#novidades-itens #item p{
+    font-family: 'Droid-sefit';
+    color:rgb(28, 40, 92);
+}
+
+#contato{
+    width: 100%;
+    min-width: 1200px;
+    height: auto;
+    background-image: url('../images/bg_02.png');
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+#contato h2{
+    font-family: 'Raleway';
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+    margin: 20px;
+}
+
+/*
+ * after = serve para colocar o tracejado no titulo h2
+ */
+#contato h2::after{
+    content: '';
+    width: 100px;
+    height: 2px;
+    background-color: rgb(187, 231, 128);
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+#contato #formulario{
+    width: 500px;
+    font-family: 'Raleway';
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 30px;
+    margin-top: 50px;
+    margin-bottom: -40px;
+}
+
+#contato #formulario label{
+    width: 15%;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+#contato #formulario input{
+    width: 85%;
+    height: 25px;
+    border: 0;
+    margin-left: 5px;
+    font-size: 18px;
+}
+
+#contato .coluna{
+    display: flex;
+    flex-direction: column;
+}
+
+#contato #formulario select{
+    width: 83%;
+    height: 25px;
+    border: 0;
+    background-color: rgb(255, 255, 255);
+    font-family: 'Raleway';
+}
+
+
+#contato button{
+    margin-top: 80px;
+    margin-left: 160px;
+}
+
+#contato #formulario textarea{
+    height: 150px;
+    border: 0;
+    font-family: 'Raleway';
+}
+
+
+
+#rodape{
+    width: 100%;
+    min-width: 1280px;
+    background-color: rgb(154, 223, 144);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+#rodape #social img{
+    margin-top: -30px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+#rodape h4{
+    font-weight: lighter;
+    font-family: 'Droid-sefit';
+    color:rgb(73, 108, 134);
+    margin-top: 40px;
+}
+
