@@ -1,0 +1,193 @@
+/* IGOR RICARDO GONÇALVES LOUSADA
+RA 1582607
+ARQUIVO CSS UTILIZZADO PARA A CONFIGURAÇÃO DE TODO O DESIGN DA PÁGINA
+FOI UTILIZADA APENAS A FONTE RALEWAY, POIS A OUTRA FONTE SOLICITADA JÁ NÃO SE ENCONTRA DISPONÍVEL 
+*/
+
+
+@import url(https://fonts.google.com/specimen/Raleway);
+@import url(https://www.fonts.com/font/ascender/droid-serif?QueryFontType=Web&src=GoogleWebFonts);
+
+.menu{
+    background: #223843;
+    position: fixed;
+    width: 100%;
+    z-index: 9;
+}
+
+.espacamento{
+    width:100%;
+    height: 40px;
+}
+
+.espacamento-linha{
+    width: 100%;
+    height: 20px;
+    
+    justify-content: center;
+}
+
+.color_text_menu{
+    color: #f1f7ee;
+}
+
+.font1, .font2, .font3, .font4, .font5, .font6, .box-text, .box-white{
+    font-family: 'Raleway', sans-serif;
+}
+
+.font2{
+    color:  #f1f7ee;
+}
+
+.font3, .font6{
+    color: #223843;;
+}
+
+.font4{
+    color: #f1f7ee;
+    font-size: 65px;
+}
+
+.font4, .fontB{
+    font-weight: bold;
+}
+
+.font5{
+    color: #b2bea9;
+}
+
+.font6{
+    text-align: left;
+}
+
+.size_grande{
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.italico{
+    font-style: Italic;
+}
+
+.container{
+    padding: 40px;
+    width: 100%;
+    text-align: center;
+}
+
+.container1{
+    padding-top: 40px;
+    width: 270px;
+    font-size: 12px;
+    color: #223843;;
+}
+
+.container2{
+    padding: 40px;
+    width: 600px;
+    font-size: 12px;
+    color: #b0bea9;
+}
+
+.box-text{
+    background: #223843;;
+    font-size: 12px;
+    color: #b0bea9;
+    padding: 15px 10px;
+    text-align: center;
+}
+
+.box-title{
+    font-weight: bold;
+    font-size: 1.6rem;
+    font-weight: 900;
+}
+
+.font-white{
+    color: #f1f7ee;
+}
+
+.font-green{
+    color: #b0bea9;
+}
+
+.box-white{
+    background-color: #f1f7ee;
+    font-size: 12px;
+    padding: 15px 10px;
+    text-align: center; 
+}
+
+.background1{
+    background-color: #b0bea9;
+}
+
+.background2{
+    background-color: #f1f7ee;
+}
+
+.background3{
+    background-image: url(../images/bg_01.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.background4{
+    background-image: url(../images/bg_02.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.button, .button-white{
+    display: inline-block;
+    border-radius: 25px;
+    padding: 15px 60px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.button{
+    background-color: #b2bd7e;
+    border: none;
+    color: #223843;
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: #f1f7ee;
+    border: none;
+    color: #223843;
+}
+
+.button-white{
+    background-color: #f1f7ee;
+    border: 1px solid #b2bd7e;
+    color: #b2bd7e;
+    cursor: pointer;
+}
+
+.button-white:hover{
+    background-color: #b2bd7e;
+    border: 1px solid #b2bd7e;
+    color: #f1f7ee;
+}
+
+.form-group{
+    width: 500px;
+    font-family: 'Raleway';
+    background-color: #f1f7ee;
+    padding: 5px;
+    border-radius: 30px;
+    margin: 20px;
+    
+}
+
+.msg-erro{ 
+    color: red;
+}
+
+
+
+
+
