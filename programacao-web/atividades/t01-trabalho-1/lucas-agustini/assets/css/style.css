@@ -1,0 +1,276 @@
+/*  Padrao  */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(179, 190, 169);
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+p{
+    margin: 0 auto;
+    line-height: 1.5;
+    font-size: 11px;
+ /*   
+    color:rgb(34, 56, 67);*/
+}
+
+.detail_tamanho{
+    width: 150px;
+}
+
+.container{
+    width: 980px;
+    margin: 0 auto;
+}
+
+.italico-home{
+    font-style: italic;
+    color: white;
+    font-size: 2em;
+    margin-top: 2rem;
+}
+
+
+.texto-home{
+    font-size: 4em;
+    margin-bottom: 0.4em;
+}
+
+.italico-produto{
+    font-style: italic;
+    color: rgb(34, 56, 67);
+    font-size: 2em;
+    margin-top: 2rem;    
+}
+.texto-produto{
+    font-size: 4em;
+    margin-bottom: 0.4em;
+    color: white;
+}
+
+/*  Menu    */
+#menu{
+    background-color: rgb(34, 56, 67);
+    position: fixed;
+    z-index: 999;
+    float: left;
+    width: 100%;
+    height: 60px;
+}
+
+#menu ul{
+    position: relative;
+    float: left;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#menu ul li{
+    list-style: none;
+    font-size: 2em;
+}
+
+#menu ul li a{
+    text-decoration: none;
+    position: relative;
+    display: block;
+    text-align: center;
+    padding-top: 16px;
+    color: #fff;
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+}
+
+/*para arrumar a section*/
+section{
+    width: 100%;
+    float: left;
+}
+
+/*main*/
+
+/*home*/
+#home{
+    margin-top: 120px;
+    display: flex;
+/*    align-items: center;
+    justify-content: center;*/
+    text-align: center;
+}
+
+#home p{    
+    width: 280px;
+    margin-bottom: 2rem;
+}
+
+#home .boxes{
+    display: flex;
+    margin-top: 1rem;
+    justify-content:  space-between;
+}
+
+#home .box{
+    background-color: rgb(34, 56, 67);
+    width: 250px;
+    height: 180px;
+}
+
+#home .box p{
+    color: white;
+    width: 100%;
+    max-width: 200px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+#home .box h3{
+    color: white;
+    font-size: 1.3rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+/*contato meio*/
+#contato-meio{
+    background-image: url(../img/bg_01.png);
+    height: 650px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#contato-meio h2{
+    font-size: 3.5rem;
+    color: white;
+}
+
+#contato-meio p{
+    color: rgb(179, 190, 169);
+    font-size: 1rem;
+    width: 450px;
+    margin-top: 6rem;
+}
+
+#contato-meio a{
+
+    background-color: rgb(178,189,126);
+    border-radius: 30px;
+    text-decoration: none;
+    border: 2px solid rgb(178,189,126);
+    display: inline-block;
+    font-size: 1.4em;
+    font-weight: 900;
+    color: rgb(34, 56, 67);
+    line-height: 50px;
+    width: 180px;
+    margin-top: 5rem;
+}
+
+/*produtos*/
+
+#produtos{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/*#produtos h2{
+    color: white;
+    float: left;
+    position: relative;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+#produtos h3{
+    color: rgb(34, 56, 67);
+    font-style: italic;
+    position: relative;
+    float: left;
+    width: 100%;
+}*/
+
+#lista-produtos{
+    margin-top: 3rem;
+    position: relative;
+    float: left;
+    width: 980px;
+    height: 860px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    align-content: center;
+    width: 320px;
+    height: 420px;
+    background-color: #fff;    
+
+}
+
+#produtos p{
+    color: rgb(34, 56, 67);
+    width: 250px;
+    margin-bottom: 1rem;
+}
+#produtos h3{
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    color: rgb(178,189,126);
+}
+
+#produtos a{
+    border-radius: 25px;
+    text-indent: 0px;
+    text-decoration: none;
+    border: 2px solid rgb(178,189,126);
+    display: inline-block;
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: 900;
+    color: rgb(178,189,126);
+    height: 40px;
+    line-height: 40px;
+    width: 120px;
+}
+
+#produtos a:hover{
+    background-color: rgb(178,189,126);
+    color: rgb(34, 56, 67);
+}
+
+
+/*footer*/
+
+footer{
+    margin-top: 3rem;
+    float: left;
+    width: 100%;
+    text-align: center;
+}
+
+footer ul{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+footer ul li{
+    list-style: none;
+}
