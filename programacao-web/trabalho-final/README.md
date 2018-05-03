@@ -15,9 +15,13 @@ Cada equipe deverá desenvolver a regra de negócios da sua aplicação __Back-E
 
 O __Back-End__ poderá ser desenvolvido em PHP ou NodeJS. Com os padrões mínimos vistos durante a disciplina: Templates, Roteamento, MVC;
 
-Deve-se preencher o seguinte documento com as equipes e suas relações;
+Deve-se preencher o seguinte documento com as equipes e suas relações:
 
 https://docs.google.com/spreadsheets/d/1TJeV0tXWeejdk9ZLIfbkDtlTFYVDtTlMzb7tvxdpgwM/edit?usp=sharing
+
+Cada equipe deve identificar qual será a outra equipe que irá construir seu __Front-End__;
+
+O número de equipes obviamente deve ser par, e cada equipe deverá desenvolver apenas o __Front-End__ de uma outra equipe;
 
 # Como deve ser entregue?
 
@@ -53,7 +57,7 @@ A seguir define-se um cronograma para a realização das tarefas.
 
 + 05/06/2018 - Apresentação do andamento;
 + 12/06/2018 - Apresentação Final;
-+ 12/06/2018 - Apresentação Final;
++ 18/06/2018 - Apresentação Final;
 
 A apresentação será por ordem dos grupos definidos no documento citado anteriomente.
 
