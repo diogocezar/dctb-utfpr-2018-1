@@ -51,11 +51,76 @@ No repositório de __Front-End__ deverão ser enviados apenas:
 
 Todos os membros do grupo deverão fazer commits no repositório destinado a regra de negócios da aplicação.
 
+# Entrega dos Protótipos de Tela
+
+Todas equipes deverão criar um documento com os protótipos de todas as telas que deverão ser implementadas pela equipe parceira.
+
+Neste documento deve-se criar:
+
+1. Wireframe de __TODAS__ as telas a serem desenvolvidas;
+2. Descrição detalhadas de cada um dos campos, funcionalidades e validações dos formulários;
+3. Entrega do nome/logo a ser utilizado pela equipe em SVG;
+
+Este documento deverá ser entregue impresso, e será conferido pelo professor no dia da entrega.
+
+# Tecnologias a Serem Apresentadas
+
+Todas as equipes deverão apresentar no mínimo o trabalho contendo as seguintes tecnologias:
+
+## Front-End
+
++ CSS3;
+	+ Utilização de Bootstrap para melhorar a compatibilidade e responsividade;
+	+ Todo o CSS deve ser escrito em __SASS__ e compilado para CSS;
+	+ Animações;
+	+ Houvers;
+	+ Pseudo-seletores;
+	+ Utilização das estruturas modernas: Flex ou Grid;
++ HTML5;
+	+ Organização Corretas dos Blocos com os novos elementos do HTML5;
+	+ MetaTags;
+	+ FavIcon;
+	+ Otimizações para SEO;
++ JavaScript;
+	+ Validação dos campos e formulários;
+	+ Efeitos e animações da página;
+	+ Utilização de AJAX para interações com o servidor;
+	+ Estão liberados frameworks front-end: Angular, React, Vue.JS;
++ SVG;
+	+ Ícones em SVG;
++ Gulp;
+	+ Utilizado para compilar o SASS;
+	+ Utilizado para minificar o CSS;
+	+ Utilizado para minificar os JS;
+
+Podem utilizar templates de HTML e Painéis Administrativos para agilizar o desenvolvimento; (MAS CUIDADO, DEVE-SE ADAPTAR AS NECESSIDADES DO APLICATIVO A SER DESENVOLVIDO).
+
+## Back-End
+
++ Organização das Rotas;
++ Organização dos Templates (se for aplicável);
++ Acesso a banco de dados;
+	+ Organização Orientada a Objetos;
+	+ Utilização de Bibliotecas externas com Composer ou NPM;
+	+ MVC;
+	+ Utilização livre de Frameworks;
+
+## DICAS
+
+A grande ideia deste trabalho é fornecer uma base para entendimento de como funciona a integração entre __Front-End__ e __Back-End__;
+
+Por isso é interessante que:
+
+Ao desenvolver o __Back-End__ a equipe tente ao máximo trabalhar com as tecnologias __RESTFULL__ na qual o que são retornados são paneas JSONS (a serem tratados no __Front-End__)
+
+A integração entre __Front-End__ e __Back-End__ será de responsabilidade da equipe que fará o __Back-End__
+
 # Cronograma
 
 A seguir define-se um cronograma para a realização das tarefas.
 
-+ 05/06/2018 - Apresentação do andamento;
++ 21/05/2018 - Entrega dos Protótipos de Tela;
++ 05/06/2018 - Apresentação do Andamento;
 + 12/06/2018 - Apresentação Final;
 + 18/06/2018 - Apresentação Final;
 
