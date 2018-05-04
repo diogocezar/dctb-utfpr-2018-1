@@ -27,7 +27,7 @@ O número de equipes obviamente deve ser par, e cada equipe deverá desenvolver 
 
 ## Individual
 
-2. Preencha **CORRETAMENTE** nome, email, biografia, company (utilizem @seugrupo), location e foto do perfil do GitHub;
+1. Preencha **CORRETAMENTE** nome, email, biografia, company (utilizem @seugrupo), location e foto do perfil do GitHub;
 
 ## Grupo
 
