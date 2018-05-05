@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" minHeight="720.0" minWidth="1280.0" prefHeight="720.0" prefWidth="1280.0" stylesheets="@../css/index.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.register.SupplierRegisterController">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="32.0" AnchorPane.leftAnchor="32.0" AnchorPane.rightAnchor="32.0" AnchorPane.topAnchor="60.0">
+         <children>
+            <Group AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Label fx:id="mainLabel" prefHeight="30.0" prefWidth="319.0" text="Registro de Fornecedor">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="nameTextField" layoutY="50.0" prefHeight="30.0" prefWidth="720.0" promptText="Nome do Cliente *" />
+                  <TextField fx:id="CNPJTextField" layoutY="100.0" prefHeight="26.0" prefWidth="330.0" promptText="CNPJ *" />
+               </children>
+            </Group>
+            <Separator layoutY="269.0" prefHeight="5.0" prefWidth="720.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="170.0" />
+            <Group layoutY="308.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="210.0">
+               <children>
+                  <Label layoutX="0.0732421875" text="Telefone">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="telTextField" layoutX="0.0732421875" layoutY="47.0" prefHeight="30.0" prefWidth="350.0" promptText="Telefone Principal *" />
+                  <TextField fx:id="secTelTextField" layoutX="370.0" layoutY="47.0" prefHeight="30.0" prefWidth="350.0" promptText="Telefone Secundário (Opcional)" />
+               </children>
+            </Group>
+            <Group layoutY="360.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="360.0">
+               <children>
+                  <Label text="Endereço">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="streetTextField" layoutY="41.0" prefHeight="30.0" prefWidth="558.0" promptText="Rua *" />
+                  <TextField fx:id="districtTextField" layoutY="94.0" prefHeight="30.0" prefWidth="300.0" promptText="Bairro *" />
+                  <TextField fx:id="numberTextField" layoutX="590.0" layoutY="41.0" prefHeight="30.0" prefWidth="130.0" promptText="Número *" />
+                  <ComboBox fx:id="City" layoutX="310.0" layoutY="95.0" prefHeight="26.0" prefWidth="239.0" promptText="Cidade" />
+                  <ComboBox fx:id="State" layoutX="563.0" layoutY="95.0" prefHeight="26.0" prefWidth="157.0" promptText="Estado" />
+               </children>
+            </Group>
+            <Button layoutY="621.0" mnemonicParsing="false" onAction="#back" prefHeight="35.0" prefWidth="125.0" styleClass="level-1" text="Voltar" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" />
+            <Button fx:id="actionBtn" layoutX="1091.0" layoutY="621.0" mnemonicParsing="false" onAction="#register" prefHeight="35.0" prefWidth="125.0" styleClass="level-1" text="Registrar" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+            <Separator layoutX="10.0" layoutY="180.0" prefHeight="5.0" prefWidth="720.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="330.0" />
+            <TableView fx:id="brandTable" layoutX="756.0" layoutY="30.0" prefHeight="400.0" prefWidth="470.0" AnchorPane.bottomAnchor="205.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="50.0">
+              <columns>
+                <TableColumn fx:id="Brands" maxWidth="1.7976931348623157E308" minWidth="-Infinity" prefWidth="470.0" resizable="false" text="Marcas" />
+              </columns>
+            </TableView>
+            <Button layoutX="746.0" layoutY="460.0" mnemonicParsing="false" onAction="#addBrand" prefHeight="35.0" prefWidth="150.0" text="Adicionar marca" AnchorPane.bottomAnchor="160.0" AnchorPane.rightAnchor="320.0">
+               <styleClass>
+                  <String fx:value="level-1" />
+                  <String fx:value="table-button" />
+               </styleClass></Button>
+            <Button layoutX="906.0" layoutY="460.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="150.0" text="Remover marca" AnchorPane.bottomAnchor="160.0" AnchorPane.rightAnchor="0.0">
+               <styleClass>
+                  <String fx:value="level-1" />
+                  <String fx:value="table-button" />
+               </styleClass></Button>
+            <Button layoutX="916.0" layoutY="567.0" mnemonicParsing="false" onAction="#createNewBrand" prefHeight="35.0" prefWidth="150.0" text="Cadastrar marca" AnchorPane.bottomAnchor="160.0" AnchorPane.rightAnchor="160.0">
+               <styleClass>
+                  <String fx:value="level-1" />
+                  <String fx:value="table-button" />
+               </styleClass></Button>
+         </children>
+      </AnchorPane>
+      <MenuBar layoutX="40.0" layoutY="39.0" maxHeight="-Infinity" prefHeight="30.0" prefWidth="1280.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <menus>
+            <Menu mnemonicParsing="false" text="Arquivo">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Fechar" />
+                  <MenuItem mnemonicParsing="false" text="About" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Registros">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#showEmployeeRegister" text="Registrar Funcionario" />
+                  <MenuItem mnemonicParsing="false" onAction="#showCustomerRegister" text="Registrar Cliente" />
+                  <MenuItem mnemonicParsing="false" onAction="#showSupplierRegister" text="Registrar Fornecedor" />
+                  <MenuItem mnemonicParsing="false" onAction="#showProductRegister" text="Registrar Produto" />
+                  <MenuItem mnemonicParsing="false" onAction="#showModalService" text="Registrar Serviços" />
+                  <MenuItem mnemonicParsing="false" onAction="#showModalRegisterBrand" text="Registrar Marcas" />
+                  <MenuItem mnemonicParsing="false" onAction="#showMainActionM" text="Registro de Vendas" />
+                  <MenuItem mnemonicParsing="false" onAction="#showMainActionM" text="Registro de Compras" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Consultas">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#showSupplierQuery" text="Consulta Fornecedores" />
+                  <MenuItem mnemonicParsing="false" onAction="#showGenericTransaction" text="Consulta Vendas" />
+                  <MenuItem mnemonicParsing="false" onAction="#showBrandQuery" text="Consulta Marcas" />
+                  <MenuItem mnemonicParsing="false" onAction="#showGenericTransaction" text="Consulta Compras" />
+                  <MenuItem mnemonicParsing="false" onAction="#showPersonQuery" text="Consulta Pessoas" />
+                  <MenuItem mnemonicParsing="false" onAction="#showServiceQuery" text="Consulta Serviços" />
+                  <MenuItem mnemonicParsing="false" onAction="#showStockQuery" text="Consulta Estoque" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>

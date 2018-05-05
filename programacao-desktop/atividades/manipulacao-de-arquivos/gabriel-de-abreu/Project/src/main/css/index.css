@@ -1,0 +1,323 @@
+@font-face {
+    font-family: "Lato";
+    src: url("fonts/Lato-Light.ttf");
+}
+
+.menu-button > .arrow-button, .menu-button > .arrow-button > .arrow { -fx-padding: 0; } 
+
+.root {
+    -swatch-grey: rgb(200.0, 200.0, 200.0);
+    -swatch-dark-grey: rgb(150.0, 150.0, 150.0);
+    /* Colors */
+    -base-color: #FAFAFA;
+    -menu-bar: #f2f2f2;
+    -primary-color: #1976D2;
+    -secondary-color: #0AD58D;
+    -fx-grey: #b3b3b3;
+    
+    /* Configurations */
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+    
+    -fx-background-color: white;
+}
+
+/* Shadows */
+.level-1{
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.4) , 5, 0, 0, 1);
+}
+.level-1:hover{
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.4) , 10, 0, 0, 3);
+}
+.level-1:pressed{
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.4) , 5, 0, 0, 1);
+}
+
+/*generic classes*/
+.remove-glow{
+    -fx-background-radius: 2px;
+    -fx-background-insets: 0;
+}
+
+/* Text */
+.text-field {
+    -fx-padding: 8px 0 8px 0;
+}
+
+/* Material Text-Field/Area border */
+.text-field,
+.text-area {
+    -fx-background-color: transparent;
+    
+    -fx-border-style: solid;
+    -fx-border-color: -fx-grey;
+    -fx-border-width: 0 0 1 0;
+}
+.text-field:hover, 
+.text-area:hover {
+    -fx-border-width: 0 0 2 0;
+}
+.text-field:focused, 
+.text-area:focused {
+    -fx-border-width: 0 0 2 0;
+    -fx-border-color: -primary-color;
+}
+
+/* Button */
+.button,
+.menu-button {
+    -fx-background-color: -base-color;
+    -fx-text-fill: -primary-color;
+    -fx-font-size: 17px;
+    -fx-border-radius: 0;
+}
+.button:hover,
+.menu-button:hover {
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+}
+.table-button {
+    -fx-font-size: 14px;
+}
+
+/*Text area*/
+.text-area { 
+    -fx-background-insets: 0;
+    -fx-background-color: transparent, white, transparent, white;
+    -fx-background-radius: 0, 0, 0, 0;
+
+    -fx-box-border: none;
+    -fx-focus-color: -fx-control-inner-background;
+    -fx-faint-focus-color: -fx-control-inner-background;
+    -fx-text-box-border: -fx-control-inner-background;
+}
+.text-area .content { 
+    -fx-background-color: transparent, white, transparent, white;
+}
+.text-area:focused .content{
+    -fx-background-color: transparent, white, transparent, white;
+}
+
+/* Radion Button */
+.radio-button {
+    -fx-padding: 10;
+}
+.radio-button>.radio,
+.radio-button>.radio.unfocused,
+.radio-button:disabled>.radio,
+.radio-button:selected>.radio {
+    -fx-border-radius: 100.0;
+    -fx-border-color: -swatch-grey;
+    -fx-border-width: 2;
+    -fx-background-radius: 100;
+    -fx-background-color: transparent;
+    -fx-padding: 3 3 3 3;
+}
+.radio-button:focused>.radio {
+    -fx-background-color: derive(-primary-color, 80%);
+}
+.radio-button:focused:armed>.radio {
+    -fx-background-color: derive(-primary-color, 80%);
+}
+.radio-button:selected>.radio>.dot {
+    -fx-background-color: -primary-color;
+    -fx-background-insets: 0;
+}
+
+/* ComboBox  */
+.combo-box-base, 
+.choice-box {
+    -fx-background-color: transparent;
+    -fx-border-color: -swatch-grey;
+    -fx-border-width: 0 0 1 0;
+    -fx-background-radius: 0;
+    -fx-border-radius: 0;
+}
+.combo-box:focused, 
+.choice-box:focused {
+    -fx-border-color: -primary-color;
+}
+.combo-box-base>.label, 
+.choice-box>.label {
+    -fx-padding: 0.7em 0.7em 0.7em 0em;
+}
+.combo-box-base>.arrow-button, 
+.choice-box>.open-button {
+    -fx-padding: 1em 0.7em 1em 0.5em;
+    -fx-background-radius: 0.0 2.0 2.0 0.0;
+}
+.combo-box-base>.arrow-button>.arrow, 
+.choice-box>.open-button>.arrow {
+    -fx-background-color: -primary-color;
+}
+.combo-box-base .arrow-button:hover .arrow, 
+.spinner .increment-arrow-button:hover .increment-arrow,
+.spinner .decrement-arrow-button:hover .decrement-arrow {
+    -fx-background-color: -primary-color;
+}
+
+/* MenuButton */
+.menu-button .label{
+    -fx-text-fill: -primary-color;
+}
+
+.menu-item:focused {
+     -fx-background-color: -primary-color;
+}
+
+.menu-item:focused .label {
+    -fx-text-fill: white;
+}
+
+/*table*/
+.table-view{
+    /* Constants used throughout the tableview. */
+    -fx-table-header-border-color: transparent;
+    -fx-table-cell-border-color: -fx-box-border; /* Horizontal Lines*/
+    -fx-background-color: transparent;
+}
+
+/* The column header row is made up of a number of column-header, one for each
+   TableColumn, and a 'filler' area that extends from the right-most column
+   to the edge of the tableview, or up to the 'column control' button. */
+.table-view .filler, .tree-table-view .filler, .table-view .column-header,
+	.tree-table-view .column-header {
+	-fx-size: 40;
+	-fx-border-style: none;
+	-fx-border-color: -swatch-grey;
+	-fx-border-width: 0 0 2 0;
+	-fx-background-color: transparent;
+}
+
+.table-view .show-hide-columns-button, .tree-table-view .show-hide-columns-button
+	{
+	-fx-background-color: transparent;
+}
+
+.table-view .column-header .label, .table-view .filler .label,
+	.table-view .column-drag-header .label, .tree-table-view .column-header .label,
+	.tree-table-view .filler .label, .tree-table-view .column-drag-header .label
+	{
+	-fx-alignment: CENTER_LEFT;
+}
+
+.table-view .column-header-background, .tree-table-view .column-header-background
+	{
+	-fx-background-color: transparent;
+}
+
+.table-row-cell, .tree-table-row-cell {
+	-fx-cell-size: 40px;
+}
+
+.table-cell {
+	-fx-border-color: transparent; /* Vertical Lines*/
+	-fx-border-width: 1;
+}
+
+/*scroll bar*/
+.scroll-bar:vertical>.track-background, .scroll-bar:horizontal>.track-background
+	{
+/*	-fx-background-color: -swatch-light-grey;*/
+	-fx-background-insets: 0.0;
+}
+
+.scroll-bar:vertical>.thumb, .scroll-bar:horizontal>.thumb {
+	-fx-background-color: -swatch-grey;
+	-fx-background-insets: 0.0;
+	-fx-background-radius: 4.0;
+}
+
+.scroll-bar>.increment-button, .scroll-bar>.decrement-button,
+	.scroll-bar:hover>.increment-button, .scroll-bar:hover>.decrement-button
+	{
+	-fx-background-color: transparent;
+}
+
+.scroll-bar>.increment-button>.increment-arrow, .scroll-bar>.decrement-button>.decrement-arrow
+	{
+	-fx-background-color: -swatch-dark-grey;
+}
+
+.scroll-bar>.track-background {
+	-fx-background-color: transparent;
+}
+
+/*date picker*/
+.date-picker .arrow-button{
+    -fx-background-color: -primary-color;
+    -fx-background-radius: 0 0 0 0;
+}
+
+.date-picker .arrow-button .arrow{
+    -fx-background-color: white;
+    -fx-background-radius: 0 0 0 0;
+}
+
+.date-picker:hover .arrow-button .arrow{
+    -fx-background-color: white;
+    -fx-background-radius: 0 0 0 0;
+}
+
+.date-picker-popup > * > .day-cell:focused,
+.date-picker-popup > * > .today:focused {
+    -fx-background-color: -primary-color;
+    -fx-background-insets: 1, 2, 3;
+}
+
+.date-picker-popup > * > .day-cell:hover,
+.date-picker-popup > * > .selected,
+.date-picker-popup > * > .previous-month.selected,
+.date-picker-popup > * > .next-month.selected {
+    -fx-background: -primary-color;
+}
+
+.date-picker-popup .button {
+    -fx-background-color: -primary-color;
+}
+
+.date-picker-popup>.month-year-pane {
+    -fx-background-color: -primary-color;
+}
+
+.date-picker-popup>*>.spinner>.button>.left-arrow, .date-picker-popup>*>.spinner>.button>.right-arrow
+	{
+    -fx-background-color: white;
+}
+
+.date-picker-popup>*>.spinner {
+    -fx-border-width: 0;
+}
+
+.date-picker-popup>*>.spinner>.label {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.date-picker-popup>*>.day-name-cell, .date-picker-popup>*>.week-number-cell
+	{
+    -fx-font-weight: normal;
+    -fx-text-fill: -fx-grey;
+    -fx-font-size: 1em;
+}
+
+/*menubar*/
+.menu-bar{
+    -fx-background-color: -menu-bar;
+}
+
+.menu-bar .menu-button .label{
+    -fx-font-size: 0.75em;
+}
+
+.menu-bar .menu-button{
+    -fx-background-color: -menu-bar;
+}
+
+.menu-bar .menu-button:hover{
+    -fx-background-color: -base-color;
+}
+
+.menu-bar .menu:showing{
+    -fx-background-color: -base-color;
+}
