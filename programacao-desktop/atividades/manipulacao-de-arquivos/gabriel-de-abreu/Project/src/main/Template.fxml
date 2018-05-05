@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="720.0" prefWidth="1280.0" stylesheets="@css/index.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.TemplateController">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="32.0" AnchorPane.leftAnchor="32.0" AnchorPane.rightAnchor="32.0" AnchorPane.topAnchor="60.0">
+         <children>
+            <Label fx:id="mainActionScreenTitle" layoutY="6.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <TableView fx:id="Transations" layoutX="1016.0" layoutY="30.0" prefHeight="200.0" prefWidth="500.0" AnchorPane.bottomAnchor="150.0" AnchorPane.leftAnchor="716.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="100.0">
+              <columns>
+                <TableColumn fx:id="Name" minWidth="-1.0" prefWidth="250.0" resizable="false" text="Nome" />
+                <TableColumn fx:id="Price" prefWidth="100.0" resizable="false" text="Valor" />
+                  <TableColumn fx:id="Quantity" prefWidth="200.0" resizable="false" text="Quantidade" />
+              </columns>
+            </TableView>
+            <Button layoutX="46.0" layoutY="559.0" mnemonicParsing="false" onAction="#back" prefHeight="35.0" prefWidth="250.0" styleClass="level-1" text="Voltar" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" />
+            <Button fx:id="registerBtnMainAction" layoutX="971.0" layoutY="621.0" mnemonicParsing="false" onAction="#register" prefHeight="35.0" prefWidth="250.0" styleClass="level-1" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="-5.0" />
+            <TextField fx:id="customerOrSupplier" layoutY="74.0" prefWidth="600.0" promptText="Cliente / Fornecedor *" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="100.0" />
+            <Label layoutX="520.0" layoutY="526.0" text="R$" AnchorPane.leftAnchor="520.0" AnchorPane.topAnchor="526.0">
+               <font>
+                  <Font size="20.0" />
+               </font></Label>
+            <Label fx:id="FinalPrice" layoutX="550.0" layoutY="526.0" text="0,000" AnchorPane.leftAnchor="550.0" AnchorPane.topAnchor="526.0">
+               <font>
+                  <Font size="20.0" />
+               </font></Label>
+            <Label layoutX="716.0" layoutY="49.0" text="Registro de transações" AnchorPane.topAnchor="50.0">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Button fx:id="deleteEntry" layoutX="1066.0" layoutY="521.0" mnemonicParsing="false" onAction="#deleteEntry" prefHeight="35.0" prefWidth="150.0" text="Deletar entrada" AnchorPane.bottomAnchor="100.0" AnchorPane.rightAnchor="0.0">
+               <styleClass>
+                  <String fx:value="level-1" />
+                  <String fx:value="table-button" />
+               </styleClass></Button>
+            <Button fx:id="addProductBtn" layoutX="716.0" layoutY="521.0" mnemonicParsing="false" onAction="#showModalAddProduct" prefHeight="35.0" prefWidth="150.0" text="Adicionar produto" AnchorPane.bottomAnchor="100.0">
+               <styleClass>
+                  <String fx:value="level-1" />
+                  <String fx:value="table-button" />
+               </styleClass></Button>
+            <Button fx:id="addServiceBtn" layoutX="891.0" layoutY="521.0" mnemonicParsing="false" onAction="#showModalAddService" prefHeight="35.0" prefWidth="150.0" text="Adicionar serviço" AnchorPane.bottomAnchor="100.0">
+               <styleClass>
+                  <String fx:value="level-1" />
+                  <String fx:value="table-button" />
+               </styleClass></Button>
+         </children>
+      </AnchorPane>
+      <MenuBar layoutX="10.0" layoutY="8.0" maxHeight="-Infinity" prefHeight="30.0" prefWidth="1280.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <menus>
+            <Menu mnemonicParsing="false" text="Arquivo">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Fechar" />
+                  <MenuItem mnemonicParsing="false" text="About" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Registros">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#showEmployeeRegister" text="Registrar Funcionario" />
+                  <MenuItem mnemonicParsing="false" onAction="#showCustomerRegister" text="Registrar Cliente" />
+                  <MenuItem mnemonicParsing="false" onAction="#showSupplierRegister" text="Registrar Fornecedor" />
+                  <MenuItem mnemonicParsing="false" onAction="#showProductRegister" text="Registrar Produto" />
+                  <MenuItem mnemonicParsing="false" onAction="#showModalService" text="Registrar Serviços" />
+                  <MenuItem mnemonicParsing="false" onAction="#showModalRegisterBrand" text="Registrar Marcas" />
+                  <MenuItem mnemonicParsing="false" onAction="#showMainActionM" text="Registro de Vendas" />
+                  <MenuItem mnemonicParsing="false" onAction="#showMainActionM" text="Registro de Compras" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Consultas">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#showSupplierQuery" text="Consulta Fornecedores" />
+                  <MenuItem mnemonicParsing="false" onAction="#showGenericTransaction" text="Consulta Vendas" />
+                  <MenuItem mnemonicParsing="false" onAction="#showBrandQuery" text="Consulta Marcas" />
+                  <MenuItem mnemonicParsing="false" onAction="#showGenericTransaction" text="Consulta Compras" />
+                  <MenuItem mnemonicParsing="false" onAction="#showPersonQuery" text="Consulta Pessoas" />
+                  <MenuItem mnemonicParsing="false" onAction="#showServiceQuery" text="Consulta Serviços" />
+                  <MenuItem mnemonicParsing="false" onAction="#showStockQuery" text="Consulta Estoque" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>
