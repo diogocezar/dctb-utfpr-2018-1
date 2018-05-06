@@ -1,0 +1,5 @@
+Como o projeto inicial todas as interações aconteciam de maneira
+automática, não chegamos a criar formulários para cadastros, ja que
+toda a informação ja estaria implementada nas classes. Então fiz
+um protótipo de formulário para a implementação manual de uma classe, 
+sendo esta a dos aventureiros.
