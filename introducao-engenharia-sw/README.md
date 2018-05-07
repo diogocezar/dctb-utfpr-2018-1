@@ -42,6 +42,84 @@ Para o trabalho do Git, o aluno deve demonstrar os conhecimentos básicos para:
 
 10. Enviar pelo moodle o link do repositório criado;
 
+## Instruções para o Trabalho Final
+
+### Projeto de um Sistema Computacional
+
+Pessoal, vamos começar uma Jornada, que durará até o final do nosso semestre.
+
+É de extrema importância que nós façamos todas as seguintes atividades com o máximo de dedicação, pois através destas atividades nós poderemos iniciar no aprendizado básico de como: coletar as informações do cliente, entender estas informações e documentá-las.
+
+A primeira atividade prática será a do dia __07/05/2018__ que deverá avaliar as habilidades dos alunos em entender e identificar:
+
++ O que são requisitos de usuário;
++ O que são requisitos de sistema;
++ Extrair os requisitos funcionais e não funcionais da reunião com um cliente;
++ Descrição Formal de um Projeto de Software;
++ Deve-se: formar equipes de 4 ou 5 pessoas;
+
+O número de equipes deve ser par;
+
+__IMPORTANTE!__ Essa será a equipe que vocês deverão manter até o final do semestre.
+
+Cada equipe deve criar uma empresa __fictícia__ que deverá contratar uma empresa de software para desenvolver o sistema gerenciador de sua empresa;
+
+Esta empresa deverá possuir:
+
++ Nome;
++ Ramo de Atuação;
++ Descrição dos Bens ou Serviços que são ofertados;
++ Qual o público alvo;
++ Cada equipe, deverá escolher uma outra, e estas equipes deverão se entrevistar mutuamente;
+
+Devem obter informações de um briefing inicial. Esta é a etapa em que se deve entender o negócio do cliente, suas necessidades, e junto com ele identificar:
+
++ Como é seu negócio? Como é o seu produto? Como será o seu serviço?
++ Qual será o objetivo do sistema?
++ Qual será o público-alvo? Quando possível identificar:
++ Classe Social;
++ Sexo;
++ Faixa-etária;
++ Limitações Técnicas;
++ Necessitam de algum tipo de Acessibilidade?
+
+As equipes, deverão se entrevistar e gerar um relatório o mais detalhado o possível com todos os tópicos preenchidos do documento __[ES31A-ES11] Documento de Projeto de Software__ até os requisitos de software;
+
+Exigências:
+
++ Linguagem Formal;
++ Normas da ABNT;
++ Entrega do Documento Impresso (No dia da apresentação);
++ Caso as equipes não consigam definir um tema, pode-se utilizar o PDF ([ES31A-ES11] Temas Software) com algumas sugestões de sistemas a serem desenvolvidos;
+
+### Atividades na Sequência
+Este documento (__[ES31A-ES11] Documento de Projeto de Software__) deverá ser a base para as seguintes apresentações:
+
+__28/05/2018__ e __30/05/2018__ - __Trabalho 3__ - Apresentação de um Sistema Computacional: Requisitos do Sistema e Diagramas de Caso de Uso;
+
+__25/06/2018__ e __27/05/2018__ - Trabalho 4 - Apresentação do Projeto Final: Todo o documento preenchido - Diagramas de Atividades e de Classes;
+
+Exigências:
+
++ Apresentação dos Slides;
++ Retroprojetor disponível com saída HDMI ou computador compatível com PDF / PPT;
++ Todos os membros da equipe deverão apresentar;
++ A avaliação é individual;
++ Tempo médio de apresentação por equipe: 30 a 35 minutos;
+
+#### Importante
+
+Todas as sugestões do professor deverão ser acatadas até a entrega final do projeto;
+
+#### O que será avaliado?
+
++ Objetividade com relação as explicações;
++ Tempo suficiente para apresentação de todo o conteúdo;
++ Postura e desinvoltura na apresentação;
++ Respostas as possíveis perguntas;
++ Documentação;
++ Fidelidade aos padrões de projetos escolhidos;
+
 ## Aqui estão alguns links interessantes
 
 * conheçam o curso que vocês estão matriculados: https://goo.gl/CtMoHh
