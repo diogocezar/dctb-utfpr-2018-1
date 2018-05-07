@@ -5,6 +5,7 @@ nbbuild/
 dist/
 nbdist/
 .nb-gradle/
+target/
 
 # Aquivos mac os
 .DS_Store
@@ -34,3 +35,4 @@ Temporary Items
 /programacao-desktop/a14-banco-de-dados-parte-1/DataBaseExample1/nbproject/private/
 /programacao-desktop/a14-banco-de-dados-parte-1/DataBaseExample2/nbproject/private/
 /programacao-desktop/a14-banco-de-dados-parte-1/DataBaseExemple3/nbproject/private/
+
