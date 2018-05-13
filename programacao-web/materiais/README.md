@@ -23,3 +23,7 @@
 * https://www.impacta.com.br/blog/2015/03/30/dicas-de-css-position-absolut-relative-static-e-fixed/
 
 * http://www.devmedia.com.br/position-css-definindo-a-posicao-de-elementos-com-fixed-relative-e-absolute/37700
+
+# Livro JavaScript
+
+* https://github.com/braziljs/eloquente-javascript
