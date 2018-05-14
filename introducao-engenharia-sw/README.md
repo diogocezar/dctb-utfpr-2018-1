@@ -120,6 +120,19 @@ Todas as sugestões do professor deverão ser acatadas até a entrega final do p
 + Documentação;
 + Fidelidade aos padrões de projetos escolhidos;
 
+## Lembretes de Aula (14/05/2018)
+
++ Por gentileza, preencher a tabela com o nome dos grupos para o trabalho final, o documento é: https://docs.google.com/spreadsheets/d/1Hl6i1SPgpF-MZih_rJFSQqEkWWvOafpX6sVpYi769pw/edit?usp=sharing
+
++ Como foi definido em: https://docs.google.com/presentation/d/18CaL49M8L-s0qTTkkc56VQdYc6UKSzg80k5Bu6TX8_A/edit?usp=sharing
+    + Deve-se entregar por equipe:
+        + Um relatório de acordo com as normas da ABNT e dos modelos de trabalhos acadêmicos da UTFPR;
+        + No relatório deve-se descrever as duas etapas da apresentação feita em sala;
+        + A não entrega do relatório, acarretará na perca de nota final da apresentação da equipe;
+        + A data de entrega para o relatório ficou extendida para: 16/08/2018;
+        + O Formato de envio deve ser um pack .zip com o PDF do relatório e da apresentação feita em aula;
+        + Apenas um aluno de cada equipe deverá fazer o envio;
+
 ## Aqui estão alguns links interessantes
 
 * conheçam o curso que vocês estão matriculados: https://goo.gl/CtMoHh
