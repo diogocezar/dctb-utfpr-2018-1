@@ -123,6 +123,9 @@ Todas as sugestões do professor deverão ser acatadas até a entrega final do p
 ## Lembretes de Aula (14/05/2018)
 
 + Por gentileza, preencher a tabela com o nome dos grupos para o trabalho final, o documento é: https://docs.google.com/spreadsheets/d/1Hl6i1SPgpF-MZih_rJFSQqEkWWvOafpX6sVpYi769pw/edit?usp=sharing
+    + Limite de pessoas por equipe: 6;
+    + Lembrando que teremos que fazer grupos com números pares;
+    + Ao criar novos grupos, outras reuniões devem ser realizadas para coletar o briefing dos clientes;
 
 + Como foi definido em: https://docs.google.com/presentation/d/18CaL49M8L-s0qTTkkc56VQdYc6UKSzg80k5Bu6TX8_A/edit?usp=sharing
     + Deve-se entregar por equipe:
