@@ -13,7 +13,7 @@ public class DataBaseExample1 {
             //new UpdateFromDatabase().updateDatabase();
             
             // Exemplo 4
-            //new DeleteFromDatabase().deleteDatabase();
+            new DeleteFromDatabase().deleteDatabase();
         } catch (Exception ex) {
             System.out.println("Houve um erro: " + ex.getMessage());
         }

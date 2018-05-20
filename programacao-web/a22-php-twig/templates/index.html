@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+{% block title %}Index{% endblock %}
+
+{% block head %}
+    {{ parent() }}
+    <style type="text/css">
+        .important { color: #336699; }
+    </style>
+{% endblock %}
+
+{% block content %}
+    <h1>My Webpage</h1>
+    <p>Testando atributo 1 : {{ var[0] }}</p>
+    <p>Testando atributo 2 : {{ var[1] }}</p>
+    <p>Testando atributo 3 : {{ doo }}</p>
+    <ul>
+    	{% for user in users %}
+    	<li>Nome: {{ user.name }} - Idade: {{ user.name }}</li>
+    	{% endfor %}
+    </ul>
+    {% include 'include.html' %}
+{% endblock %}
+
+{% block footer %}
+	{{ parent() }}
+	<p>Personal Footer</p>
+{% endblock %}
