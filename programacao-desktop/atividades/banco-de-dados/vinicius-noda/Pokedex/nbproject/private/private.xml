@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/home/noda/Documentos/NetBeansProjects/Pokedex/src/pokedex/controller/IndexController.java</file>
+            <file>file:/home/noda/Documentos/NetBeansProjects/Pokedex/src/pokedex/Classes/Pokemon.java</file>
+            <file>file:/home/noda/Documentos/NetBeansProjects/Pokedex/src/pokedex/Pokedex.java</file>
+            <file>file:/home/noda/Documentos/NetBeansProjects/Pokedex/src/pokedex/Config/ConfigurationsMySQL.java</file>
+            <file>file:/home/noda/Documentos/NetBeansProjects/Pokedex/src/pokedex/view/Display.fxml</file>
+            <file>file:/home/noda/Documentos/NetBeansProjects/Pokedex/src/pokedex/controller/DisplayController.java</file>
+            <file>file:/home/noda/Documentos/NetBeansProjects/Pokedex/src/pokedex/model/DAO/PokemonDAOMySql.java</file>
+        </group>
+    </open-files>
+</project-private>
