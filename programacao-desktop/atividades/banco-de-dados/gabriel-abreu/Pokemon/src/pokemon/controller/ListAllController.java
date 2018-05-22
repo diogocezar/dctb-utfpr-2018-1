@@ -57,6 +57,9 @@ public class ListAllController implements Initializable {
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
+        updateData();
+    }
+    public void updateData(){
         loadList();
         loadTable();
     }

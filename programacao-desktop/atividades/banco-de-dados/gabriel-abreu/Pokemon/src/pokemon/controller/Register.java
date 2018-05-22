@@ -60,6 +60,19 @@ public class Register implements Initializable {
             ControllerMaster.getInstance().displayErrorAlert("Falha ao conectar com banco de dados!");
         }
     }
+    @FXML
+    private void delete(){
+        try{
+            ControllerMaster.getInstance().getPokeDAO().removePokemon(
+                    ControllerMaster.getInstance().getPokeAux());
+            ControllerMaster.getInstance().displayInformationAlert("Removido com sucesso!");
+            ControllerMaster.getInstance().getAuxStage().close();
+            ControllerMaster.getInstance().getListController().updateData();
+        }
+        catch(Exception e){
+            ControllerMaster.getInstance().displayErrorAlert("Falha ao conectar com o banco de dados!");
+        }
+    }
 
     private void savePokemon() throws Exception {
         Pokemon pokemon = new Pokemon();
@@ -78,6 +91,7 @@ public class Register implements Initializable {
             ControllerMaster.getInstance().getPokeDAO().updatePokemon(
                     ControllerMaster.getInstance().getPokeAux().getName(),pokemon);
             ControllerMaster.getInstance().displayInformationAlert("Atualizado com sucesso!");
+            ControllerMaster.getInstance().getListController().updateData();
         }
     }
 

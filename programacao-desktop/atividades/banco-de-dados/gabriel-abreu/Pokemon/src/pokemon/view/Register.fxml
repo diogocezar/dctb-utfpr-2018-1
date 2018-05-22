@@ -68,8 +68,8 @@
       <Pane layoutX="21.0" layoutY="352.0" prefHeight="26.0" prefWidth="414.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0">
          <children>
             <Button mnemonicParsing="false" onAction="#save" text="Salvar" />
-            <Button fx:id="delete" layoutX="176.0" mnemonicParsing="false" text="Excluir" />
-            <Button layoutX="338.0" mnemonicParsing="false" onAction="#cancel" text="Cancelar" />
+            <Button fx:id="delete" layoutX="176.0" mnemonicParsing="false" onAction="#delete" text="Excluir" />
+            <Button layoutX="338.0" mnemonicParsing="false" onAction="#cancel" text="Voltar" />
          </children>
       </Pane>
    </children>

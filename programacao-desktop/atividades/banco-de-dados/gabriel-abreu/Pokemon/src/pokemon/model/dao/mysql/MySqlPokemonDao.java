@@ -34,7 +34,7 @@ public class MySqlPokemonDao extends PokemonDAO {
                 + "`defense`, `specialAttack`, `specialDefense`) "
                 + "VALUES (?,?,?,?,?,?,?,?)");
         statement.setString(1, pokemon.getName());
-        statement.setInt(2, pokemon.getAgility());
+        statement.setInt(2, pokemon.getLevel());
         statement.setInt(3, pokemon.getHp());
         statement.setInt(4, pokemon.getAgility());
         statement.setInt(5, pokemon.getAttack());
@@ -46,8 +46,12 @@ public class MySqlPokemonDao extends PokemonDAO {
     }
 
     @Override
-    public void removePokemon(Pokemon pokemon) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public void removePokemon(Pokemon pokemon) throws Exception{
+        PreparedStatement statement = connect.prepareStatement("DELETE FROM `Pokemon`"
+                + " WHERE name = ?");
+        statement.setString(1, pokemon.getName());
+        statement.executeUpdate();
+        statement.close();
     }
 
     @Override
@@ -57,7 +61,7 @@ public class MySqlPokemonDao extends PokemonDAO {
                 + "`attack`=?,`defense`=?,"
                 + "`specialAttack`=?,`specialDefense`=? WHERE name= ?");
         statement.setString(1, pokemon.getName());
-        statement.setInt(2, pokemon.getAgility());
+        statement.setInt(2, pokemon.getLevel());
         statement.setInt(3, pokemon.getHp());
         statement.setInt(4, pokemon.getAgility());
         statement.setInt(5, pokemon.getAttack());

@@ -32,6 +32,8 @@ public class ControllerMaster {
 
     private Pokemon pokeAux;
 
+    private ListAllController listController;
+    
     public void openEditPanel() {
         LoadedScene ls = setScene("view/Register.fxml");
         openStage(auxStage,"Cadastro de pokemons", ls.scene);
@@ -42,15 +44,15 @@ public class ControllerMaster {
     public void openEdit() {
         LoadedScene ls = setScene("view/ListAll.fxml");
         openStage(masterStage,"Todos os Pokemons", ls.scene);
-        ListAllController controller = (ListAllController) ls.controller;
-        controller.setEditMode();
+        listController = (ListAllController) ls.controller;
+        listController.setEditMode();
     }
 
     public void openListAll() {
         LoadedScene ls = setScene("view/ListAll.fxml");
         openStage(masterStage,"Todos os Pokemons", ls.scene);
-        ListAllController controller = (ListAllController) ls.controller;
-        controller.setListMode();
+        listController = (ListAllController) ls.controller;
+        listController.setListMode();
     }
 
     public void openRegister() {
@@ -91,6 +93,10 @@ public class ControllerMaster {
         alert.showAndWait();
     }
 
+    public ListAllController getListController() {
+        return listController;
+    }
+    
     public DatabaseConnection getDatabaseConnection() {
         return connection;
     }
