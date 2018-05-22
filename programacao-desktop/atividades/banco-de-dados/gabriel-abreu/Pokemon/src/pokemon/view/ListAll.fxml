@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="440.0" prefWidth="743.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pokemon.controller.ListAllController">
+   <children>
+      <TableView fx:id="pokemons" layoutX="13.0" layoutY="40.0" prefHeight="360.0" prefWidth="746.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="2.0">
+        <columns>
+          <TableColumn fx:id="name" prefWidth="75.0" text="Nome" />
+          <TableColumn fx:id="level" prefWidth="75.0" text="Nivel" />
+            <TableColumn fx:id="hp" prefWidth="75.0" text="HP" />
+            <TableColumn fx:id="agility" prefWidth="75.0" text="Agilidade" />
+            <TableColumn fx:id="attack" prefWidth="75.0" text="Ataque" />
+            <TableColumn fx:id="defense" prefWidth="75.0" text="Defesa" />
+            <TableColumn fx:id="specialAttack" prefWidth="159.0" text="Ataque Especial" />
+            <TableColumn fx:id="specialDefense" prefWidth="136.0" text="Defesa Especial" />
+        </columns>
+      </TableView>
+      <Label fx:id="title" layoutX="334.0" layoutY="14.0" text="Todos os Pokemons" />
+      <Button layoutX="618.0" layoutY="407.0" mnemonicParsing="false" onAction="#goBack" prefHeight="26.0" prefWidth="111.0" text="Voltar" />
+      <Button fx:id="select" layoutX="14.0" layoutY="407.0" mnemonicParsing="false" onAction="#editPokemon" prefHeight="26.0" prefWidth="111.0" text="Selecionar" />
+   </children>
+</AnchorPane>
