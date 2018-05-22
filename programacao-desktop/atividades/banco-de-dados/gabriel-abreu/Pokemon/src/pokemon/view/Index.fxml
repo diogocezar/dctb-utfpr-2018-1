@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="204.0" prefWidth="413.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.141" fx:controller="pokemon.controller.IndexController">
+   <children>
+      <Label layoutX="179.0" layoutY="6.0" text="Pokedex" />
+      <Button layoutX="150.0" layoutY="28.0" mnemonicParsing="false" onAction="#openRegister" prefHeight="38.0" prefWidth="115.0" text="Cadastrar" />
+      <Button layoutX="149.0" layoutY="127.0" mnemonicParsing="false" onAction="#openListAll" prefHeight="38.0" prefWidth="115.0" text="Listar Todos" />
+      <Button layoutX="149.0" layoutY="76.0" mnemonicParsing="false" onAction="#openManagement" prefHeight="38.0" prefWidth="115.0" text="Gerenciar" />
+   </children>
+</AnchorPane>
