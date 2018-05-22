@@ -72,12 +72,6 @@ public class MySqlPokemonDao extends PokemonDAO {
         statement.executeUpdate();
         statement.close();
     }
-
-    @Override
-    public Pokemon getPokemon(String name) throws Exception {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
     @Override
     public ArrayList<Pokemon> getALlPokemons() throws Exception {
         ArrayList<Pokemon> pokemons = new ArrayList<>();

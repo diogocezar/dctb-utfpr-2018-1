@@ -16,6 +16,5 @@ public abstract class PokemonDAO {
     public abstract void insertPokemon(Pokemon pokemon) throws Exception;
     public abstract void removePokemon(Pokemon pokemon) throws Exception;
     public abstract void updatePokemon(String oldName,Pokemon pokemon) throws Exception;
-    public abstract Pokemon getPokemon(String name) throws Exception;
     public abstract ArrayList<Pokemon> getALlPokemons() throws Exception;
 }
