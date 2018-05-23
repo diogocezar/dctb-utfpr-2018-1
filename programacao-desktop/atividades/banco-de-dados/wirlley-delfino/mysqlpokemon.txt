@@ -1,0 +1,20 @@
+create table Pokemons (
+	
+	name varchar(50) NOT NULL AUTO_INCREMENT,
+    
+	level int,
+    	
+	hp int,
+    
+	agi int,
+    
+	atk int,
+    
+	def int,
+    
+	specialAtk int,
+	
+	specialDef int
+,
+	primary key(id)    	
+	)
