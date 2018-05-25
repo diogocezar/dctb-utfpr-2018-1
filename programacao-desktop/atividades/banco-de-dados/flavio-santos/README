@@ -1,0 +1,2 @@
+Para a execução da atividade, foi utilizado um banco de dados MySQL hospedado na Amazon Web Services (AWS).
+Os dados para a conexão manual, caso necessária, estão no arquivo ConfigurationsMySQL.java.
