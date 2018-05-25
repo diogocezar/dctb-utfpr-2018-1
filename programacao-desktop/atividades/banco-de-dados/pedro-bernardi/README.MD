@@ -4,7 +4,7 @@
 
 ``` bash
 # criar banco pelo dump
-extras/sql-dumb.sql
+extras/sql-dump.sql
 
 # alterar senha se necessário ou manter usuário root e senha padrão
 ConfigurationsMySQL -> super.PASS = ""
