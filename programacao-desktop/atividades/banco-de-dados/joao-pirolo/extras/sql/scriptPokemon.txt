@@ -1,0 +1,22 @@
+﻿CREATE TABLE java_pokemon (
+	
+	name VARCHAR(30) NOT NULL,
+	level int (10) NOT NULL,
+	hp int (10) NOT NULL,
+	agility int (10) NOT NULL,
+	attack int (10) NOT NULL,
+	defense int (10) NOT NULL,
+	specialAttack int(10) NOT NULL,
+	specialDefense int (10) NOT NULL,
+	PRIMARY KEY (name)
+)DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+
+INSERT INTO `java_pokemon` (`name`, `level`,`hp`,`agility`,
+			`attack`,`defense`,`specialAttack`,`specialDefense`) VALUES
+('Bulbasaur', 1,20,30,35,25,35,30),
+('Charmander', 1,25,30,38,29,45,35),
+('Charmeleon', 2,40,40,50,45,65,50),
+('Charizard', 3,60,55,60,55,72,62),
+('Squirtle', 1, 24,28,34,29,33,34),
+('Wartortle', 2,45,44,48,42,57,41),
+('Blastoise', 3,61,53,67,62,74,66)
